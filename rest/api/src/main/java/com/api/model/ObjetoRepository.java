@@ -11,5 +11,5 @@ public interface ObjetoRepository extends JpaRepository<ObjetoEntity, Integer> {
 
 
     @Query("SELECT j FROM ObjetoEntity j WHERE j.nombre LIKE %:nombre%")
-    List<JugadorEntity> findByNombreContaining(@Param("nombre") String nombre);
+    List<ObjetoEntity> findByNombreContaining(@Param("nombre") String nombre);
 }
