@@ -5,7 +5,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 
-import com.afundacion.inazumawiki.pantallaInital.InitialActivity;
+import com.afundacion.inazumawiki.pantallaInitial.InitialActivity;
 import com.afundacion.myaplication.R;
 
 public class LauncherActivity extends AppCompatActivity {
@@ -15,7 +15,7 @@ public class LauncherActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_launcher);
 
-        int delayMillis = 3000; // 5 seconds (you can adjust the time as needed)
+        int delayMillis = 5000; // 3 seconds (you can adjust the time as needed)
 
         new Handler().postDelayed(new Runnable() {
             @Override

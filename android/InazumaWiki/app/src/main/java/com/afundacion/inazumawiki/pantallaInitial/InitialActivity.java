@@ -1,4 +1,4 @@
-package com.afundacion.inazumawiki.pantallaInital;
+package com.afundacion.inazumawiki.pantallaInitial;
 
 import androidx.appcompat.app.AppCompatActivity;
 
