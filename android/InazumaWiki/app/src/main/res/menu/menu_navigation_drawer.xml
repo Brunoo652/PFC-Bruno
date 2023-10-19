@@ -1,24 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
+ <menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view"
+
+    >
+
+
 
     <group
         android:checkableBehavior="single"
         android:id="@+id/Buscadores">
         <item
             android:id="@+id/BuscadorJugadorNombre"
-            android:title="Buscador de jugador por nombre" />
+            android:title="Buscador de jugadores" />
 
         <item
             android:id="@+id/BuscadorClubesNombre"
-            android:title="Buscador de jugador por club" />
+            android:title="Buscador de clubes" />
 
         <item
             android:id="@+id/BuscadorobjetosNombre"
-            android:title="Buscador de objetos por nombre" />
+            android:title="Buscador de objetos" />
 
         <item
             android:id="@+id/BuscadorSTNombre"
-            android:title="Buscador de supertecnicas por nombre" />
+            android:title="Buscador de supertécnicas" />
     </group>
 
     <group>
