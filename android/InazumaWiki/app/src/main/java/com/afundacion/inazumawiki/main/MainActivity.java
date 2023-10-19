@@ -130,9 +130,7 @@ public class MainActivity extends AppCompatActivity
                         .commit();
                 break;
 
-
         }
-
 
     }
 
@@ -156,6 +154,5 @@ public class MainActivity extends AppCompatActivity
                 throw new IllegalArgumentException("menu option not implemented!!");
         }
     }
-
 
 }
