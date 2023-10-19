@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f64eb30c-a4e1-4ab1-a6ae-e011171c4219" name="Changes" comment="" />
+    <list default="true" id="f64eb30c-a4e1-4ab1-a6ae-e011171c4219" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../android/InazumaWiki/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../../android/InazumaWiki/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../android/InazumaWiki/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../../android/InazumaWiki/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../android/InazumaWiki/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../../android/InazumaWiki/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -47,7 +51,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "Api+BBDD",
+    "git-widget-placeholder": "Android",
     "last_opened_file_path": "C:/msys64/home/brure/PFC-Bruno/rest/api",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",

@@ -1,4 +1,4 @@
-package com.afundacion.inazumawiki.main;
+package com.afundacion.inazumawiki;
 
 import android.os.Bundle;
 import android.view.MenuItem;
@@ -12,7 +12,6 @@ import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.fragment.app.Fragment;
 
-import com.afundacion.inazumawiki.R;
 import com.afundacion.inazumawiki.acercade.FragmentAcercaDe;
 import com.afundacion.inazumawiki.clubes.FragmentBuscarClubesNombre;
 import com.afundacion.inazumawiki.favoritos.FragmentListaFavoritos;
@@ -20,6 +19,7 @@ import com.afundacion.inazumawiki.jugadores.FragmentBuscarJugadoresNombre;
 import com.afundacion.inazumawiki.objetos.FragmentBuscarObjetosNombre;
 import com.afundacion.inazumawiki.opciones.FragmentOpciones;
 import com.afundacion.inazumawiki.st.FragmentBuscarSTNombre;
+import com.afundacion.myaplication.R;
 import com.google.android.material.navigation.NavigationView;
 
 
@@ -56,43 +56,85 @@ public class MainActivity extends AppCompatActivity
         }
     }
 
-    public Fragment newInstance(int titleId) {
-        Fragment fragment = null;
-        switch (titleId) {
-            case R.string.buscadorJugadorNombre:
-                fragment = FragmentBuscarJugadoresNombre.newInstance(titleId);
-                break;
-            case R.string.buscadorClubesNombre:
-                fragment = FragmentBuscarClubesNombre.newInstance(titleId);
-                break;
-            case R.string.buscadorObjetosNombre:
-                fragment = FragmentBuscarObjetosNombre.newInstance(titleId);
-                break;
-            case R.string.buscadorSTNombre:
-                fragment = FragmentBuscarSTNombre.newInstance(titleId);
-                break;
-            case R.string.listaFavoritos:
-                fragment = FragmentListaFavoritos.newInstance(titleId);
-                break;
-            case R.string.AcercaDe:
-                fragment = FragmentAcercaDe.newInstance(titleId);
-                break;
-            case R.string.Opciones:
-                fragment = FragmentOpciones.newInstance(titleId);
-                break;
-        }
-
-        if (fragment != null) {
-            getSupportFragmentManager()
-                    .beginTransaction()
-                    .replace(R.id.home_content, fragment)
-                    .commit();
-        }
-
-        return fragment;
+    @Override
+    public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+        int titleId = getTitle(item);
+        showFragment(titleId);
+        drawerLayout.closeDrawer(GravityCompat.START);
+        return true;
     }
 
 
+    private void showFragment(int titleId) {
+        Fragment fragment;
+
+
+        setTitle(getString(titleId));
+        switch (titleId){
+
+            case R.string.buscadorJugadorNombre:
+                fragment = FragmentBuscarJugadoresNombre.newInstance(titleId);
+                getSupportFragmentManager()
+                        .beginTransaction()
+                        .replace(R.id.home_content, fragment)
+                        .commit();
+                break;
+
+
+            case R.string.buscadorClubesNombre:
+                fragment = FragmentBuscarClubesNombre.newInstance(titleId);
+                getSupportFragmentManager()
+                        .beginTransaction()
+                        .replace(R.id.home_content, fragment)
+                        .commit();
+                break;
+
+
+            case R.string.buscadorObjetosNombre:
+                fragment = FragmentBuscarObjetosNombre.newInstance(titleId);
+                getSupportFragmentManager()
+                        .beginTransaction()
+                        .replace(R.id.home_content, fragment)
+                        .commit();
+                break;
+
+            case R.string.buscadorSTNombre:
+                fragment = FragmentBuscarSTNombre.newInstance(titleId);
+                getSupportFragmentManager()
+                        .beginTransaction()
+                        .replace(R.id.home_content, fragment)
+                        .commit();
+                break;
+
+            case R.string.AcercaDe:
+                fragment = FragmentAcercaDe.newInstance(titleId);
+                getSupportFragmentManager()
+                        .beginTransaction()
+                        .replace(R.id.home_content, fragment)
+                        .commit();
+                break;
+
+            case R.string.Opciones:
+                fragment = FragmentOpciones.newInstance(titleId);
+                getSupportFragmentManager()
+                        .beginTransaction()
+                        .replace(R.id.home_content, fragment)
+                        .commit();
+                break;
+
+            case R.string.listaFavoritos:
+                fragment = FragmentListaFavoritos.newInstance(titleId);
+                getSupportFragmentManager()
+                        .beginTransaction()
+                        .replace(R.id.home_content, fragment)
+                        .commit();
+                break;
+
+
+        }
+
+
+    }
 
     private int getTitle(@NonNull MenuItem menuItem) {
         switch (menuItem.getItemId()) {
@@ -109,28 +151,11 @@ public class MainActivity extends AppCompatActivity
             case R.id.AcercaDe:
                 return R.string.AcercaDe;
             case R.id.Opciones:
-                return  R.string.Opciones;
-
+                return R.string.Opciones;
             default:
                 throw new IllegalArgumentException("menu option not implemented!!");
         }
     }
 
-    @Override
-    public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-        int titleId = getTitle(item);
-        Fragment fragment = newInstance(titleId);
-        if (fragment != null) {
-            getSupportFragmentManager()
-                    .beginTransaction()
-                    .replace(R.id.home_content, fragment)
-                    .commit();
-
-            // Cambiar el título del DrawerLayout
-            setTitle(item.getTitle());
-        }
-        drawerLayout.closeDrawer(GravityCompat.START);
-        return true;
-    }
 
 }
