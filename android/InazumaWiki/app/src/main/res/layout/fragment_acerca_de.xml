@@ -3,12 +3,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".acercade.FragmentAcercaDe">
+    tools:context=".acercade.FragmentAcercaDe"
+    android:background="@android:color/darker_gray">
 
-    <!-- TODO: Update blank fragment layout -->
+
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:id="@+id/TextoAcercaDe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Aplicación hecha por Bruno Reboredo Álvarez"
+        android:textAlignment="center"
+        android:layout_gravity="center"
+        android:textSize="25dp"
+        android:textColor="@color/black" />
 
 </FrameLayout>
