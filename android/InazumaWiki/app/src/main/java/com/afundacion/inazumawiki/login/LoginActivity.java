@@ -1,4 +1,4 @@
-package com.afundacion.inazumawiki.pantallaInitial;
+package com.afundacion.inazumawiki.login;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -7,27 +7,23 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-
 import com.afundacion.inazumawiki.main.MainActivity;
-import com.afundacion.inazumawiki.login.LoginActivity;
 import com.afundacion.myaplication.R;
 
-public class InitialActivity extends AppCompatActivity {
+public class LoginActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_initial);
+        setContentView(R.layout.activity_login);
 
-        Button loginButton = findViewById(R.id.botonLogin);
+        Button submit = findViewById(R.id.SubmitLoginBoton);
 
-        loginButton.setOnClickListener(new View.OnClickListener() {
+        submit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // Crear un intent para abrir la actividad Login Activity
-                Intent intent = new Intent(InitialActivity.this, LoginActivity.class);
+                Intent intent = new Intent(LoginActivity.this, MainActivity.class);
                 startActivity(intent);
-
             }
         });
     }

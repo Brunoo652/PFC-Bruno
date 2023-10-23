@@ -5,9 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f64eb30c-a4e1-4ab1-a6ae-e011171c4219" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../../android/InazumaWiki/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../../android/InazumaWiki/app/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../android/InazumaWiki/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../../android/InazumaWiki/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../android/InazumaWiki/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../../android/InazumaWiki/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../android/InazumaWiki/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../android/InazumaWiki/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../android/InazumaWiki/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../android/InazumaWiki/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../android/InazumaWiki/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../android/InazumaWiki/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../android/InazumaWiki/app/src/main/java/com/afundacion/inazumawiki/MainActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../android/InazumaWiki/app/src/main/res/layout/activity_initial.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../android/InazumaWiki/app/src/main/res/layout/activity_initial.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,7 +54,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "Android",
-    "last_opened_file_path": "C:/msys64/home/brure/PFC-Bruno/rest/api",
+    "last_opened_file_path": "C:/byl/tms-core-order",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -140,6 +142,7 @@
       <workItem from="1697524885352" duration="16536000" />
       <workItem from="1697614188436" duration="6022000" />
       <workItem from="1697621273169" duration="2439000" />
+      <workItem from="1697727785047" duration="20000" />
     </task>
     <servers />
   </component>

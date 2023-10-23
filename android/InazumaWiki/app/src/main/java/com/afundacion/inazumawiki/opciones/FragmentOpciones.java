@@ -1,15 +1,11 @@
 package com.afundacion.inazumawiki.opciones;
 
-import android.content.SharedPreferences;
 import android.os.Bundle;
 
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
 import androidx.annotation.StringRes;
 import androidx.appcompat.app.AppCompatDelegate;
 import androidx.fragment.app.Fragment;
 
-import android.preference.PreferenceManager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -40,24 +36,18 @@ public class FragmentOpciones extends Fragment {
     }
 
     Switch switchNightMode;
-    @Override
+
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_opciones, container, false);
 
         // Inicializa el Switch y establece su estado según las preferencias.
         switchNightMode = view.findViewById(R.id.ModoOscuro);
-        SharedPreferences sharedPreferences = PreferenceManager.getDefaultSharedPreferences(getContext());
-        boolean isNightModeEnabled = sharedPreferences.getBoolean("NIGHT_MODE", false);
-        switchNightMode.setChecked(isNightModeEnabled);
+
 
         // Agrega un Listener para manejar el cambio de estado del Switch.
         switchNightMode.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                // Guarda el estado en las preferencias.
-                SharedPreferences.Editor editor = sharedPreferences.edit();
-                editor.putBoolean("NIGHT_MODE", isChecked);
-                editor.apply();
 
                 // Actualiza el tema de la aplicación en tiempo real.
                 if (isChecked) {
@@ -65,7 +55,7 @@ public class FragmentOpciones extends Fragment {
                 } else {
                     AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
                 }
-                recreateActivity(); // Método personalizado para recrear la actividad y aplicar el nuevo tema.
+                recreateActivity();
             }
         });
 
@@ -73,10 +63,11 @@ public class FragmentOpciones extends Fragment {
     }
 
     private void recreateActivity() {
-        // Recrea la actividad para aplicar el nuevo tema.
         if (getActivity() != null) {
             getActivity().recreate();
         }
     }
 
+
 }
+

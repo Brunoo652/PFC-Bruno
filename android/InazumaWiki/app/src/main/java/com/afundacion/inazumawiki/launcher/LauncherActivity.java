@@ -15,7 +15,7 @@ public class LauncherActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_launcher);
 
-        int delayMillis = 5000; // 3 seconds (you can adjust the time as needed)
+        int delayMillis = 3000; // 3 seconds (you can adjust the time as needed)
 
         new Handler().postDelayed(new Runnable() {
             @Override
