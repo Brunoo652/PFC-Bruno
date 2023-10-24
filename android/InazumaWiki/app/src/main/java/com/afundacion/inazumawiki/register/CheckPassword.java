@@ -3,8 +3,8 @@ package com.afundacion.inazumawiki.register;
 public class CheckPassword {
 
     public static boolean isPasswordValid(String password) {
-        // Comprueba si la contraseña tiene al menos 8 caracteres
-        if (password.length() < 8) {
+        // Comprueba si la contraseña tiene al menos 8 caracteres y no supera los 20 caracteres
+        if (password.length() < 8 || password.length() > 20) {
             return false;
         }
 

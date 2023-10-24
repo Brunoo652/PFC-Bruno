@@ -25,7 +25,7 @@ public class UsuarioController {
         return ResponseEntity.ok("Healthy");
     }
 
-    @PostMapping("/registrar-usuario") // Maneja solicitudes POST en /usuarios/registrar
+    @PostMapping("/register") // Maneja solicitudes POST en /usuarios/register
     public ResponseEntity<String> registrarUsuario(@RequestBody UsuarioEntity usuario) {
         try {
             // Guarda el usuario en la base de datos
@@ -34,8 +34,27 @@ public class UsuarioController {
             // Puedes personalizar la respuesta si es necesario
             return new ResponseEntity<>("Usuario registrado con éxito. ID: " + usuarioGuardado.getId(), HttpStatus.CREATED);
         } catch (Exception e) {
+            // Registra detalles del error en el log
+            e.printStackTrace();
             // Maneja cualquier error que pueda ocurrir al guardar el usuario
             return new ResponseEntity<>("No se pudo registrar el usuario.", HttpStatus.INTERNAL_SERVER_ERROR);
         }
+    }
+
+    @PostMapping("/login")
+    public ResponseEntity<String> loginUsuario(@RequestBody UsuarioEntity usuario) {
+        // Recupera el usuario de la base de datos por su correo electrónico
+        UsuarioEntity usuarioEncontrado = usuarioRepository.findByEmail(usuario.getEmail());
+
+        if (usuarioEncontrado != null) {
+            // Verifica si la contraseña coincide
+            if (usuarioEncontrado.getPassword().equals(usuario.getPassword())) {
+                // Devuelve una respuesta exitosa (código 200)
+                return ResponseEntity.ok("Inicio de sesión exitoso");
+            }
+        }
+
+        // Si el inicio de sesión no es exitoso, devuelve un error no autorizado (código 401)
+        return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body("Inicio de sesión fallido");
     }
 }
