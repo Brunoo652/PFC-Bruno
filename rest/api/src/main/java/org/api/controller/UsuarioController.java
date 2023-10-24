@@ -38,4 +38,22 @@ public class UsuarioController {
             return new ResponseEntity<>("No se pudo registrar el usuario.", HttpStatus.INTERNAL_SERVER_ERROR);
         }
     }
+
+
+    @PostMapping("/login")
+    public ResponseEntity<String> loginUsuario(@RequestBody UsuarioEntity usuario) {
+        // Recupera el usuario de la base de datos por su correo electrónico
+        UsuarioEntity usuarioEncontrado = usuarioRepository.findByEmail(usuario.getEmail());
+
+        if (usuarioEncontrado != null) {
+            // Verifica si la contraseña coincide
+            if (usuarioEncontrado.getPassword().equals(usuario.getPassword())) {
+                // Devuelve una respuesta exitosa (código 200)
+                return ResponseEntity.ok("Inicio de sesión exitoso");
+            }
+        }
+
+        // Si el inicio de sesión no es exitoso, devuelve un error no autorizado (código 401)
+        return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body("Inicio de sesión fallido");
+    }
 }
