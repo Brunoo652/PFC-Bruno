@@ -15,9 +15,8 @@ import com.android.volley.toolbox.Volley;
 import org.json.JSONObject;
 
 public class POSTregister {
-
     public static void register(Context context, String email, String password) {
-        String serverUrl = "http://192.168.68.140:8080/api/usuarios/registrar-usuario";
+        String serverUrl = "http://192.168.68.140:8080/api/usuarios/register";
         int tiempoDeEsperaEnMs = 10000;  // Configura el tiempo de espera a 10 segundos
 
         // Inicializa la cola de solicitudes HTTP

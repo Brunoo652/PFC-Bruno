@@ -41,7 +41,7 @@ public class RegisterActivity extends AppCompatActivity {
                         POSTregister.register(RegisterActivity.this, email, password);
                     } else {
                         // La contraseña no cumple con los requisitos, muestra un toast
-                        Toast.makeText(RegisterActivity.this, "La contraseña debe tener al menos 8 caracteres y una letra mayúscula", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(RegisterActivity.this, "La contraseña debe tener al menos 8 y máximo 20caractere,con almenos una letra mayúscula", Toast.LENGTH_SHORT).show();
                     }
                 } else {
                     // Las contraseñas no coinciden, muestra un toast
