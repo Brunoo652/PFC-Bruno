@@ -8,8 +8,9 @@ import android.view.View;
 import android.widget.Button;
 
 
-import com.afundacion.inazumawiki.main.MainActivity;
 import com.afundacion.inazumawiki.login.LoginActivity;
+
+import com.afundacion.inazumawiki.register.RegisterActivity;
 import com.afundacion.myaplication.R;
 
 public class InitialActivity extends AppCompatActivity {
@@ -20,15 +21,23 @@ public class InitialActivity extends AppCompatActivity {
         setContentView(R.layout.activity_initial);
 
         Button loginButton = findViewById(R.id.botonLogin);
-
+        Button registerButton = findViewById(R.id.botonRegister);
         loginButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // Crear un intent para abrir la actividad Login Activity
                 Intent intent = new Intent(InitialActivity.this, LoginActivity.class);
                 startActivity(intent);
 
             }
         });
+
+        registerButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(InitialActivity.this, RegisterActivity.class);
+                startActivity(intent);
+            }
+        });
+
     }
 }
