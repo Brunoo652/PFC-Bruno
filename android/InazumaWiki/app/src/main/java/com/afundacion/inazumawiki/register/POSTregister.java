@@ -2,7 +2,6 @@ package com.afundacion.inazumawiki.register;
 
 import android.content.Context;
 import android.content.Intent;
-import android.util.Log;
 import android.widget.Toast;
 import com.afundacion.inazumawiki.main.MainActivity;
 import com.android.volley.Request;
@@ -16,6 +15,22 @@ import org.json.JSONObject;
 
 public class POSTregister {
     public static void register(Context context, String email, String password) {
+
+        // Primero, verifica si el correo ya está registrado
+        CheckEmail.isEmailAlreadyRegistered(context, email, new CheckEmail.CheckEmailCallback() {
+            @Override
+            public void onEmailCheckComplete(boolean isEmailRegistered) {
+                if (isEmailRegistered) {
+                    // El correo ya está registrado, no hagas nada
+                } else {
+                    // El correo no está registrado, procede con el registro
+                    continueRegistration(context, email, password);
+                }
+            }
+        });
+    }
+
+    public static void continueRegistration(Context context, String email, String password) {
         String serverUrl = "http://192.168.68.140:8080/api/usuarios/register";
 
         // Inicializa la cola de solicitudes HTTP
@@ -35,8 +50,7 @@ public class POSTregister {
                 new Response.Listener<JSONObject>() {
                     @Override
                     public void onResponse(JSONObject response) {
-                        Log.d("POSTregister", "Respuesta exitosa: " + response.toString());
-                        // La solicitud fue exitosa, muestra un toast de éxito
+
                         Toast.makeText(context, "Usuario registrado correctamente", Toast.LENGTH_SHORT).show();
 
                         // Cambia a la actividad principal (MainActivity)
@@ -48,12 +62,10 @@ public class POSTregister {
                 new Response.ErrorListener() {
                     @Override
                     public void onErrorResponse(VolleyError error) {
-                        Log.e("POSTregister", "Error en la solicitud: " + error.toString());
-                        // Muestra el error en el registro (log)
-                        Log.e("RegistroError", "Error al registrar el usuario", error);
-                        // Hubo un error en la solicitud, muestra un toast de error
+
                         // Hubo un error en la solicitud, muestra un toast de error
                         Toast.makeText(context, "Error al registrar el usuario", Toast.LENGTH_SHORT).show();
+
                     }
                 }
         );
@@ -61,6 +73,5 @@ public class POSTregister {
         // Agrega la solicitud a la cola
         requestQueue.add(request);
     }
+
 }
-
-

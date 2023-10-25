@@ -20,12 +20,6 @@ public class UsuarioController {
         this.usuarioRepository = usuarioRepository;
     }
 
-    @GetMapping("/health")
-    @ApiOperation(value = "Check health", notes = "Check the health of the application")
-    public ResponseEntity<String> checkHealth() {
-        return ResponseEntity.ok("Healthy");
-    }
-
 
     @PostMapping("/register")
     public ResponseEntity<JSONObject> registrarUsuario(@RequestBody UsuarioEntity usuario) {
@@ -33,22 +27,34 @@ public class UsuarioController {
             // Guarda el usuario en la base de datos
             UsuarioEntity usuarioGuardado = usuarioRepository.save(usuario);
 
-            JSONObject response = new JSONObject();
-            response.put("message", "Usuario registrado con éxito. ID: " + usuarioGuardado.getId());
+            if (usuarioGuardado != null) {
+                JSONObject response = new JSONObject();
+                response.put("message", "Usuario registrado con éxito. ID: " + usuarioGuardado.getId());
 
-            // Devuelve la respuesta como un objeto JSON
-            return new ResponseEntity<>(response, HttpStatus.CREATED);
+                // Devuelve la respuesta como un objeto JSON con código 200 (éxito)
+                return new ResponseEntity<>(response, HttpStatus.OK);
+            } else {
+                // Maneja el caso donde el usuario no se guarda correctamente con un código 400 (solicitud incorrecta)
+                JSONObject errorResponse = new JSONObject();
+                errorResponse.put("error", "No se pudo registrar el usuario.");
+                return new ResponseEntity<>(errorResponse, HttpStatus.BAD_REQUEST);
+            }
         } catch (Exception e) {
             // Registra detalles del error en el log
             e.printStackTrace();
-            // Maneja cualquier error que pueda ocurrir al guardar el usuario
+            // Maneja cualquier otro error con un código 500 (error interno del servidor)
             JSONObject errorResponse = new JSONObject();
             errorResponse.put("error", "No se pudo registrar el usuario.");
             return new ResponseEntity<>(errorResponse, HttpStatus.INTERNAL_SERVER_ERROR);
         }
     }
 
-
+    @GetMapping("/check-email")
+    public ResponseEntity<Boolean> checkEmail(@RequestParam String email) {
+        // Verifica si el correo electrónico ya está registrado en la base de datos
+        boolean emailExists = (usuarioRepository.findByEmail(email) != null);
+        return ResponseEntity.ok(emailExists);
+    }
 
     @PostMapping("/login")
     public ResponseEntity<String> loginUsuario(@RequestBody UsuarioEntity usuario) {

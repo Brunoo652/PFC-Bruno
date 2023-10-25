@@ -37,8 +37,8 @@ public class RegisterActivity extends AppCompatActivity {
                 if (password.equals(password2)) {
                     // Comprueba si la contraseña cumple con los requisitos
                     if (CheckPassword.isPasswordValid(password)) {
-                        // La contraseña es válida, procede a enviar la solicitud al servidor
-                        POSTregister.register(RegisterActivity.this, email, password);
+                        // La contraseña es válida, proceder a aplicar el metodo register
+                        POSTregister.continueRegistration(RegisterActivity.this, email, password);
                     } else {
                         // La contraseña no cumple con los requisitos, muestra un toast
                         Toast.makeText(RegisterActivity.this, "La contraseña debe tener que tener entre 8 y 20 carácteres, incluida alguna letra mayúscula", Toast.LENGTH_LONG).show();

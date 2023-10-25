@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f64eb30c-a4e1-4ab1-a6ae-e011171c4219" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../../android/InazumaWiki/.idea/deploymentTargetDropDown.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../android/InazumaWiki/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../../android/InazumaWiki/app/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../android/InazumaWiki/.idea/deploymentTargetDropDown.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../android/InazumaWiki/app/src/main/java/com/afundacion/inazumawiki/register/CheckEmail.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../android/InazumaWiki/app/src/main/java/com/afundacion/inazumawiki/register/POSTregister.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../android/InazumaWiki/app/src/main/java/com/afundacion/inazumawiki/register/POSTregister.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -142,7 +142,7 @@
       <workItem from="1697621273169" duration="2439000" />
       <workItem from="1697727785047" duration="20000" />
       <workItem from="1698130254351" duration="6159000" />
-      <workItem from="1698217557254" duration="3069000" />
+      <workItem from="1698217557254" duration="7485000" />
     </task>
     <servers />
   </component>
