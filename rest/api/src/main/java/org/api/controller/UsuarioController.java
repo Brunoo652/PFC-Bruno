@@ -3,6 +3,7 @@ package org.api.controller;
 import io.swagger.annotations.ApiOperation;
 import org.api.model.UsuarioEntity;
 import org.api.model.UsuarioRepository;
+import org.json.JSONObject;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -25,21 +26,29 @@ public class UsuarioController {
         return ResponseEntity.ok("Healthy");
     }
 
-    @PostMapping("/register") // Maneja solicitudes POST en /usuarios/register
-    public ResponseEntity<String> registrarUsuario(@RequestBody UsuarioEntity usuario) {
+
+    @PostMapping("/register")
+    public ResponseEntity<JSONObject> registrarUsuario(@RequestBody UsuarioEntity usuario) {
         try {
             // Guarda el usuario en la base de datos
             UsuarioEntity usuarioGuardado = usuarioRepository.save(usuario);
 
-            // Puedes personalizar la respuesta si es necesario
-            return new ResponseEntity<>("Usuario registrado con éxito. ID: " + usuarioGuardado.getId(), HttpStatus.CREATED);
+            JSONObject response = new JSONObject();
+            response.put("message", "Usuario registrado con éxito. ID: " + usuarioGuardado.getId());
+
+            // Devuelve la respuesta como un objeto JSON
+            return new ResponseEntity<>(response, HttpStatus.CREATED);
         } catch (Exception e) {
             // Registra detalles del error en el log
             e.printStackTrace();
             // Maneja cualquier error que pueda ocurrir al guardar el usuario
-            return new ResponseEntity<>("No se pudo registrar el usuario.", HttpStatus.INTERNAL_SERVER_ERROR);
+            JSONObject errorResponse = new JSONObject();
+            errorResponse.put("error", "No se pudo registrar el usuario.");
+            return new ResponseEntity<>(errorResponse, HttpStatus.INTERNAL_SERVER_ERROR);
         }
     }
+
+
 
     @PostMapping("/login")
     public ResponseEntity<String> loginUsuario(@RequestBody UsuarioEntity usuario) {
