@@ -1,75 +1,53 @@
-package org.api.controller;
+package com.afundacion.inazumawiki.register;
 
-import io.swagger.annotations.ApiOperation;
-import org.api.model.UsuarioEntity;
-import org.api.model.UsuarioRepository;
-import org.json.JSONObject;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpStatus;
-import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.*;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.Toast;
+import androidx.appcompat.app.AppCompatActivity;
+import com.afundacion.myaplication.R;
 
-@RestController
-@RequestMapping("/usuarios") // Define la ruta base para las solicitudes relacionadas con usuarios
-public class UsuarioController {
+public class RegisterActivity extends AppCompatActivity {
 
-    private final UsuarioRepository usuarioRepository;
+    private EditText emailEditText, password1EditText, password2EditText;
+    private Button submitButton;
 
-    @Autowired
-    public UsuarioController(UsuarioRepository usuarioRepository) {
-        this.usuarioRepository = usuarioRepository;
-    }
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_register);
 
+        // Inicializa las vistas
+        emailEditText = findViewById(R.id.EmailRegister);
+        password1EditText = findViewById(R.id.RegisterPassword1);
+        password2EditText = findViewById(R.id.RegisterPassword2);
+        submitButton = findViewById(R.id.SubmitRegisterBoton);
 
-    @PostMapping("/register")
-    public ResponseEntity<JSONObject> registrarUsuario(@RequestBody UsuarioEntity usuario) {
-        try {
-            // Guarda el usuario en la base de datos
-            UsuarioEntity usuarioGuardado = usuarioRepository.save(usuario);
+        // Agrega un OnClickListener al botón "Submit"
+        submitButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Obtiene los valores de los campos
+                String email = emailEditText.getText().toString();
+                String password = password1EditText.getText().toString();
+                String password2 = password2EditText.getText().toString();
 
-            if (usuarioGuardado != null) {
-                JSONObject response = new JSONObject();
-                response.put("message", "Usuario registrado con éxito. ID: " + usuarioGuardado.getId());
-
-                // Devuelve la respuesta como un objeto JSON con código 200 (éxito)
-                return new ResponseEntity<>(response, HttpStatus.OK);
-            } else {
-                // Maneja el caso donde el usuario no se guarda correctamente con un código 400 (solicitud incorrecta)
-                JSONObject errorResponse = new JSONObject();
-                errorResponse.put("error", "No se pudo registrar el usuario.");
-                return new ResponseEntity<>(errorResponse, HttpStatus.BAD_REQUEST);
+                // Verifica si las contraseñas coinciden
+                if (password.equals(password2)) {
+                    // Comprueba si la contraseña cumple con los requisitos
+                    if (CheckPassword.isPasswordValid(password)) {
+                        // La contraseña es válida, proceder a aplicar el metodo register
+                        POSTregister.continueRegistration(RegisterActivity.this, email, password);
+                    } else {
+                        // La contraseña no cumple con los requisitos, muestra un toast
+                        Toast.makeText(RegisterActivity.this, "La contraseña debe tener que tener entre 8 y 20 carácteres, incluida alguna letra mayúscula", Toast.LENGTH_LONG).show();
+                    }
+                } else {
+                    // Las contraseñas no coinciden, muestra un toast
+                    Toast.makeText(RegisterActivity.this, "Las contraseñas no coinciden", Toast.LENGTH_SHORT).show();
+                }
             }
-        } catch (Exception e) {
-            // Registra detalles del error en el log
-            e.printStackTrace();
-            // Maneja cualquier otro error con un código 500 (error interno del servidor)
-            JSONObject errorResponse = new JSONObject();
-            errorResponse.put("error", "No se pudo registrar el usuario.");
-            return new ResponseEntity<>(errorResponse, HttpStatus.INTERNAL_SERVER_ERROR);
-        }
-    }
-
-    @GetMapping("/check-email")
-    public ResponseEntity<Boolean> checkEmail(@RequestParam String email) {
-        // Verifica si el correo electrónico ya está registrado en la base de datos
-        boolean emailExists = (usuarioRepository.findByEmail(email) != null);
-        return ResponseEntity.ok(emailExists);
-    }
-
-    @PostMapping("/login")
-    public ResponseEntity<String> loginUsuario(@RequestBody UsuarioEntity usuario) {
-        // Recupera el usuario de la base de datos por su correo electrónico
-        UsuarioEntity usuarioEncontrado = usuarioRepository.findByEmail(usuario.getEmail());
-
-        if (usuarioEncontrado != null) {
-            // Verifica si la contraseña coincide
-            if (usuarioEncontrado.getPassword().equals(usuario.getPassword())) {
-                // Devuelve una respuesta exitosa (código 200)
-                return ResponseEntity.ok("Inicio de sesión exitoso");
-            }
-        }
-
-        // Si el inicio de sesión no es exitoso, devuelve un error no autorizado (código 401)
-        return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body("Inicio de sesión fallido");
+        });
     }
 }
