@@ -21,6 +21,7 @@ public class UsuarioController {
     }
 
 
+    //endpoint para el register
     @PostMapping("/register")
     @ApiOperation(value = "Register usuarios", notes = "Almacena en la tabla usuarios los datos introducidos en la pantalla de register")
     public ResponseEntity<JSONObject> registrarUsuario(@RequestBody UsuarioEntity usuario) {
@@ -50,6 +51,7 @@ public class UsuarioController {
         }
     }
 
+    //endpoiunt que sirve para comprobar el email, para evitar tener dos cuentas con el mismo email
     @GetMapping("/check-email")
     @ApiOperation(value = "Comprobar email", notes = "Comprueba que el email dado para registrarse no este guardado en la tabla usuarios en la BBDD")
     public ResponseEntity<Boolean> checkEmail(@RequestParam String email) {
@@ -58,10 +60,11 @@ public class UsuarioController {
         return ResponseEntity.ok(emailExists);
     }
 
+    //Endpoint de login
     @PostMapping("/login")
     @ApiOperation(value = "Login Usuarios", notes = "Permite comprobar los datos del usuario con los de la tabla para poder acceder a la app")
     public ResponseEntity<Boolean> loginUsuario() {
-       return null;
+        return null;
     }
 
 }
