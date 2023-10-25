@@ -6,7 +6,7 @@ import org.springframework.stereotype.Repository;
 @Repository
 public interface UsuarioRepository extends JpaRepository<UsuarioEntity, Integer> {
 
-    // Puedes agregar métodos de consulta personalizados aquí si es necesario
-    // Por ejemplo, puedes definir métodos para buscar usuarios por email, etc.
+    // Método personalizado para buscar un usuario por su correo electrónico
+    UsuarioEntity findByEmail(String email);
 
 }
