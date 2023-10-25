@@ -1,38 +1,53 @@
-package org.api.controller;
+package com.afundacion.inazumawiki.register;
 
+import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.Toast;
+import androidx.appcompat.app.AppCompatActivity;
+import com.afundacion.myaplication.R;
 
-import org.api.model.UsuarioEntity;
-import org.api.model.UsuarioRepository;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpStatus;
-import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+public class RegisterActivity extends AppCompatActivity {
 
-@RestController
-@RequestMapping("/usuarios")
-public class UsuarioController {
+    private EditText emailEditText, password1EditText, password2EditText;
+    private Button submitButton;
 
-    private final UsuarioRepository usuarioRepository;
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_register);
 
-    @Autowired
-    public UsuarioController(UsuarioRepository usuarioRepository) {
-        this.usuarioRepository = usuarioRepository;
-    }
+        // Inicializa las vistas
+        emailEditText = findViewById(R.id.EmailRegister);
+        password1EditText = findViewById(R.id.RegisterPassword1);
+        password2EditText = findViewById(R.id.RegisterPassword2);
+        submitButton = findViewById(R.id.SubmitRegisterBoton);
 
-    @PostMapping("/registrar") // Maneja solicitudes POST en /usuarios/registrar
-    public ResponseEntity<String> registrarUsuario(@RequestBody UsuarioEntity usuario) {
-        try {
-            // Guarda el usuario en la base de datos
-            UsuarioEntity usuarioGuardado = usuarioRepository.save(usuario);
+        // Agrega un OnClickListener al botón "Submit"
+        submitButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Obtiene los valores de los campos
+                String email = emailEditText.getText().toString();
+                String password = password1EditText.getText().toString();
+                String password2 = password2EditText.getText().toString();
 
-            // Puedes personalizar la respuesta si es necesario
-            return new ResponseEntity<>("Usuario registrado con éxito. ID: " + usuarioGuardado.getId(), HttpStatus.CREATED);
-        } catch (Exception e) {
-            // Maneja cualquier error que pueda ocurrir al guardar el usuario
-            return new ResponseEntity<>("No se pudo registrar el usuario.", HttpStatus.INTERNAL_SERVER_ERROR);
-        }
+                // Verifica si las contraseñas coinciden
+                if (password.equals(password2)) {
+                    // Comprueba si la contraseña cumple con los requisitos
+                    if (CheckPassword.isPasswordValid(password)) {
+                        // La contraseña es válida, proceder a aplicar el metodo register
+                        POSTregister.continueRegistration(RegisterActivity.this, email, password);
+                    } else {
+                        // La contraseña no cumple con los requisitos, muestra un toast
+                        Toast.makeText(RegisterActivity.this, "La contraseña debe tener que tener entre 8 y 20 carácteres, incluida alguna letra mayúscula", Toast.LENGTH_LONG).show();
+                    }
+                } else {
+                    // Las contraseñas no coinciden, muestra un toast
+                    Toast.makeText(RegisterActivity.this, "Las contraseñas no coinciden", Toast.LENGTH_SHORT).show();
+                }
+            }
+        });
     }
 }
