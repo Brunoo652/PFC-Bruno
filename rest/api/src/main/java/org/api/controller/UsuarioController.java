@@ -21,6 +21,7 @@ public class UsuarioController {
     }
 
 
+
     //endpoint para el register
     @PostMapping("/register")
     @ApiOperation(value = "Register usuarios", notes = "Almacena en la tabla usuarios los datos introducidos en la pantalla de register")
@@ -64,7 +65,8 @@ public class UsuarioController {
     @PostMapping("/login")
     @ApiOperation(value = "Login Usuarios", notes = "Permite comprobar los datos del usuario con los de la tabla para poder acceder a la app")
     public ResponseEntity<Boolean> loginUsuario() {
+        
         return null;
-    }
 
+    }
 }
