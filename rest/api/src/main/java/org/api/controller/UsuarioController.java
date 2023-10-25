@@ -65,7 +65,7 @@ public class UsuarioController {
     @PostMapping("/login")
     @ApiOperation(value = "Login Usuarios", notes = "Permite comprobar los datos del usuario con los de la tabla para poder acceder a la app")
     public ResponseEntity<Boolean> loginUsuario() {
-        
+
         return null;
 
     }
