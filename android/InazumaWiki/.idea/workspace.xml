@@ -12,13 +12,15 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6b781745-df71-4f3e-97d2-a489bee41adc" name="Changes" comment="" />
+    <list default="true" id="a227355e-0b31-4abb-9f70-7adbeb0eea77" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../rest/api/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../rest/api/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[30526139450061M]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[C:\Users\brure\.android\avd\6.7_Horizontal_Fold-in_API_33.avd]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
