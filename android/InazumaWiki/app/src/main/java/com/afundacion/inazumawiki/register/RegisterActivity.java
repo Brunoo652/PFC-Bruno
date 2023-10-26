@@ -8,7 +8,7 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 import com.afundacion.myaplication.R;
 
-public class RegisterActivity extends AppCompatActivity {
+public class RegisterActivity extends AppCompatActivity implements CheckEmail.EmailCheckCallback {
 
     private EditText emailEditText, password1EditText, password2EditText;
     private Button submitButton;
@@ -37,11 +37,11 @@ public class RegisterActivity extends AppCompatActivity {
                 if (password.equals(password2)) {
                     // Comprueba si la contraseña cumple con los requisitos
                     if (CheckPassword.isPasswordValid(password)) {
-                        // La contraseña es válida, proceder a aplicar el metodo register
-                        POSTregister.continueRegistration(RegisterActivity.this, email, password);
+                        // La contraseña es válida, proceder a aplicar el método register
+                        POSTregister.register(RegisterActivity.this, email, password, RegisterActivity.this);
                     } else {
                         // La contraseña no cumple con los requisitos, muestra un toast
-                        Toast.makeText(RegisterActivity.this, "La contraseña debe tener que tener entre 8 y 20 carácteres, incluida alguna letra mayúscula", Toast.LENGTH_LONG).show();
+                        Toast.makeText(RegisterActivity.this, "La contraseña debe tener entre 8 y 20 caracteres, incluida alguna letra mayúscula", Toast.LENGTH_LONG).show();
                     }
                 } else {
                     // Las contraseñas no coinciden, muestra un toast
@@ -49,5 +49,18 @@ public class RegisterActivity extends AppCompatActivity {
                 }
             }
         });
+    }
+
+    @Override
+    public void onEmailCheckComplete(boolean emailExists) {
+        if (emailExists) {
+            // True, el correo existe
+            Toast.makeText(this, "Este correo ya existe", Toast.LENGTH_SHORT).show();
+        } else {
+            // False, el correo no existe, procede con el registro
+            String email = emailEditText.getText().toString();
+            String password = password1EditText.getText().toString();
+            POSTregister.continueRegistration(this, email, password);
+        }
     }
 }

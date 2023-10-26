@@ -15,11 +15,13 @@ import org.json.JSONObject;
 
 public class CheckEmail {
 
-    public interface CheckEmailCallback {
-        void onEmailCheckComplete(boolean isEmailRegistered);
+
+    public interface EmailCheckCallback {
+        void onEmailCheckComplete(boolean emailExists);
     }
 
-    public static void isEmailAlreadyRegistered(Context context, String email, CheckEmailCallback callback) {
+
+    public static void isEmailAlreadyRegistered(Context context, String email, String password, EmailCheckCallback callback) {
         String serverUrl = "http://192.168.68.140:8080/api/usuarios/check-email?email=" + email;
 
         // Inicializa la cola de solicitudes HTTP
@@ -31,10 +33,24 @@ public class CheckEmail {
                     @Override
                     public void onResponse(JSONObject response) {
                         try {
-                            boolean emailExists = response.getBoolean("emailExists");
-                            callback.onEmailCheckComplete(emailExists);
+                            if (response != null && response.has("emailExists")) {
+                                boolean emailExists = response.getBoolean("emailExists");
+
+                                if (emailExists) {
+                                    // True, el correo existe
+                                    Toast.makeText(context, "Este correo ya existe", Toast.LENGTH_SHORT).show();
+                                } else {
+                                    // False, el correo no existe, procede con el registro
+                                    callback.onEmailCheckComplete(false);
+                                }
+                            } else {
+                                // Respuesta inesperada del servidor, muestra un toast de error
+                                Toast.makeText(context, "Error en la respuesta del servidor", Toast.LENGTH_SHORT).show();
+                            }
                         } catch (JSONException e) {
                             e.printStackTrace();
+                            // Error al procesar la respuesta del servidor, muestra un toast de error
+                            Toast.makeText(context, "Error en la respuesta del servidor", Toast.LENGTH_SHORT).show();
                         }
                     }
                 },
@@ -42,7 +58,7 @@ public class CheckEmail {
                     @Override
                     public void onErrorResponse(VolleyError error) {
                         // Hubo un error en la solicitud, muestra un toast de error
-                        Toast.makeText(context, "Este correo ya existe", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(context, "Error al verificar el correo", Toast.LENGTH_SHORT).show();
                     }
                 }
         );
@@ -50,4 +66,5 @@ public class CheckEmail {
         // Agrega la solicitud a la cola
         requestQueue.add(request);
     }
+
 }

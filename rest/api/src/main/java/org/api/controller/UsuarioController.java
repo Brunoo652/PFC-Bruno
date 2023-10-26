@@ -11,7 +11,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@RequestMapping("/usuarios")
+@RequestMapping("usuarios")
 public class UsuarioController {
 
     private final UsuarioRepository usuarioRepository;
@@ -71,7 +71,7 @@ public class UsuarioController {
             String password = loginData.getString("password");
 
             // Busca un usuario en la base de datos con el correo electrónico proporcionado
-            UsuarioEntity usuarioEncontrado = usuarioRepository.findByEmail(email);
+            UsuarioEntity usuarioEncontrado = (usuarioRepository.findByEmail(email));
 
             if (usuarioEncontrado != null) {
                 // Si se encuentra un usuario, verifica si la contraseña coincide

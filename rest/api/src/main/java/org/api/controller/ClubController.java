@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.*;
 import java.io.IOException;
 
 @RestController
-@RequestMapping("/clubes")
+@RequestMapping("clubes")
 public class ClubController {
 
     private final ClubService clubService;
