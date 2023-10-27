@@ -3,6 +3,7 @@ package com.afundacion.inazumawiki.login;
 import android.content.Context;
 import android.util.Log;
 
+import com.afundacion.inazumawiki.register.CheckEmail;
 import com.android.volley.DefaultRetryPolicy;
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
@@ -25,8 +26,10 @@ public class POSTlogin {
         void onLoginError();
     }
 
-    public static void login(Context context, String email, String password, final LoginCallback callback) {
-        String serverUrl = "http://192.168.68.140:8080/api/usuarios/login";
+
+    public static void continueLogin(Context context, String email, String password, final LoginCallback callback) {
+        String serverUrl = "http://192.168.68.140:8080/api/usuarios/login?login="+ email;
+
 
         // Inicializa la cola de solicitudes HTTP
         RequestQueue requestQueue = Volley.newRequestQueue(context);
@@ -69,13 +72,6 @@ public class POSTlogin {
                     }
                 }
         );
-
-        // Configura el tiempo de espera de la solicitud
-        request.setRetryPolicy(new DefaultRetryPolicy(
-                10000,
-                DefaultRetryPolicy.DEFAULT_MAX_RETRIES,
-                DefaultRetryPolicy.DEFAULT_BACKOFF_MULT
-        ));
 
         // Agrega la solicitud a la cola
         requestQueue.add(request);

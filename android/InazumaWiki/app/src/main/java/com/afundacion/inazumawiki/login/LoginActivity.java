@@ -8,6 +8,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 import com.afundacion.inazumawiki.main.MainActivity;
+import com.afundacion.inazumawiki.register.CheckEmail;
 import com.afundacion.myaplication.R;
 
 public class LoginActivity extends AppCompatActivity implements POSTlogin.LoginCallback {
@@ -35,7 +36,7 @@ public class LoginActivity extends AppCompatActivity implements POSTlogin.LoginC
                     return;
                 }
 
-                POSTlogin.login(LoginActivity.this, email, password, LoginActivity.this);
+              //  CheckEmailLogin.isEmailExisting(LoginActivity.this, email, CheckEmail.CheckEmailLoginCallback callback);
             }
         });
     }
