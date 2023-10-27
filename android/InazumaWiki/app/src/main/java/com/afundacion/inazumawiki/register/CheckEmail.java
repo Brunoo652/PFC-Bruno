@@ -3,6 +3,7 @@ package com.afundacion.inazumawiki.register;
 import android.content.Context;
 import android.widget.Toast;
 
+
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
 import com.android.volley.Response;
@@ -17,11 +18,11 @@ public class CheckEmail {
 
 
     public interface EmailCheckCallback {
-        void onEmailCheckComplete(boolean emailExists);
+        void onEmailCheckComplete(boolean emailExists) throws InterruptedException;
     }
 
 
-    public static void isEmailAlreadyRegistered(Context context, String email, String password, EmailCheckCallback callback) {
+    public static void isEmailAlreadyRegistered(Context context, String email, EmailCheckCallback callback) {
         String serverUrl = "http://192.168.68.140:8080/api/usuarios/check-email?email=" + email;
 
         // Inicializa la cola de solicitudes HTTP
@@ -35,13 +36,13 @@ public class CheckEmail {
                         try {
                             if (response != null && response.has("emailExists")) {
                                 boolean emailExists = response.getBoolean("emailExists");
-
+                                System.out.println("Paso por aquí");
                                 if (emailExists) {
                                     // True, el correo existe
-                                    Toast.makeText(context, "Este correo ya existe", Toast.LENGTH_SHORT).show();
+                                    callback.onEmailCheckComplete(emailExists);
                                 } else {
                                     // False, el correo no existe, procede con el registro
-                                    callback.onEmailCheckComplete(false);
+                                    callback.onEmailCheckComplete(emailExists);
                                 }
                             } else {
                                 // Respuesta inesperada del servidor, muestra un toast de error
@@ -51,6 +52,8 @@ public class CheckEmail {
                             e.printStackTrace();
                             // Error al procesar la respuesta del servidor, muestra un toast de error
                             Toast.makeText(context, "Error en la respuesta del servidor", Toast.LENGTH_SHORT).show();
+                        } catch (InterruptedException e) {
+                            throw new RuntimeException(e);
                         }
                     }
                 },
@@ -66,5 +69,7 @@ public class CheckEmail {
         // Agrega la solicitud a la cola
         requestQueue.add(request);
     }
+
+
 
 }

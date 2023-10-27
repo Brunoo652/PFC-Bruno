@@ -10,17 +10,18 @@ import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.Volley;
+
 import org.json.JSONException;
 import org.json.JSONObject;
 
 public class POSTregister {
-    public static void register(Context context, String email, String password, CheckEmail.EmailCheckCallback callback) {
+    public static void register(Context context, String email, CheckEmail.EmailCheckCallback callback) throws InterruptedException {
         // Primero, verifica si el correo ya está registrado
-        CheckEmail.isEmailAlreadyRegistered(context, email, password, callback);
+        CheckEmail.isEmailAlreadyRegistered(context, email, callback);
     }
 
 
-    public static void continueRegistration(Context context, String email, String password) {
+    public static void continueRegistration(Context context, String email, String password) throws InterruptedException {
         String serverUrl = "http://192.168.68.140:8080/api/usuarios/register";
 
         // Inicializa la cola de solicitudes HTTP
@@ -59,5 +60,6 @@ public class POSTregister {
 
         // Agrega la solicitud a la cola
         requestQueue.add(request);
+
     }
 }

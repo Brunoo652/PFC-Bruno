@@ -18,16 +18,27 @@
         app:layout_constraintTop_toTopOf="parent"></ImageView>
 
     <Button
+        android:id="@+id/botonInvitado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="96dp"
+        android:text="Invitado"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        app:layout_constraintTop_toBottomOf="@+id/imagenLogo"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <Button
         android:id="@+id/botonLogin"
         style="@style/CardView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="104dp"
+        android:layout_marginTop="36dp"
         android:text="LOGIN"
         android:textColor="@color/black"
         android:textSize="30dp"
-        app:layout_constraintTop_toBottomOf="@+id/imagenLogo"
-        tools:layout_editor_absoluteX="-16dp" />
+        app:layout_constraintTop_toBottomOf="@+id/botonInvitado"
+        tools:layout_editor_absoluteX="0dp" />
 
     <Button
         android:id="@+id/botonRegister"
@@ -39,6 +50,8 @@
         android:textSize="30dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/botonLogin"
-        tools:layout_editor_absoluteX="0dp" />
+        app:layout_constraintVertical_bias="0.183"
+        tools:layout_editor_absoluteX="16dp" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
