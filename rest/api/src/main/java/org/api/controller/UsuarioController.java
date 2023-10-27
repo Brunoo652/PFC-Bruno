@@ -3,6 +3,7 @@ package org.api.controller;
 import io.swagger.annotations.ApiOperation;
 import org.api.model.UsuarioEntity;
 import org.api.model.UsuarioRepository;
+import org.json.JSONException;
 import org.json.JSONObject;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -10,7 +11,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@RequestMapping("/usuarios")
+@RequestMapping("usuarios")
 public class UsuarioController {
 
     private final UsuarioRepository usuarioRepository;
@@ -62,9 +63,31 @@ public class UsuarioController {
 
     //Endpoint de login
     @PostMapping("/login")
-    @ApiOperation(value = "Login Usuarios", notes = "Permite comprobar los datos del usuario con los de la tabla para poder acceder a la app")
-    public ResponseEntity<Boolean> loginUsuario() {
-        return null;
+    @ApiOperation(value = "Login usuario", notes = "Permite hacer login a los usuarios")
+    public ResponseEntity<String> loginUsuario(@RequestBody JSONObject loginData) {
+        try {
+            // Extrae el correo electrónico y la contraseña del JSON
+            String email = loginData.getString("email");
+            String password = loginData.getString("password");
+
+            // Busca un usuario en la base de datos con el correo electrónico proporcionado
+            UsuarioEntity usuarioEncontrado = (usuarioRepository.findByEmail(email));
+
+            if (usuarioEncontrado != null) {
+                // Si se encuentra un usuario, verifica si la contraseña coincide
+                if (usuarioEncontrado.getPassword().equals(password)) {
+                    // Devuelve una respuesta exitosa (código 200) en caso de inicio de sesión exitoso
+                    return ResponseEntity.ok("Inicio de sesión exitoso");
+                }
+            }
+
+            // Si las credenciales no son válidas, devuelve un error no autorizado (código 401)
+            return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body("Inicio de sesión fallido");
+        } catch (JSONException e) {
+            // Maneja errores de formato JSON
+            e.printStackTrace();
+            return ResponseEntity.status(HttpStatus.BAD_REQUEST).body("Solicitud JSON no válida");
+        }
     }
 
 }

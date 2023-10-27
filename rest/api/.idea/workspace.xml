@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f64eb30c-a4e1-4ab1-a6ae-e011171c4219" name="Changes" comment="" />
+    <list default="true" id="f64eb30c-a4e1-4ab1-a6ae-e011171c4219" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../android/InazumaWiki/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../android/InazumaWiki/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../android/InazumaWiki/app/src/main/java/com/afundacion/inazumawiki/login/CheckEmailLogin.java" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -47,7 +50,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "Rebasing register",
+    "git-widget-placeholder": "Rebasing Login",
     "last_opened_file_path": "C:/byl/tms-core-order",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -114,6 +117,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Application.ApiApplication" />
+      <item itemvalue="JUnit.ApiApplicationTests" />
+      <item itemvalue="Spring Boot.ApiApplication" />
+      <item itemvalue="Spring Boot.DemoApplication" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.ApiApplication" />
@@ -139,6 +148,7 @@
       <workItem from="1697727785047" duration="20000" />
       <workItem from="1698130254351" duration="6159000" />
       <workItem from="1698217557254" duration="7485000" />
+      <workItem from="1698303052098" duration="1367000" />
     </task>
     <servers />
   </component>
