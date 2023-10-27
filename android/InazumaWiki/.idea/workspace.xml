@@ -12,8 +12,8 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a227355e-0b31-4abb-9f70-7adbeb0eea77" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../../rest/api/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../rest/api/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="cc7e223a-7bff-4fb8-95d1-eaa76334bef0" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_initial.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_initial.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
