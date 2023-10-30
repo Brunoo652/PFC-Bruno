@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\msys64\home\brure\PFC-Bruno\android\InazumaWiki\app\src\main\AndroidManifest.xml:2:1-44:12
-INJECTED from C:\msys64\home\brure\PFC-Bruno\android\InazumaWiki\app\src\main\AndroidManifest.xml:2:1-44:12
-INJECTED from C:\msys64\home\brure\PFC-Bruno\android\InazumaWiki\app\src\main\AndroidManifest.xml:2:1-44:12
-INJECTED from C:\msys64\home\brure\PFC-Bruno\android\InazumaWiki\app\src\main\AndroidManifest.xml:2:1-44:12
+ADDED from C:\msys64\home\brure\PFC-Bruno\android\InazumaWiki\app\src\main\AndroidManifest.xml:2:1-48:12
+INJECTED from C:\msys64\home\brure\PFC-Bruno\android\InazumaWiki\app\src\main\AndroidManifest.xml:2:1-48:12
+INJECTED from C:\msys64\home\brure\PFC-Bruno\android\InazumaWiki\app\src\main\AndroidManifest.xml:2:1-48:12
+INJECTED from C:\msys64\home\brure\PFC-Bruno\android\InazumaWiki\app\src\main\AndroidManifest.xml:2:1-48:12
 MERGED from [com.squareup.picasso:picasso:2.8] C:\Users\brure\.gradle\caches\transforms-3\f247a8428758363ad40e9cad992214c1\transformed\picasso-2.8\AndroidManifest.xml:2:1-14:12
 MERGED from [androidx.navigation:navigation-ui:2.3.5] C:\Users\brure\.gradle\caches\transforms-3\b70e1e9f81c5cb411da7ffd81409db33\transformed\navigation-ui-2.3.5\AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.android.material:material:1.8.0] C:\Users\brure\.gradle\caches\transforms-3\113dec783198fb148d5bb0a209784fef\transformed\material-1.8.0\AndroidManifest.xml:17:1-26:12
@@ -51,22 +51,22 @@ MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\brure\.gradle\ca
 MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\brure\.gradle\caches\transforms-3\21e5d7815174ebf12ec0d7289134dcd4\transformed\documentfile-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\brure\.gradle\caches\transforms-3\e73c86b3573ad4a7ff179a0b22b3e639\transformed\localbroadcastmanager-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.print:print:1.0.0] C:\Users\brure\.gradle\caches\transforms-3\e49e4dff70250dbb03e409465432a16f\transformed\print-1.0.0\AndroidManifest.xml:17:1-22:12
-INJECTED from C:\msys64\home\brure\PFC-Bruno\android\InazumaWiki\app\src\main\AndroidManifest.xml:2:1-44:12
-INJECTED from C:\msys64\home\brure\PFC-Bruno\android\InazumaWiki\app\src\main\AndroidManifest.xml:2:1-44:12
-INJECTED from C:\msys64\home\brure\PFC-Bruno\android\InazumaWiki\app\src\main\AndroidManifest.xml:2:1-44:12
+INJECTED from C:\msys64\home\brure\PFC-Bruno\android\InazumaWiki\app\src\main\AndroidManifest.xml:2:1-48:12
+INJECTED from C:\msys64\home\brure\PFC-Bruno\android\InazumaWiki\app\src\main\AndroidManifest.xml:2:1-48:12
+INJECTED from C:\msys64\home\brure\PFC-Bruno\android\InazumaWiki\app\src\main\AndroidManifest.xml:2:1-48:12
 	package
 		INJECTED from C:\msys64\home\brure\PFC-Bruno\android\InazumaWiki\app\src\main\AndroidManifest.xml
-		ADDED from C:\msys64\home\brure\PFC-Bruno\android\InazumaWiki\app\src\main\AndroidManifest.xml:2:1-44:12
+		ADDED from C:\msys64\home\brure\PFC-Bruno\android\InazumaWiki\app\src\main\AndroidManifest.xml:2:1-48:12
 		INJECTED from C:\msys64\home\brure\PFC-Bruno\android\InazumaWiki\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from C:\msys64\home\brure\PFC-Bruno\android\InazumaWiki\app\src\main\AndroidManifest.xml
-		ADDED from C:\msys64\home\brure\PFC-Bruno\android\InazumaWiki\app\src\main\AndroidManifest.xml:2:1-44:12
+		ADDED from C:\msys64\home\brure\PFC-Bruno\android\InazumaWiki\app\src\main\AndroidManifest.xml:2:1-48:12
 		INJECTED from C:\msys64\home\brure\PFC-Bruno\android\InazumaWiki\app\src\main\AndroidManifest.xml
 	xmlns:tools
 		ADDED from C:\msys64\home\brure\PFC-Bruno\android\InazumaWiki\app\src\main\AndroidManifest.xml:3:5-51
 	android:versionCode
 		INJECTED from C:\msys64\home\brure\PFC-Bruno\android\InazumaWiki\app\src\main\AndroidManifest.xml
-		ADDED from C:\msys64\home\brure\PFC-Bruno\android\InazumaWiki\app\src\main\AndroidManifest.xml:2:1-44:12
+		ADDED from C:\msys64\home\brure\PFC-Bruno\android\InazumaWiki\app\src\main\AndroidManifest.xml:2:1-48:12
 		INJECTED from C:\msys64\home\brure\PFC-Bruno\android\InazumaWiki\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\msys64\home\brure\PFC-Bruno\android\InazumaWiki\app\src\main\AndroidManifest.xml:2:11-69
@@ -75,7 +75,7 @@ ADDED from C:\msys64\home\brure\PFC-Bruno\android\InazumaWiki\app\src\main\Andro
 	android:name
 		ADDED from C:\msys64\home\brure\PFC-Bruno\android\InazumaWiki\app\src\main\AndroidManifest.xml:5:22-64
 application
-ADDED from C:\msys64\home\brure\PFC-Bruno\android\InazumaWiki\app\src\main\AndroidManifest.xml:7:5-42:19
+ADDED from C:\msys64\home\brure\PFC-Bruno\android\InazumaWiki\app\src\main\AndroidManifest.xml:7:5-46:19
 MERGED from [com.squareup.picasso:picasso:2.8] C:\Users\brure\.gradle\caches\transforms-3\f247a8428758363ad40e9cad992214c1\transformed\picasso-2.8\AndroidManifest.xml:7:5-12:19
 MERGED from [com.squareup.picasso:picasso:2.8] C:\Users\brure\.gradle\caches\transforms-3\f247a8428758363ad40e9cad992214c1\transformed\picasso-2.8\AndroidManifest.xml:7:5-12:19
 MERGED from [com.google.android.material:material:1.8.0] C:\Users\brure\.gradle\caches\transforms-3\113dec783198fb148d5bb0a209784fef\transformed\material-1.8.0\AndroidManifest.xml:24:5-20
@@ -114,52 +114,60 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\br
 		ADDED from C:\msys64\home\brure\PFC-Bruno\android\InazumaWiki\app\src\main\AndroidManifest.xml:9:9-65
 	android:usesCleartextTraffic
 		ADDED from C:\msys64\home\brure\PFC-Bruno\android\InazumaWiki\app\src\main\AndroidManifest.xml:16:9-44
-activity#com.afundacion.inazumawiki.register.RegisterActivity
-ADDED from C:\msys64\home\brure\PFC-Bruno\android\InazumaWiki\app\src\main\AndroidManifest.xml:18:9-20:40
+activity#com.afundacion.inazumawiki.detalleJugador.DetalleJugadorActivity
+ADDED from C:\msys64\home\brure\PFC-Bruno\android\InazumaWiki\app\src\main\AndroidManifest.xml:18:9-21:46
 	android:exported
 		ADDED from C:\msys64\home\brure\PFC-Bruno\android\InazumaWiki\app\src\main\AndroidManifest.xml:20:13-37
-	android:name
-		ADDED from C:\msys64\home\brure\PFC-Bruno\android\InazumaWiki\app\src\main\AndroidManifest.xml:19:13-80
-activity#com.afundacion.inazumawiki.login.LoginActivity
-ADDED from C:\msys64\home\brure\PFC-Bruno\android\InazumaWiki\app\src\main\AndroidManifest.xml:21:9-23:40
-	android:exported
-		ADDED from C:\msys64\home\brure\PFC-Bruno\android\InazumaWiki\app\src\main\AndroidManifest.xml:23:13-37
-	android:name
-		ADDED from C:\msys64\home\brure\PFC-Bruno\android\InazumaWiki\app\src\main\AndroidManifest.xml:22:13-74
-activity#com.afundacion.inazumawiki.pantallaInitial.InitialActivity
-ADDED from C:\msys64\home\brure\PFC-Bruno\android\InazumaWiki\app\src\main\AndroidManifest.xml:24:9-27:47
-	android:exported
-		ADDED from C:\msys64\home\brure\PFC-Bruno\android\InazumaWiki\app\src\main\AndroidManifest.xml:26:13-37
 	android:theme
-		ADDED from C:\msys64\home\brure\PFC-Bruno\android\InazumaWiki\app\src\main\AndroidManifest.xml:27:13-44
+		ADDED from C:\msys64\home\brure\PFC-Bruno\android\InazumaWiki\app\src\main\AndroidManifest.xml:21:13-44
 	android:name
-		ADDED from C:\msys64\home\brure\PFC-Bruno\android\InazumaWiki\app\src\main\AndroidManifest.xml:25:13-86
-activity#com.afundacion.inazumawiki.launcher.LauncherActivity
-ADDED from C:\msys64\home\brure\PFC-Bruno\android\InazumaWiki\app\src\main\AndroidManifest.xml:28:9-37:20
+		ADDED from C:\msys64\home\brure\PFC-Bruno\android\InazumaWiki\app\src\main\AndroidManifest.xml:19:13-92
+activity#com.afundacion.inazumawiki.register.RegisterActivity
+ADDED from C:\msys64\home\brure\PFC-Bruno\android\InazumaWiki\app\src\main\AndroidManifest.xml:22:9-24:40
 	android:exported
-		ADDED from C:\msys64\home\brure\PFC-Bruno\android\InazumaWiki\app\src\main\AndroidManifest.xml:30:13-36
+		ADDED from C:\msys64\home\brure\PFC-Bruno\android\InazumaWiki\app\src\main\AndroidManifest.xml:24:13-37
+	android:name
+		ADDED from C:\msys64\home\brure\PFC-Bruno\android\InazumaWiki\app\src\main\AndroidManifest.xml:23:13-80
+activity#com.afundacion.inazumawiki.login.LoginActivity
+ADDED from C:\msys64\home\brure\PFC-Bruno\android\InazumaWiki\app\src\main\AndroidManifest.xml:25:9-27:40
+	android:exported
+		ADDED from C:\msys64\home\brure\PFC-Bruno\android\InazumaWiki\app\src\main\AndroidManifest.xml:27:13-37
+	android:name
+		ADDED from C:\msys64\home\brure\PFC-Bruno\android\InazumaWiki\app\src\main\AndroidManifest.xml:26:13-74
+activity#com.afundacion.inazumawiki.pantallaInitial.InitialActivity
+ADDED from C:\msys64\home\brure\PFC-Bruno\android\InazumaWiki\app\src\main\AndroidManifest.xml:28:9-31:47
+	android:exported
+		ADDED from C:\msys64\home\brure\PFC-Bruno\android\InazumaWiki\app\src\main\AndroidManifest.xml:30:13-37
 	android:theme
 		ADDED from C:\msys64\home\brure\PFC-Bruno\android\InazumaWiki\app\src\main\AndroidManifest.xml:31:13-44
 	android:name
-		ADDED from C:\msys64\home\brure\PFC-Bruno\android\InazumaWiki\app\src\main\AndroidManifest.xml:29:13-80
-intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\msys64\home\brure\PFC-Bruno\android\InazumaWiki\app\src\main\AndroidManifest.xml:32:13-36:29
-action#android.intent.action.MAIN
-ADDED from C:\msys64\home\brure\PFC-Bruno\android\InazumaWiki\app\src\main\AndroidManifest.xml:33:17-69
-	android:name
-		ADDED from C:\msys64\home\brure\PFC-Bruno\android\InazumaWiki\app\src\main\AndroidManifest.xml:33:25-66
-category#android.intent.category.LAUNCHER
-ADDED from C:\msys64\home\brure\PFC-Bruno\android\InazumaWiki\app\src\main\AndroidManifest.xml:35:17-77
-	android:name
-		ADDED from C:\msys64\home\brure\PFC-Bruno\android\InazumaWiki\app\src\main\AndroidManifest.xml:35:27-74
-activity#com.afundacion.inazumawiki.main.MainActivity
-ADDED from C:\msys64\home\brure\PFC-Bruno\android\InazumaWiki\app\src\main\AndroidManifest.xml:38:9-41:47
+		ADDED from C:\msys64\home\brure\PFC-Bruno\android\InazumaWiki\app\src\main\AndroidManifest.xml:29:13-86
+activity#com.afundacion.inazumawiki.launcher.LauncherActivity
+ADDED from C:\msys64\home\brure\PFC-Bruno\android\InazumaWiki\app\src\main\AndroidManifest.xml:32:9-41:20
 	android:exported
-		ADDED from C:\msys64\home\brure\PFC-Bruno\android\InazumaWiki\app\src\main\AndroidManifest.xml:40:13-37
+		ADDED from C:\msys64\home\brure\PFC-Bruno\android\InazumaWiki\app\src\main\AndroidManifest.xml:34:13-36
 	android:theme
-		ADDED from C:\msys64\home\brure\PFC-Bruno\android\InazumaWiki\app\src\main\AndroidManifest.xml:41:13-44
+		ADDED from C:\msys64\home\brure\PFC-Bruno\android\InazumaWiki\app\src\main\AndroidManifest.xml:35:13-44
 	android:name
-		ADDED from C:\msys64\home\brure\PFC-Bruno\android\InazumaWiki\app\src\main\AndroidManifest.xml:39:13-72
+		ADDED from C:\msys64\home\brure\PFC-Bruno\android\InazumaWiki\app\src\main\AndroidManifest.xml:33:13-80
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from C:\msys64\home\brure\PFC-Bruno\android\InazumaWiki\app\src\main\AndroidManifest.xml:36:13-40:29
+action#android.intent.action.MAIN
+ADDED from C:\msys64\home\brure\PFC-Bruno\android\InazumaWiki\app\src\main\AndroidManifest.xml:37:17-69
+	android:name
+		ADDED from C:\msys64\home\brure\PFC-Bruno\android\InazumaWiki\app\src\main\AndroidManifest.xml:37:25-66
+category#android.intent.category.LAUNCHER
+ADDED from C:\msys64\home\brure\PFC-Bruno\android\InazumaWiki\app\src\main\AndroidManifest.xml:39:17-77
+	android:name
+		ADDED from C:\msys64\home\brure\PFC-Bruno\android\InazumaWiki\app\src\main\AndroidManifest.xml:39:27-74
+activity#com.afundacion.inazumawiki.main.MainActivity
+ADDED from C:\msys64\home\brure\PFC-Bruno\android\InazumaWiki\app\src\main\AndroidManifest.xml:42:9-45:47
+	android:exported
+		ADDED from C:\msys64\home\brure\PFC-Bruno\android\InazumaWiki\app\src\main\AndroidManifest.xml:44:13-37
+	android:theme
+		ADDED from C:\msys64\home\brure\PFC-Bruno\android\InazumaWiki\app\src\main\AndroidManifest.xml:45:13-44
+	android:name
+		ADDED from C:\msys64\home\brure\PFC-Bruno\android\InazumaWiki\app\src\main\AndroidManifest.xml:43:13-72
 uses-sdk
 INJECTED from C:\msys64\home\brure\PFC-Bruno\android\InazumaWiki\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\msys64\home\brure\PFC-Bruno\android\InazumaWiki\app\src\main\AndroidManifest.xml

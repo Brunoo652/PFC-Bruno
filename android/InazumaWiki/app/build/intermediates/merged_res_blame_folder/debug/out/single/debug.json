@@ -1,5 +1,9 @@
 [
     {
+        "merged": "com.afundacion.myaplication.app-merged_res-33:/layout_activity_detalle_jugador.xml.flat",
+        "source": "com.afundacion.myaplication.app-main-35:/layout/activity_detalle_jugador.xml"
+    },
+    {
         "merged": "C:\\Users\\brure\\.gradle\\daemon\\7.4\\com.afundacion.myaplication.app-merged_res-33:\\drawable_logo_app_placeholder.png.flat",
         "source": "C:\\Users\\brure\\.gradle\\daemon\\7.4\\com.afundacion.myaplication.app-main-35:\\drawable\\logo_app_placeholder.png"
     },
@@ -76,6 +80,10 @@
         "source": "C:\\Users\\brure\\.gradle\\daemon\\7.4\\com.afundacion.myaplication.app-main-35:\\layout\\activity_login.xml"
     },
     {
+        "merged": "C:\\Users\\brure\\.gradle\\daemon\\7.4\\com.afundacion.myaplication.app-merged_res-33:\\drawable_button_colored.xml.flat",
+        "source": "C:\\Users\\brure\\.gradle\\daemon\\7.4\\com.afundacion.myaplication.app-main-35:\\drawable\\button_colored.xml"
+    },
+    {
         "merged": "C:\\Users\\brure\\.gradle\\daemon\\7.4\\com.afundacion.myaplication.app-merged_res-33:\\menu_menu_navigation_drawer.xml.flat",
         "source": "C:\\Users\\brure\\.gradle\\daemon\\7.4\\com.afundacion.myaplication.app-main-35:\\menu\\menu_navigation_drawer.xml"
     },
@@ -112,8 +120,8 @@
         "source": "C:\\Users\\brure\\.gradle\\daemon\\7.4\\com.afundacion.myaplication.app-main-35:\\mipmap-xxxhdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "com.afundacion.myaplication.app-merged_res-33:/layout_activity_main.xml.flat",
-        "source": "com.afundacion.myaplication.app-main-35:/layout/activity_main.xml"
+        "merged": "C:\\Users\\brure\\.gradle\\daemon\\7.4\\com.afundacion.myaplication.app-merged_res-33:\\drawable_btn_toogle_selector.xml.flat",
+        "source": "C:\\Users\\brure\\.gradle\\daemon\\7.4\\com.afundacion.myaplication.app-main-35:\\drawable\\btn_toogle_selector.xml"
     },
     {
         "merged": "C:\\Users\\brure\\.gradle\\daemon\\7.4\\com.afundacion.myaplication.app-merged_res-33:\\drawable_ic_launcher_background.xml.flat",
@@ -134,5 +142,9 @@
     {
         "merged": "C:\\Users\\brure\\.gradle\\daemon\\7.4\\com.afundacion.myaplication.app-merged_res-33:\\mipmap-xhdpi_ic_launcher_round.webp.flat",
         "source": "C:\\Users\\brure\\.gradle\\daemon\\7.4\\com.afundacion.myaplication.app-main-35:\\mipmap-xhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\brure\\.gradle\\daemon\\7.4\\com.afundacion.myaplication.app-merged_res-33:\\layout_activity_detalle_jugador.xml.flat",
+        "source": "C:\\Users\\brure\\.gradle\\daemon\\7.4\\com.afundacion.myaplication.app-main-35:\\layout\\activity_detalle_jugador.xml"
     }
 ]

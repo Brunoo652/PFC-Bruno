@@ -1,5 +1,6 @@
 package com.afundacion.inazumawiki.main;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.MenuItem;
@@ -17,6 +18,7 @@ import androidx.fragment.app.Fragment;
 
 import com.afundacion.inazumawiki.acercade.FragmentAcercaDe;
 import com.afundacion.inazumawiki.clubes.FragmentBuscarClubesNombre;
+import com.afundacion.inazumawiki.detalleJugador.DetalleJugadorActivity;
 import com.afundacion.inazumawiki.favoritos.FragmentListaFavoritos;
 import com.afundacion.inazumawiki.home.HomeFragment;
 import com.afundacion.inazumawiki.jugadores.FragmentBuscarJugadoresNombre;
@@ -95,6 +97,22 @@ public class MainActivity extends AppCompatActivity {
                 drawerLayout.closeDrawer(GravityCompat.START);
 
                 return true;
+            }
+        });
+
+        //listener a la imagen, que cuando se clique llevará al detalle del jugador
+        spriteJugador.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Log.d("MainActivity", "Clic en la imagen. Intentando abrir DetalleJugadorActivity.");
+                // Crea un Intent para abrir la actividad "DetalleJugadorActivity"
+                Intent intent = new Intent(MainActivity.this, DetalleJugadorActivity.class);
+
+                // Puedes pasar datos adicionales a la actividad, si es necesario
+                // intent.putExtra("key", value);
+
+                // Inicia la actividad "DetalleJugadorActivity"
+                startActivity(intent);
             }
         });
     }
