@@ -10,102 +10,114 @@
 9        android:targetSdkVersion="33" />
 9-->C:\msys64\home\brure\PFC-Bruno\android\InazumaWiki\app\src\main\AndroidManifest.xml
 10
-11    <permission
-11-->[androidx.core:core:1.9.0] C:\Users\brure\.gradle\caches\transforms-3\c6770eda00af6c105866b6db09ea3053\transformed\core-1.9.0\AndroidManifest.xml:22:5-24:47
-12        android:name="com.afundacion.myaplication.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
-12-->[androidx.core:core:1.9.0] C:\Users\brure\.gradle\caches\transforms-3\c6770eda00af6c105866b6db09ea3053\transformed\core-1.9.0\AndroidManifest.xml:23:9-81
-13        android:protectionLevel="signature" />
-13-->[androidx.core:core:1.9.0] C:\Users\brure\.gradle\caches\transforms-3\c6770eda00af6c105866b6db09ea3053\transformed\core-1.9.0\AndroidManifest.xml:24:9-44
-14
-15    <uses-permission android:name="com.afundacion.myaplication.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
-15-->[androidx.core:core:1.9.0] C:\Users\brure\.gradle\caches\transforms-3\c6770eda00af6c105866b6db09ea3053\transformed\core-1.9.0\AndroidManifest.xml:26:5-97
-15-->[androidx.core:core:1.9.0] C:\Users\brure\.gradle\caches\transforms-3\c6770eda00af6c105866b6db09ea3053\transformed\core-1.9.0\AndroidManifest.xml:26:22-94
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->C:\msys64\home\brure\PFC-Bruno\android\InazumaWiki\app\src\main\AndroidManifest.xml:5:5-67
+11-->C:\msys64\home\brure\PFC-Bruno\android\InazumaWiki\app\src\main\AndroidManifest.xml:5:22-64
+12
+13    <permission
+13-->[androidx.core:core:1.9.0] C:\Users\brure\.gradle\caches\transforms-3\c6770eda00af6c105866b6db09ea3053\transformed\core-1.9.0\AndroidManifest.xml:22:5-24:47
+14        android:name="com.afundacion.myaplication.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+14-->[androidx.core:core:1.9.0] C:\Users\brure\.gradle\caches\transforms-3\c6770eda00af6c105866b6db09ea3053\transformed\core-1.9.0\AndroidManifest.xml:23:9-81
+15        android:protectionLevel="signature" />
+15-->[androidx.core:core:1.9.0] C:\Users\brure\.gradle\caches\transforms-3\c6770eda00af6c105866b6db09ea3053\transformed\core-1.9.0\AndroidManifest.xml:24:9-44
 16
-17    <application
-17-->C:\msys64\home\brure\PFC-Bruno\android\InazumaWiki\app\src\main\AndroidManifest.xml:5:5-36:19
-18        android:allowBackup="true"
-18-->C:\msys64\home\brure\PFC-Bruno\android\InazumaWiki\app\src\main\AndroidManifest.xml:6:9-35
-19        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-19-->[androidx.core:core:1.9.0] C:\Users\brure\.gradle\caches\transforms-3\c6770eda00af6c105866b6db09ea3053\transformed\core-1.9.0\AndroidManifest.xml:28:18-86
-20        android:dataExtractionRules="@xml/data_extraction_rules"
-20-->C:\msys64\home\brure\PFC-Bruno\android\InazumaWiki\app\src\main\AndroidManifest.xml:7:9-65
-21        android:debuggable="true"
-22        android:fullBackupContent="@xml/backup_rules"
-22-->C:\msys64\home\brure\PFC-Bruno\android\InazumaWiki\app\src\main\AndroidManifest.xml:8:9-54
-23        android:icon="@drawable/logo_app_placeholder"
-23-->C:\msys64\home\brure\PFC-Bruno\android\InazumaWiki\app\src\main\AndroidManifest.xml:9:9-54
-24        android:label="@string/app_name"
-24-->C:\msys64\home\brure\PFC-Bruno\android\InazumaWiki\app\src\main\AndroidManifest.xml:10:9-41
-25        android:roundIcon="@mipmap/ic_launcher"
-25-->C:\msys64\home\brure\PFC-Bruno\android\InazumaWiki\app\src\main\AndroidManifest.xml:11:9-48
-26        android:supportsRtl="true"
-26-->C:\msys64\home\brure\PFC-Bruno\android\InazumaWiki\app\src\main\AndroidManifest.xml:12:9-35
-27        android:testOnly="true"
-28        android:theme="@style/AppTheme" >
-28-->C:\msys64\home\brure\PFC-Bruno\android\InazumaWiki\app\src\main\AndroidManifest.xml:13:9-40
-29        <activity
-29-->C:\msys64\home\brure\PFC-Bruno\android\InazumaWiki\app\src\main\AndroidManifest.xml:15:9-17:40
-30            android:name="com.afundacion.inazumawiki.login.LoginActivity"
-30-->C:\msys64\home\brure\PFC-Bruno\android\InazumaWiki\app\src\main\AndroidManifest.xml:16:13-74
-31            android:exported="false" />
-31-->C:\msys64\home\brure\PFC-Bruno\android\InazumaWiki\app\src\main\AndroidManifest.xml:17:13-37
+17    <uses-permission android:name="com.afundacion.myaplication.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+17-->[androidx.core:core:1.9.0] C:\Users\brure\.gradle\caches\transforms-3\c6770eda00af6c105866b6db09ea3053\transformed\core-1.9.0\AndroidManifest.xml:26:5-97
+17-->[androidx.core:core:1.9.0] C:\Users\brure\.gradle\caches\transforms-3\c6770eda00af6c105866b6db09ea3053\transformed\core-1.9.0\AndroidManifest.xml:26:22-94
+18
+19    <application
+19-->C:\msys64\home\brure\PFC-Bruno\android\InazumaWiki\app\src\main\AndroidManifest.xml:7:5-42:19
+20        android:allowBackup="true"
+20-->C:\msys64\home\brure\PFC-Bruno\android\InazumaWiki\app\src\main\AndroidManifest.xml:8:9-35
+21        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+21-->[androidx.core:core:1.9.0] C:\Users\brure\.gradle\caches\transforms-3\c6770eda00af6c105866b6db09ea3053\transformed\core-1.9.0\AndroidManifest.xml:28:18-86
+22        android:dataExtractionRules="@xml/data_extraction_rules"
+22-->C:\msys64\home\brure\PFC-Bruno\android\InazumaWiki\app\src\main\AndroidManifest.xml:9:9-65
+23        android:debuggable="true"
+24        android:fullBackupContent="@xml/backup_rules"
+24-->C:\msys64\home\brure\PFC-Bruno\android\InazumaWiki\app\src\main\AndroidManifest.xml:10:9-54
+25        android:icon="@drawable/logo_app_placeholder"
+25-->C:\msys64\home\brure\PFC-Bruno\android\InazumaWiki\app\src\main\AndroidManifest.xml:11:9-54
+26        android:label="@string/app_name"
+26-->C:\msys64\home\brure\PFC-Bruno\android\InazumaWiki\app\src\main\AndroidManifest.xml:12:9-41
+27        android:roundIcon="@mipmap/ic_launcher"
+27-->C:\msys64\home\brure\PFC-Bruno\android\InazumaWiki\app\src\main\AndroidManifest.xml:13:9-48
+28        android:supportsRtl="true"
+28-->C:\msys64\home\brure\PFC-Bruno\android\InazumaWiki\app\src\main\AndroidManifest.xml:14:9-35
+29        android:testOnly="true"
+30        android:theme="@style/AppTheme"
+30-->C:\msys64\home\brure\PFC-Bruno\android\InazumaWiki\app\src\main\AndroidManifest.xml:15:9-40
+31        android:usesCleartextTraffic="true" >
+31-->C:\msys64\home\brure\PFC-Bruno\android\InazumaWiki\app\src\main\AndroidManifest.xml:16:9-44
 32        <activity
-32-->C:\msys64\home\brure\PFC-Bruno\android\InazumaWiki\app\src\main\AndroidManifest.xml:18:9-21:56
-33            android:name="com.afundacion.inazumawiki.pantallaInitial.InitialActivity"
-33-->C:\msys64\home\brure\PFC-Bruno\android\InazumaWiki\app\src\main\AndroidManifest.xml:19:13-86
-34            android:exported="false"
+32-->C:\msys64\home\brure\PFC-Bruno\android\InazumaWiki\app\src\main\AndroidManifest.xml:18:9-20:40
+33            android:name="com.afundacion.inazumawiki.register.RegisterActivity"
+33-->C:\msys64\home\brure\PFC-Bruno\android\InazumaWiki\app\src\main\AndroidManifest.xml:19:13-80
+34            android:exported="false" />
 34-->C:\msys64\home\brure\PFC-Bruno\android\InazumaWiki\app\src\main\AndroidManifest.xml:20:13-37
-35            android:theme="@style/AppTheme" />
-35-->C:\msys64\home\brure\PFC-Bruno\android\InazumaWiki\app\src\main\AndroidManifest.xml:21:13-44
-36        <activity
-36-->C:\msys64\home\brure\PFC-Bruno\android\InazumaWiki\app\src\main\AndroidManifest.xml:22:9-31:20
-37            android:name="com.afundacion.inazumawiki.launcher.LauncherActivity"
-37-->C:\msys64\home\brure\PFC-Bruno\android\InazumaWiki\app\src\main\AndroidManifest.xml:23:13-80
-38            android:exported="true"
-38-->C:\msys64\home\brure\PFC-Bruno\android\InazumaWiki\app\src\main\AndroidManifest.xml:24:13-36
-39            android:theme="@style/AppTheme" >
-39-->C:\msys64\home\brure\PFC-Bruno\android\InazumaWiki\app\src\main\AndroidManifest.xml:25:13-44
-40            <intent-filter>
-40-->C:\msys64\home\brure\PFC-Bruno\android\InazumaWiki\app\src\main\AndroidManifest.xml:26:13-30:29
-41                <action android:name="android.intent.action.MAIN" />
-41-->C:\msys64\home\brure\PFC-Bruno\android\InazumaWiki\app\src\main\AndroidManifest.xml:27:17-69
-41-->C:\msys64\home\brure\PFC-Bruno\android\InazumaWiki\app\src\main\AndroidManifest.xml:27:25-66
-42
-43                <category android:name="android.intent.category.LAUNCHER" />
-43-->C:\msys64\home\brure\PFC-Bruno\android\InazumaWiki\app\src\main\AndroidManifest.xml:29:17-77
-43-->C:\msys64\home\brure\PFC-Bruno\android\InazumaWiki\app\src\main\AndroidManifest.xml:29:27-74
-44            </intent-filter>
-45        </activity>
-46        <activity
-46-->C:\msys64\home\brure\PFC-Bruno\android\InazumaWiki\app\src\main\AndroidManifest.xml:32:9-35:47
-47            android:name="com.afundacion.inazumawiki.main.MainActivity"
-47-->C:\msys64\home\brure\PFC-Bruno\android\InazumaWiki\app\src\main\AndroidManifest.xml:33:13-72
-48            android:exported="false"
-48-->C:\msys64\home\brure\PFC-Bruno\android\InazumaWiki\app\src\main\AndroidManifest.xml:34:13-37
-49            android:theme="@style/AppTheme" />
-49-->C:\msys64\home\brure\PFC-Bruno\android\InazumaWiki\app\src\main\AndroidManifest.xml:35:13-44
-50
-51        <provider
-51-->[androidx.emoji2:emoji2:1.2.0] C:\Users\brure\.gradle\caches\transforms-3\ec6e2ba61c9a42dd8e0aa44ee71f9dfb\transformed\emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
-52            android:name="androidx.startup.InitializationProvider"
-52-->[androidx.emoji2:emoji2:1.2.0] C:\Users\brure\.gradle\caches\transforms-3\ec6e2ba61c9a42dd8e0aa44ee71f9dfb\transformed\emoji2-1.2.0\AndroidManifest.xml:25:13-67
-53            android:authorities="com.afundacion.myaplication.androidx-startup"
-53-->[androidx.emoji2:emoji2:1.2.0] C:\Users\brure\.gradle\caches\transforms-3\ec6e2ba61c9a42dd8e0aa44ee71f9dfb\transformed\emoji2-1.2.0\AndroidManifest.xml:26:13-68
-54            android:exported="false" >
-54-->[androidx.emoji2:emoji2:1.2.0] C:\Users\brure\.gradle\caches\transforms-3\ec6e2ba61c9a42dd8e0aa44ee71f9dfb\transformed\emoji2-1.2.0\AndroidManifest.xml:27:13-37
-55            <meta-data
-55-->[androidx.emoji2:emoji2:1.2.0] C:\Users\brure\.gradle\caches\transforms-3\ec6e2ba61c9a42dd8e0aa44ee71f9dfb\transformed\emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
-56                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-56-->[androidx.emoji2:emoji2:1.2.0] C:\Users\brure\.gradle\caches\transforms-3\ec6e2ba61c9a42dd8e0aa44ee71f9dfb\transformed\emoji2-1.2.0\AndroidManifest.xml:30:17-75
-57                android:value="androidx.startup" />
-57-->[androidx.emoji2:emoji2:1.2.0] C:\Users\brure\.gradle\caches\transforms-3\ec6e2ba61c9a42dd8e0aa44ee71f9dfb\transformed\emoji2-1.2.0\AndroidManifest.xml:31:17-49
-58            <meta-data
-58-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\brure\.gradle\caches\transforms-3\371d4428813d11175307b9e72a350208\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:31:13-33:52
-59                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-59-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\brure\.gradle\caches\transforms-3\371d4428813d11175307b9e72a350208\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:32:17-78
-60                android:value="androidx.startup" />
-60-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\brure\.gradle\caches\transforms-3\371d4428813d11175307b9e72a350208\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:33:17-49
-61        </provider>
-62    </application>
-63
-64</manifest>
+35        <activity
+35-->C:\msys64\home\brure\PFC-Bruno\android\InazumaWiki\app\src\main\AndroidManifest.xml:21:9-23:40
+36            android:name="com.afundacion.inazumawiki.login.LoginActivity"
+36-->C:\msys64\home\brure\PFC-Bruno\android\InazumaWiki\app\src\main\AndroidManifest.xml:22:13-74
+37            android:exported="false" />
+37-->C:\msys64\home\brure\PFC-Bruno\android\InazumaWiki\app\src\main\AndroidManifest.xml:23:13-37
+38        <activity
+38-->C:\msys64\home\brure\PFC-Bruno\android\InazumaWiki\app\src\main\AndroidManifest.xml:24:9-27:47
+39            android:name="com.afundacion.inazumawiki.pantallaInitial.InitialActivity"
+39-->C:\msys64\home\brure\PFC-Bruno\android\InazumaWiki\app\src\main\AndroidManifest.xml:25:13-86
+40            android:exported="false"
+40-->C:\msys64\home\brure\PFC-Bruno\android\InazumaWiki\app\src\main\AndroidManifest.xml:26:13-37
+41            android:theme="@style/AppTheme" />
+41-->C:\msys64\home\brure\PFC-Bruno\android\InazumaWiki\app\src\main\AndroidManifest.xml:27:13-44
+42        <activity
+42-->C:\msys64\home\brure\PFC-Bruno\android\InazumaWiki\app\src\main\AndroidManifest.xml:28:9-37:20
+43            android:name="com.afundacion.inazumawiki.launcher.LauncherActivity"
+43-->C:\msys64\home\brure\PFC-Bruno\android\InazumaWiki\app\src\main\AndroidManifest.xml:29:13-80
+44            android:exported="true"
+44-->C:\msys64\home\brure\PFC-Bruno\android\InazumaWiki\app\src\main\AndroidManifest.xml:30:13-36
+45            android:theme="@style/AppTheme" >
+45-->C:\msys64\home\brure\PFC-Bruno\android\InazumaWiki\app\src\main\AndroidManifest.xml:31:13-44
+46            <intent-filter>
+46-->C:\msys64\home\brure\PFC-Bruno\android\InazumaWiki\app\src\main\AndroidManifest.xml:32:13-36:29
+47                <action android:name="android.intent.action.MAIN" />
+47-->C:\msys64\home\brure\PFC-Bruno\android\InazumaWiki\app\src\main\AndroidManifest.xml:33:17-69
+47-->C:\msys64\home\brure\PFC-Bruno\android\InazumaWiki\app\src\main\AndroidManifest.xml:33:25-66
+48
+49                <category android:name="android.intent.category.LAUNCHER" />
+49-->C:\msys64\home\brure\PFC-Bruno\android\InazumaWiki\app\src\main\AndroidManifest.xml:35:17-77
+49-->C:\msys64\home\brure\PFC-Bruno\android\InazumaWiki\app\src\main\AndroidManifest.xml:35:27-74
+50            </intent-filter>
+51        </activity>
+52        <activity
+52-->C:\msys64\home\brure\PFC-Bruno\android\InazumaWiki\app\src\main\AndroidManifest.xml:38:9-41:47
+53            android:name="com.afundacion.inazumawiki.main.MainActivity"
+53-->C:\msys64\home\brure\PFC-Bruno\android\InazumaWiki\app\src\main\AndroidManifest.xml:39:13-72
+54            android:exported="false"
+54-->C:\msys64\home\brure\PFC-Bruno\android\InazumaWiki\app\src\main\AndroidManifest.xml:40:13-37
+55            android:theme="@style/AppTheme" />
+55-->C:\msys64\home\brure\PFC-Bruno\android\InazumaWiki\app\src\main\AndroidManifest.xml:41:13-44
+56
+57        <provider
+57-->[androidx.emoji2:emoji2:1.2.0] C:\Users\brure\.gradle\caches\transforms-3\ec6e2ba61c9a42dd8e0aa44ee71f9dfb\transformed\emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
+58            android:name="androidx.startup.InitializationProvider"
+58-->[androidx.emoji2:emoji2:1.2.0] C:\Users\brure\.gradle\caches\transforms-3\ec6e2ba61c9a42dd8e0aa44ee71f9dfb\transformed\emoji2-1.2.0\AndroidManifest.xml:25:13-67
+59            android:authorities="com.afundacion.myaplication.androidx-startup"
+59-->[androidx.emoji2:emoji2:1.2.0] C:\Users\brure\.gradle\caches\transforms-3\ec6e2ba61c9a42dd8e0aa44ee71f9dfb\transformed\emoji2-1.2.0\AndroidManifest.xml:26:13-68
+60            android:exported="false" >
+60-->[androidx.emoji2:emoji2:1.2.0] C:\Users\brure\.gradle\caches\transforms-3\ec6e2ba61c9a42dd8e0aa44ee71f9dfb\transformed\emoji2-1.2.0\AndroidManifest.xml:27:13-37
+61            <meta-data
+61-->[androidx.emoji2:emoji2:1.2.0] C:\Users\brure\.gradle\caches\transforms-3\ec6e2ba61c9a42dd8e0aa44ee71f9dfb\transformed\emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+62                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+62-->[androidx.emoji2:emoji2:1.2.0] C:\Users\brure\.gradle\caches\transforms-3\ec6e2ba61c9a42dd8e0aa44ee71f9dfb\transformed\emoji2-1.2.0\AndroidManifest.xml:30:17-75
+63                android:value="androidx.startup" />
+63-->[androidx.emoji2:emoji2:1.2.0] C:\Users\brure\.gradle\caches\transforms-3\ec6e2ba61c9a42dd8e0aa44ee71f9dfb\transformed\emoji2-1.2.0\AndroidManifest.xml:31:17-49
+64            <meta-data
+64-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\brure\.gradle\caches\transforms-3\371d4428813d11175307b9e72a350208\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:31:13-33:52
+65                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+65-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\brure\.gradle\caches\transforms-3\371d4428813d11175307b9e72a350208\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:32:17-78
+66                android:value="androidx.startup" />
+66-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\brure\.gradle\caches\transforms-3\371d4428813d11175307b9e72a350208\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:33:17-49
+67        </provider>
+68    </application>
+69
+70</manifest>
