@@ -1,7 +1,10 @@
 package com.afundacion.inazumawiki.main;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.view.MenuItem;
+import android.widget.ImageView;
+import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.widget.Toolbar;
@@ -21,11 +24,18 @@ import com.afundacion.inazumawiki.opciones.FragmentOpciones;
 import com.afundacion.inazumawiki.st.FragmentBuscarSTNombre;
 import com.afundacion.myaplication.R;
 import com.google.android.material.navigation.NavigationView;
+import com.squareup.picasso.Picasso;
+
+import org.json.JSONException;
+import org.json.JSONObject;
 
 public class MainActivity extends AppCompatActivity {
 
     private DrawerLayout drawerLayout;
     private Fragment selectedFragment;
+
+    private TextView nombreJugador;
+    private ImageView spriteJugador;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,6 +46,10 @@ public class MainActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
 
         selectedFragment = new HomeFragment();
+
+        // Encuentra las vistas por sus IDs
+        nombreJugador = findViewById(R.id.nombreJugador);
+        spriteJugador = findViewById(R.id.spriteJugador);
 
         // Funcionamiento del NavigationView
         NavigationView navigationView = findViewById(R.id.navigation_view);
@@ -80,6 +94,12 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
+    @Override
+    protected void onResume() {
+        super.onResume();
+        cargarJugadorAleatorio(); // Llama a la función para cargar un jugador aleatorio al iniciar la actividad
+    }
+
     // Controla el comportamiento del botón Atrás o back de Android.
     @Override
     public void onBackPressed() {
@@ -87,6 +107,36 @@ public class MainActivity extends AppCompatActivity {
             drawerLayout.closeDrawer(GravityCompat.START);
         } else {
             super.onBackPressed();
+        }
+    }
+
+    // Método para cargar un jugador aleatorio al iniciar la actividad
+    private void cargarJugadorAleatorio() {
+        GETRandomPlayer.getRandomPlayer(new GETRandomPlayer.RandomPlayerCallback() {
+            @Override
+            public void onRandomPlayerReceived(String jsonData) {
+                // Actualiza la interfaz de usuario con los datos del jugador
+                actualizarInterfazUsuario(jsonData);
+            }
+        });
+    }
+
+    // Método para actualizar la interfaz de usuario con los datos del jugador
+    private void actualizarInterfazUsuario(String jsonData) {
+        try {
+            Log.d("MainActivity", "Datos del jugador recibidos: " + jsonData);
+            JSONObject jugadorData = new JSONObject(jsonData);
+            String nombreDelJugador = jugadorData.getString("nombre");
+            String sprite = jugadorData.getString("sprite");
+
+            // Actualiza el TextView con el nombre del jugador
+            nombreJugador.setText(nombreDelJugador);
+
+            // Utiliza Picasso para cargar la imagen en el ImageView
+            Picasso.get().load(sprite).into(spriteJugador);
+
+        } catch (JSONException e) {
+            e.printStackTrace();
         }
     }
 }

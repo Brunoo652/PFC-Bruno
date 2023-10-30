@@ -49,11 +49,13 @@ id imagenLogo
 id listaFav
 id my_nav
 id navigation_view
+id nombreJugador
 id opciones
 id otros
 id progressBar
+id prueba
+id spriteJugador
 id textView
-id textView2
 id textView4
 id toolbar
 layout activity_initial
