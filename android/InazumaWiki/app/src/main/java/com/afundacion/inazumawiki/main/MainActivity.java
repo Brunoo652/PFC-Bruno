@@ -3,6 +3,7 @@ package com.afundacion.inazumawiki.main;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -84,6 +85,10 @@ public class MainActivity extends AppCompatActivity {
 
                 if (selectedFragment != null) {
                     getSupportFragmentManager().beginTransaction().replace(R.id.fragmentContainerView, selectedFragment).commit();
+
+                    // Ocultar o eliminar la vista del jugador aleatorio
+                    nombreJugador.setVisibility(View.GONE);
+                    spriteJugador.setVisibility(View.GONE);
                 }
 
                 // Cierra el menú de navegación después de hacer una selección
