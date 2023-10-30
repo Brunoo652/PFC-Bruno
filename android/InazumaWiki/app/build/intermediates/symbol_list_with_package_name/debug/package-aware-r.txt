@@ -3181,6 +3181,7 @@ id neverCompleteToEnd
 id neverCompleteToStart
 id noScroll
 id noState
+id nombreJugador
 id none
 id normal
 id north
@@ -3213,6 +3214,7 @@ id pressed
 id progressBar
 id progress_circular
 id progress_horizontal
+id prueba
 id radio
 id ratio
 id rectangles
@@ -3282,6 +3284,7 @@ id split_action_bar
 id spread
 id spread_inside
 id spring
+id spriteJugador
 id square
 id src_atop
 id src_in
@@ -3320,7 +3323,6 @@ id textSpacerNoTitle
 id textStart
 id textTop
 id textView
-id textView2
 id textView4
 id text_input_end_icon
 id text_input_error_icon

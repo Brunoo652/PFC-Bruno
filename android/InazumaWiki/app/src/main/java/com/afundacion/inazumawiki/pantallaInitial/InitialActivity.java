@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
+import com.afundacion.inazumawiki.home.HomeFragment;
 import com.afundacion.inazumawiki.login.LoginActivity;
 import com.afundacion.inazumawiki.main.MainActivity;
 import com.afundacion.inazumawiki.register.RegisterActivity;

@@ -7,27 +7,37 @@
 
 
     <TextView
-        android:id="@+id/nombreVideojuego"
+        android:id="@+id/nombreJugador"
         android:layout_width="match_parent"
         android:layout_height="42dp"
         android:textAlignment="center"
         android:textColor="@color/black"
-        app:layout_constraintBottom_toTopOf="@+id/caratula"
-        app:layout_constraintEnd_toEndOf="@+id/caratula"
+        app:layout_constraintBottom_toTopOf="@+id/spriteJugador"
+        app:layout_constraintEnd_toEndOf="@+id/spriteJugador"
         app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="@+id/caratula"
+        app:layout_constraintStart_toStartOf="@+id/spriteJugador"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.912" />
+        app:layout_constraintVertical_bias="0.571" />
 
     <ImageView
-        android:id="@+id/caratula"
+        android:id="@+id/spriteJugador"
         android:layout_width="408dp"
         android:layout_height="343dp"
-        android:layout_marginBottom="176dp"
+        android:layout_marginBottom="248dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent" />
 
+    <TextView
+        android:id="@+id/prueba"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="216dp"
+        android:text="Soy un texto de prueba"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.421"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

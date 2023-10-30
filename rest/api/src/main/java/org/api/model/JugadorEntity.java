@@ -24,7 +24,7 @@ public class JugadorEntity {
   @Column(nullable = false, name = "nombre")
   private String nombre;
 
-  @Column(nullable = false)
+  @Column(nullable = false, length = 500)
   private String sprite;
 
   @Column(length = 500)

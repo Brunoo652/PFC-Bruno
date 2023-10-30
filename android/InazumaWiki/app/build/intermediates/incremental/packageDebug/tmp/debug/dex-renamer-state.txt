@@ -1,4 +1,4 @@
-#Mon Oct 30 08:47:58 CET 2023
+#Mon Oct 30 16:46:17 CET 2023
 base.0=C\:\\msys64\\home\\brure\\PFC-Bruno\\android\\InazumaWiki\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
 base.1=C\:\\msys64\\home\\brure\\PFC-Bruno\\android\\InazumaWiki\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
 base.10=C\:\\msys64\\home\\brure\\PFC-Bruno\\android\\InazumaWiki\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\8\\classes.dex
