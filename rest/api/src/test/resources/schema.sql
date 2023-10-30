@@ -18,7 +18,7 @@ DROP TABLE IF EXISTS clubes;
 CREATE TABLE clubes (
     id           INT AUTO_INCREMENT PRIMARY KEY,
     nombre       VARCHAR(250) ,
-    sprite       VARCHAR(250) NOT NULL,
+    sprite       VARCHAR(500) NOT NULL,
     descripcion  VARCHAR(250),
     formacion    VARCHAR(250),
     miembros     VARCHAR(250),

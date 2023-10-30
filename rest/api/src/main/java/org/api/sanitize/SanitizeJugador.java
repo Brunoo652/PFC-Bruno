@@ -23,8 +23,11 @@ public class SanitizeJugador {
                     jugadorEntity.setNombre(value);
                     break;
                 case "sprite":
-                    String spritePath = "sprites/" + value.substring(value.lastIndexOf('/') + 1);
-                    jugadorEntity.setSprite(spritePath);
+                    if (value.equals("null")) {
+                        jugadorEntity.setSprite("No disponible");
+                    } else {
+                        jugadorEntity.setSprite(value);
+                    }
                     break;
                 case "descripción":
                     jugadorEntity.setDescripcion(value);
