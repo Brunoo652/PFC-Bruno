@@ -66,8 +66,8 @@ id prueba
 id sexoJugadorDetalle
 id spriteJugador
 id textView
-id textView2
 id textView4
+id tituloDetallejugador
 id toolbar
 layout activity_detalle_jugador
 layout activity_initial
