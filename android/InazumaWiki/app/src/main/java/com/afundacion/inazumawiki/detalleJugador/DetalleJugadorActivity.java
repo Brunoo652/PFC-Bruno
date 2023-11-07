@@ -1,5 +1,6 @@
 package com.afundacion.inazumawiki.detalleJugador;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -9,6 +10,7 @@ import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.afundacion.inazumawiki.jugadores.FragmentBuscarJugadoresNombre;
+import com.afundacion.inazumawiki.main.MainActivity;
 import com.afundacion.myaplication.R;
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -42,7 +44,7 @@ public class DetalleJugadorActivity extends AppCompatActivity {
         botonFavoritos = findViewById(R.id.botonFavoritosDetalleJugador);
         botonVolverDetalleJugador = findViewById(R.id.botonVolverDetalleJugador);
 /**************************************************************************************************************/
-        // Obtén la información del jugador aleatorio del intent
+        // Obtén la información del jugador aleatorio del intent (por id)
         String jugadorData = getIntent().getStringExtra("jugador_data");
 
         if (jugadorData != null) {
@@ -63,7 +65,7 @@ public class DetalleJugadorActivity extends AppCompatActivity {
 /**************************************************************************************************************/
 
 /**************************************************************************************************************/
-        // Obtén la información del jugador aleatorio del fragment de Buscar  Jugadores
+        // Obtén la información del jugador del fragment de Buscar  Jugadores (por nombre)
 
 
 /**************************************************************************************************************/
@@ -94,8 +96,9 @@ public class DetalleJugadorActivity extends AppCompatActivity {
         botonVolverDetalleJugador.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                // Realiza la transacción para volver al fragment FragmentBuscarJugadoresNombre
-                getSupportFragmentManager().beginTransaction().replace(R.id.fragmentContainerView, new FragmentBuscarJugadoresNombre()).commit();
+                // Realiza la transacción para volver a la actividad main
+                Intent intent = new Intent(DetalleJugadorActivity.this, MainActivity.class);
+                startActivity(intent);
             }
         });
     }
