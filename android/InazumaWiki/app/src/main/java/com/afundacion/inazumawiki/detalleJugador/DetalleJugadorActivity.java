@@ -7,6 +7,8 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.afundacion.inazumawiki.jugadores.FragmentBuscarJugadoresNombre;
 import com.afundacion.myaplication.R;
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -22,6 +24,7 @@ public class DetalleJugadorActivity extends AppCompatActivity {
     private TextView afinidadJugadorDetalle;
     private TextView posicionJugadorDetalle;
     private Button botonFavoritos;
+    private Button botonVolverDetalleJugador;
     private boolean favorito = false; // Estado inicial: no es favorito
 
 
@@ -37,31 +40,39 @@ public class DetalleJugadorActivity extends AppCompatActivity {
         afinidadJugadorDetalle = findViewById(R.id.afinidadJugadorDetalle);
         posicionJugadorDetalle = findViewById(R.id.posicionJugadorDetalle);
         botonFavoritos = findViewById(R.id.botonFavoritosDetalleJugador);
+        botonVolverDetalleJugador = findViewById(R.id.botonVolverDetalleJugador);
 /**************************************************************************************************************/
         // Obtén la información del jugador aleatorio del intent
         String jugadorData = getIntent().getStringExtra("jugador_data");
 
-
-        if ( jugadorData != null) {
+        if (jugadorData != null) {
             try {
                 JSONObject jsonObject = new JSONObject(jugadorData);
                 nombreJugadorDetalle.setText(jsonObject.getString("nombre"));
+                // Se carga la imagen del jugador utilizando Picasso
+                Picasso.get().load(jsonObject.getString("sprite")).into(imagenJugadorDetalle);
                 descripcionJugadorDetalle.setText(jsonObject.getString("descripcion"));
                 sexoJugadorDetalle.setText(jsonObject.getString("sexo"));
                 afinidadJugadorDetalle.setText(jsonObject.getString("afinidad"));
                 posicionJugadorDetalle.setText(jsonObject.getString("posicion"));
-
-                // La imagen del jugador generalmente se almacena como una URL en la base de datos.
-                // Puedes utilizar una biblioteca de carga de imágenes como Glide o Picasso para mostrar la imagen.
-                String imagenUrl = jsonObject.getString("sprite");
-                Picasso.get().load(imagenUrl).into(imagenJugadorDetalle);
-                Log.d("DetalleJugadorActivity", "Datos recibidos: " + jsonObject.toString());
 
             } catch (JSONException e) {
                 e.printStackTrace();
             }
         }
 /**************************************************************************************************************/
+
+/**************************************************************************************************************/
+        // Obtén la información del jugador aleatorio del fragment de Buscar  Jugadores
+
+
+/**************************************************************************************************************/
+
+/**************************************************************************************************************/
+        //LOGICA DE LOS BOTONES DE VOLVER AL BUSCADOR Y AÑADIR A FAVORITOS
+
+
+        // Obtén la información del jugador aleatorio del intent de Main activity
         botonFavoritos.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -76,6 +87,15 @@ public class DetalleJugadorActivity extends AppCompatActivity {
                     botonFavoritos.setBackgroundResource(android.R.color.darker_gray);
                     botonFavoritos.setText("Añadir a favoritos");
                 }
+            }
+        });
+
+        //Volver al fragmento de busqueda de jugadores
+        botonVolverDetalleJugador.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                // Realiza la transacción para volver al fragment FragmentBuscarJugadoresNombre
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragmentContainerView, new FragmentBuscarJugadoresNombre()).commit();
             }
         });
     }
