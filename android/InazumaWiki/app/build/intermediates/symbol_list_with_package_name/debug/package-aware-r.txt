@@ -3069,6 +3069,7 @@ id frost
 id fullscreen_header
 id ghost_view
 id ghost_view_holder
+id glide_custom_view_target_tag
 id gone
 id graph
 id graph_wrap
@@ -3089,6 +3090,7 @@ id ifRoom
 id ignore
 id ignoreRequest
 id image
+id imageViewSprite
 id imagenJugadorDetalle
 id imagenLogo
 id immediateStop
@@ -3227,6 +3229,7 @@ id prueba
 id radio
 id ratio
 id rectangles
+id recyclerViewJugadores
 id reverseSawtooth
 id right
 id rightToLeft
@@ -3244,6 +3247,7 @@ id scrollIndicatorDown
 id scrollIndicatorUp
 id scrollView
 id scrollable
+id searchView
 id search_badge
 id search_bar
 id search_bar_text_view
@@ -3334,6 +3338,7 @@ id textStart
 id textTop
 id textView
 id textView4
+id textViewNombre
 id text_input_end_icon
 id text_input_error_icon
 id text_input_start_icon
@@ -3521,6 +3526,7 @@ layout fragment_buscar_s_t_nombre
 layout fragment_home
 layout fragment_lista_favoritos
 layout fragment_opciones
+layout item_jugador
 layout m3_alert_dialog
 layout m3_alert_dialog_actions
 layout m3_alert_dialog_title

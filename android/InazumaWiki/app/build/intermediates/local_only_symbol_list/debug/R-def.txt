@@ -51,6 +51,7 @@ id fragment_opciones
 id header_image
 id header_title
 id homeFragment
+id imageViewSprite
 id imagenJugadorDetalle
 id imagenLogo
 id listaFav
@@ -63,10 +64,13 @@ id otros
 id posicionJugadorDetalle
 id progressBar
 id prueba
+id recyclerViewJugadores
+id searchView
 id sexoJugadorDetalle
 id spriteJugador
 id textView
 id textView4
+id textViewNombre
 id tituloDetallejugador
 id toolbar
 layout activity_detalle_jugador
@@ -83,6 +87,7 @@ layout fragment_buscar_s_t_nombre
 layout fragment_home
 layout fragment_lista_favoritos
 layout fragment_opciones
+layout item_jugador
 layout nav_header
 menu menu_navigation_drawer
 mipmap ic_launcher
