@@ -1,5 +1,6 @@
 package com.afundacion.inazumawiki.main;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.MenuItem;
@@ -17,6 +18,7 @@ import androidx.fragment.app.Fragment;
 
 import com.afundacion.inazumawiki.acercade.FragmentAcercaDe;
 import com.afundacion.inazumawiki.clubes.FragmentBuscarClubesNombre;
+import com.afundacion.inazumawiki.detalleJugador.DetalleJugadorActivity;
 import com.afundacion.inazumawiki.favoritos.FragmentListaFavoritos;
 import com.afundacion.inazumawiki.home.HomeFragment;
 import com.afundacion.inazumawiki.jugadores.FragmentBuscarJugadoresNombre;
@@ -97,6 +99,19 @@ public class MainActivity extends AppCompatActivity {
                 return true;
             }
         });
+
+/***************************************************************************************************************/
+
+        spriteJugador.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                // Abre la actividad de detalles del jugador aquí
+                Intent intent = new Intent(MainActivity.this, DetalleJugadorActivity.class);
+                startActivity(intent);
+            }
+        });
+
+/***************************************************************************************************************/
     }
 
     @Override
@@ -114,6 +129,8 @@ public class MainActivity extends AppCompatActivity {
             super.onBackPressed();
         }
     }
+
+/****************************************************************************************************/
 
     // Método para cargar un jugador aleatorio al iniciar la actividad
     private void cargarJugadorAleatorio() {
@@ -144,4 +161,7 @@ public class MainActivity extends AppCompatActivity {
             e.printStackTrace();
         }
     }
+
+/****************************************************************************************************/
+
 }

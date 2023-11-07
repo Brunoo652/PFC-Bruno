@@ -1,138 +1,146 @@
 [
     {
-        "merged": "C:\\Users\\brure\\.gradle\\daemon\\7.4\\com.afundacion.myaplication.app-merged_res-33:\\drawable_logo_app_placeholder.png.flat",
-        "source": "C:\\Users\\brure\\.gradle\\daemon\\7.4\\com.afundacion.myaplication.app-main-35:\\drawable\\logo_app_placeholder.png"
+        "merged": "com.afundacion.myaplication.app-merged_res-33:/drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
+        "source": "com.afundacion.myaplication.app-pngs-28:/drawable-anydpi-v24/ic_launcher_foreground.xml"
     },
     {
-        "merged": "C:\\Users\\brure\\.gradle\\daemon\\7.4\\com.afundacion.myaplication.app-merged_res-33:\\mipmap-xxhdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\brure\\.gradle\\daemon\\7.4\\com.afundacion.myaplication.app-main-35:\\mipmap-xxhdpi\\ic_launcher.webp"
+        "merged": "com.afundacion.myaplication.app-merged_res-33:/layout_activity_detalle_jugador.xml.flat",
+        "source": "com.afundacion.myaplication.app-main-35:/layout/activity_detalle_jugador.xml"
     },
     {
-        "merged": "C:\\Users\\brure\\.gradle\\daemon\\7.4\\com.afundacion.myaplication.app-merged_res-33:\\mipmap-hdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\brure\\.gradle\\daemon\\7.4\\com.afundacion.myaplication.app-main-35:\\mipmap-hdpi\\ic_launcher_round.webp"
+        "merged": "com.afundacion.myaplication.app-merged_res-33:/layout_fragment_acerca_de.xml.flat",
+        "source": "com.afundacion.myaplication.app-main-35:/layout/fragment_acerca_de.xml"
     },
     {
-        "merged": "C:\\Users\\brure\\.gradle\\daemon\\7.4\\com.afundacion.myaplication.app-merged_res-33:\\layout_fragment_buscar_clubes_nombre.xml.flat",
-        "source": "C:\\Users\\brure\\.gradle\\daemon\\7.4\\com.afundacion.myaplication.app-main-35:\\layout\\fragment_buscar_clubes_nombre.xml"
+        "merged": "com.afundacion.myaplication.app-merged_res-33:/menu_menu_navigation_drawer.xml.flat",
+        "source": "com.afundacion.myaplication.app-main-35:/menu/menu_navigation_drawer.xml"
     },
     {
-        "merged": "C:\\Users\\brure\\.gradle\\daemon\\7.4\\com.afundacion.myaplication.app-merged_res-33:\\mipmap-xhdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\brure\\.gradle\\daemon\\7.4\\com.afundacion.myaplication.app-main-35:\\mipmap-xhdpi\\ic_launcher.webp"
+        "merged": "com.afundacion.myaplication.app-merged_res-33:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "com.afundacion.myaplication.app-main-35:/mipmap-anydpi-v26/ic_launcher.xml"
     },
     {
-        "merged": "C:\\Users\\brure\\.gradle\\daemon\\7.4\\com.afundacion.myaplication.app-merged_res-33:\\layout_fragment_home.xml.flat",
-        "source": "C:\\Users\\brure\\.gradle\\daemon\\7.4\\com.afundacion.myaplication.app-main-35:\\layout\\fragment_home.xml"
+        "merged": "com.afundacion.myaplication.app-merged_res-33:/mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "com.afundacion.myaplication.app-main-35:/mipmap-hdpi/ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\brure\\.gradle\\daemon\\7.4\\com.afundacion.myaplication.app-merged_res-33:\\mipmap-mdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\brure\\.gradle\\daemon\\7.4\\com.afundacion.myaplication.app-main-35:\\mipmap-mdpi\\ic_launcher_round.webp"
+        "merged": "com.afundacion.myaplication.app-merged_res-33:/mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "com.afundacion.myaplication.app-main-35:/mipmap-xxhdpi/ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\brure\\.gradle\\daemon\\7.4\\com.afundacion.myaplication.app-merged_res-33:\\layout_fragment_opciones.xml.flat",
-        "source": "C:\\Users\\brure\\.gradle\\daemon\\7.4\\com.afundacion.myaplication.app-main-35:\\layout\\fragment_opciones.xml"
+        "merged": "com.afundacion.myaplication.app-merged_res-33:/mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "com.afundacion.myaplication.app-main-35:/mipmap-xhdpi/ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\brure\\.gradle\\daemon\\7.4\\com.afundacion.myaplication.app-merged_res-33:\\layout_fragment_buscar_jugadores_nombre.xml.flat",
-        "source": "C:\\Users\\brure\\.gradle\\daemon\\7.4\\com.afundacion.myaplication.app-main-35:\\layout\\fragment_buscar_jugadores_nombre.xml"
+        "merged": "com.afundacion.myaplication.app-merged_res-33:/layout_fragment_lista_favoritos.xml.flat",
+        "source": "com.afundacion.myaplication.app-main-35:/layout/fragment_lista_favoritos.xml"
     },
     {
-        "merged": "C:\\Users\\brure\\.gradle\\daemon\\7.4\\com.afundacion.myaplication.app-merged_res-33:\\layout_nav_header.xml.flat",
-        "source": "C:\\Users\\brure\\.gradle\\daemon\\7.4\\com.afundacion.myaplication.app-main-35:\\layout\\nav_header.xml"
+        "merged": "com.afundacion.myaplication.app-merged_res-33:/drawable_btn_toogle_selector.xml.flat",
+        "source": "com.afundacion.myaplication.app-main-35:/drawable/btn_toogle_selector.xml"
     },
     {
-        "merged": "C:\\Users\\brure\\.gradle\\daemon\\7.4\\com.afundacion.myaplication.app-merged_res-33:\\layout_fragment_lista_favoritos.xml.flat",
-        "source": "C:\\Users\\brure\\.gradle\\daemon\\7.4\\com.afundacion.myaplication.app-main-35:\\layout\\fragment_lista_favoritos.xml"
+        "merged": "com.afundacion.myaplication.app-merged_res-33:/layout_fragment_buscar_clubes_nombre.xml.flat",
+        "source": "com.afundacion.myaplication.app-main-35:/layout/fragment_buscar_clubes_nombre.xml"
     },
     {
-        "merged": "C:\\Users\\brure\\.gradle\\daemon\\7.4\\com.afundacion.myaplication.app-merged_res-33:\\mipmap-xxxhdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\brure\\.gradle\\daemon\\7.4\\com.afundacion.myaplication.app-main-35:\\mipmap-xxxhdpi\\ic_launcher.webp"
+        "merged": "com.afundacion.myaplication.app-merged_res-33:/layout_activity_launcher.xml.flat",
+        "source": "com.afundacion.myaplication.app-main-35:/layout/activity_launcher.xml"
     },
     {
-        "merged": "C:\\Users\\brure\\.gradle\\daemon\\7.4\\com.afundacion.myaplication.app-merged_res-33:\\layout_activity_launcher.xml.flat",
-        "source": "C:\\Users\\brure\\.gradle\\daemon\\7.4\\com.afundacion.myaplication.app-main-35:\\layout\\activity_launcher.xml"
+        "merged": "com.afundacion.myaplication.app-merged_res-33:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.afundacion.myaplication.app-main-35:/mipmap-xxxhdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Users\\brure\\.gradle\\daemon\\7.4\\com.afundacion.myaplication.app-merged_res-33:\\xml_backup_rules.xml.flat",
-        "source": "C:\\Users\\brure\\.gradle\\daemon\\7.4\\com.afundacion.myaplication.app-main-35:\\xml\\backup_rules.xml"
+        "merged": "com.afundacion.myaplication.app-merged_res-33:/xml_backup_rules.xml.flat",
+        "source": "com.afundacion.myaplication.app-main-35:/xml/backup_rules.xml"
     },
     {
-        "merged": "C:\\Users\\brure\\.gradle\\daemon\\7.4\\com.afundacion.myaplication.app-merged_res-33:\\mipmap-hdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\brure\\.gradle\\daemon\\7.4\\com.afundacion.myaplication.app-main-35:\\mipmap-hdpi\\ic_launcher.webp"
+        "merged": "com.afundacion.myaplication.app-merged_res-33:/layout_nav_header.xml.flat",
+        "source": "com.afundacion.myaplication.app-main-35:/layout/nav_header.xml"
     },
     {
-        "merged": "C:\\Users\\brure\\.gradle\\daemon\\7.4\\com.afundacion.myaplication.app-merged_res-33:\\layout_fragment_buscar_s_t_nombre.xml.flat",
-        "source": "C:\\Users\\brure\\.gradle\\daemon\\7.4\\com.afundacion.myaplication.app-main-35:\\layout\\fragment_buscar_s_t_nombre.xml"
+        "merged": "com.afundacion.myaplication.app-merged_res-33:/layout_fragment_buscar_s_t_nombre.xml.flat",
+        "source": "com.afundacion.myaplication.app-main-35:/layout/fragment_buscar_s_t_nombre.xml"
     },
     {
-        "merged": "C:\\Users\\brure\\.gradle\\daemon\\7.4\\com.afundacion.myaplication.app-merged_res-33:\\layout_activity_initial.xml.flat",
-        "source": "C:\\Users\\brure\\.gradle\\daemon\\7.4\\com.afundacion.myaplication.app-main-35:\\layout\\activity_initial.xml"
+        "merged": "com.afundacion.myaplication.app-merged_res-33:/drawable_button_colored.xml.flat",
+        "source": "com.afundacion.myaplication.app-main-35:/drawable/button_colored.xml"
     },
     {
-        "merged": "C:\\Users\\brure\\.gradle\\daemon\\7.4\\com.afundacion.myaplication.app-merged_res-33:\\drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
-        "source": "C:\\Users\\brure\\.gradle\\daemon\\7.4\\com.afundacion.myaplication.app-pngs-28:\\drawable-anydpi-v24\\ic_launcher_foreground.xml"
+        "merged": "com.afundacion.myaplication.app-merged_res-33:/layout_activity_initial.xml.flat",
+        "source": "com.afundacion.myaplication.app-main-35:/layout/activity_initial.xml"
     },
     {
-        "merged": "C:\\Users\\brure\\.gradle\\daemon\\7.4\\com.afundacion.myaplication.app-merged_res-33:\\layout_activity_login.xml.flat",
-        "source": "C:\\Users\\brure\\.gradle\\daemon\\7.4\\com.afundacion.myaplication.app-main-35:\\layout\\activity_login.xml"
+        "merged": "com.afundacion.myaplication.app-merged_res-33:/layout_fragment_buscar_objetos_nombre.xml.flat",
+        "source": "com.afundacion.myaplication.app-main-35:/layout/fragment_buscar_objetos_nombre.xml"
     },
     {
-        "merged": "C:\\Users\\brure\\.gradle\\daemon\\7.4\\com.afundacion.myaplication.app-merged_res-33:\\menu_menu_navigation_drawer.xml.flat",
-        "source": "C:\\Users\\brure\\.gradle\\daemon\\7.4\\com.afundacion.myaplication.app-main-35:\\menu\\menu_navigation_drawer.xml"
+        "merged": "com.afundacion.myaplication.app-merged_res-33:/layout_fragment_buscar_jugadores_nombre.xml.flat",
+        "source": "com.afundacion.myaplication.app-main-35:/layout/fragment_buscar_jugadores_nombre.xml"
     },
     {
-        "merged": "C:\\Users\\brure\\.gradle\\daemon\\7.4\\com.afundacion.myaplication.app-merged_res-33:\\layout_fragment_buscar_objetos_nombre.xml.flat",
-        "source": "C:\\Users\\brure\\.gradle\\daemon\\7.4\\com.afundacion.myaplication.app-main-35:\\layout\\fragment_buscar_objetos_nombre.xml"
+        "merged": "com.afundacion.myaplication.app-merged_res-33:/xml_data_extraction_rules.xml.flat",
+        "source": "com.afundacion.myaplication.app-main-35:/xml/data_extraction_rules.xml"
     },
     {
-        "merged": "C:\\Users\\brure\\.gradle\\daemon\\7.4\\com.afundacion.myaplication.app-merged_res-33:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "C:\\Users\\brure\\.gradle\\daemon\\7.4\\com.afundacion.myaplication.app-main-35:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+        "merged": "com.afundacion.myaplication.app-merged_res-33:/navigation_my_nav.xml.flat",
+        "source": "com.afundacion.myaplication.app-main-35:/navigation/my_nav.xml"
     },
     {
-        "merged": "C:\\Users\\brure\\.gradle\\daemon\\7.4\\com.afundacion.myaplication.app-merged_res-33:\\layout_activity_register.xml.flat",
-        "source": "C:\\Users\\brure\\.gradle\\daemon\\7.4\\com.afundacion.myaplication.app-main-35:\\layout\\activity_register.xml"
+        "merged": "com.afundacion.myaplication.app-merged_res-33:/layout_activity_register.xml.flat",
+        "source": "com.afundacion.myaplication.app-main-35:/layout/activity_register.xml"
     },
     {
-        "merged": "C:\\Users\\brure\\.gradle\\daemon\\7.4\\com.afundacion.myaplication.app-merged_res-33:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "C:\\Users\\brure\\.gradle\\daemon\\7.4\\com.afundacion.myaplication.app-main-35:\\mipmap-anydpi-v26\\ic_launcher.xml"
+        "merged": "com.afundacion.myaplication.app-merged_res-33:/layout_fragment_opciones.xml.flat",
+        "source": "com.afundacion.myaplication.app-main-35:/layout/fragment_opciones.xml"
     },
     {
-        "merged": "C:\\Users\\brure\\.gradle\\daemon\\7.4\\com.afundacion.myaplication.app-merged_res-33:\\layout_activity_main.xml.flat",
-        "source": "C:\\Users\\brure\\.gradle\\daemon\\7.4\\com.afundacion.myaplication.app-main-35:\\layout\\activity_main.xml"
+        "merged": "com.afundacion.myaplication.app-merged_res-33:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.afundacion.myaplication.app-main-35:/mipmap-xxhdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Users\\brure\\.gradle\\daemon\\7.4\\com.afundacion.myaplication.app-merged_res-33:\\navigation_my_nav.xml.flat",
-        "source": "C:\\Users\\brure\\.gradle\\daemon\\7.4\\com.afundacion.myaplication.app-main-35:\\navigation\\my_nav.xml"
+        "merged": "com.afundacion.myaplication.app-merged_res-33:/layout_fragment_home.xml.flat",
+        "source": "com.afundacion.myaplication.app-main-35:/layout/fragment_home.xml"
     },
     {
-        "merged": "C:\\Users\\brure\\.gradle\\daemon\\7.4\\com.afundacion.myaplication.app-merged_res-33:\\mipmap-mdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\brure\\.gradle\\daemon\\7.4\\com.afundacion.myaplication.app-main-35:\\mipmap-mdpi\\ic_launcher.webp"
+        "merged": "com.afundacion.myaplication.app-merged_res-33:/mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "com.afundacion.myaplication.app-main-35:/mipmap-xxxhdpi/ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\brure\\.gradle\\daemon\\7.4\\com.afundacion.myaplication.app-merged_res-33:\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\brure\\.gradle\\daemon\\7.4\\com.afundacion.myaplication.app-main-35:\\mipmap-xxxhdpi\\ic_launcher_round.webp"
+        "merged": "com.afundacion.myaplication.app-merged_res-33:/layout_activity_login.xml.flat",
+        "source": "com.afundacion.myaplication.app-main-35:/layout/activity_login.xml"
+    },
+    {
+        "merged": "com.afundacion.myaplication.app-merged_res-33:/drawable_ic_launcher_background.xml.flat",
+        "source": "com.afundacion.myaplication.app-main-35:/drawable/ic_launcher_background.xml"
     },
     {
         "merged": "com.afundacion.myaplication.app-merged_res-33:/layout_activity_main.xml.flat",
         "source": "com.afundacion.myaplication.app-main-35:/layout/activity_main.xml"
     },
     {
-        "merged": "C:\\Users\\brure\\.gradle\\daemon\\7.4\\com.afundacion.myaplication.app-merged_res-33:\\drawable_ic_launcher_background.xml.flat",
-        "source": "C:\\Users\\brure\\.gradle\\daemon\\7.4\\com.afundacion.myaplication.app-main-35:\\drawable\\ic_launcher_background.xml"
+        "merged": "com.afundacion.myaplication.app-merged_res-33:/mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "com.afundacion.myaplication.app-main-35:/mipmap-hdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Users\\brure\\.gradle\\daemon\\7.4\\com.afundacion.myaplication.app-merged_res-33:\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\brure\\.gradle\\daemon\\7.4\\com.afundacion.myaplication.app-main-35:\\mipmap-xxhdpi\\ic_launcher_round.webp"
+        "merged": "com.afundacion.myaplication.app-merged_res-33:/mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "com.afundacion.myaplication.app-main-35:/mipmap-mdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Users\\brure\\.gradle\\daemon\\7.4\\com.afundacion.myaplication.app-merged_res-33:\\xml_data_extraction_rules.xml.flat",
-        "source": "C:\\Users\\brure\\.gradle\\daemon\\7.4\\com.afundacion.myaplication.app-main-35:\\xml\\data_extraction_rules.xml"
+        "merged": "com.afundacion.myaplication.app-merged_res-33:/mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "com.afundacion.myaplication.app-main-35:/mipmap-xhdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Users\\brure\\.gradle\\daemon\\7.4\\com.afundacion.myaplication.app-merged_res-33:\\layout_fragment_acerca_de.xml.flat",
-        "source": "C:\\Users\\brure\\.gradle\\daemon\\7.4\\com.afundacion.myaplication.app-main-35:\\layout\\fragment_acerca_de.xml"
+        "merged": "com.afundacion.myaplication.app-merged_res-33:/drawable_logo_app_placeholder.png.flat",
+        "source": "com.afundacion.myaplication.app-main-35:/drawable/logo_app_placeholder.png"
     },
     {
-        "merged": "C:\\Users\\brure\\.gradle\\daemon\\7.4\\com.afundacion.myaplication.app-merged_res-33:\\mipmap-xhdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\brure\\.gradle\\daemon\\7.4\\com.afundacion.myaplication.app-main-35:\\mipmap-xhdpi\\ic_launcher_round.webp"
+        "merged": "com.afundacion.myaplication.app-merged_res-33:/mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "com.afundacion.myaplication.app-main-35:/mipmap-mdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.afundacion.myaplication.app-merged_res-33:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "com.afundacion.myaplication.app-main-35:/mipmap-anydpi-v26/ic_launcher_round.xml"
     }
 ]
