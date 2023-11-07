@@ -24,12 +24,12 @@
         "source": "C:\\Users\\brure\\.gradle\\daemon\\7.4\\com.afundacion.myaplication.app-main-35:\\layout\\fragment_home.xml"
     },
     {
-        "merged": "C:\\Users\\brure\\.gradle\\daemon\\7.4\\com.afundacion.myaplication.app-merged_res-33:\\mipmap-mdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\brure\\.gradle\\daemon\\7.4\\com.afundacion.myaplication.app-main-35:\\mipmap-mdpi\\ic_launcher_round.webp"
-    },
-    {
         "merged": "C:\\Users\\brure\\.gradle\\daemon\\7.4\\com.afundacion.myaplication.app-merged_res-33:\\layout_fragment_opciones.xml.flat",
         "source": "C:\\Users\\brure\\.gradle\\daemon\\7.4\\com.afundacion.myaplication.app-main-35:\\layout\\fragment_opciones.xml"
+    },
+    {
+        "merged": "C:\\Users\\brure\\.gradle\\daemon\\7.4\\com.afundacion.myaplication.app-merged_res-33:\\mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\brure\\.gradle\\daemon\\7.4\\com.afundacion.myaplication.app-main-35:\\mipmap-mdpi\\ic_launcher_round.webp"
     },
     {
         "merged": "C:\\Users\\brure\\.gradle\\daemon\\7.4\\com.afundacion.myaplication.app-merged_res-33:\\layout_fragment_buscar_jugadores_nombre.xml.flat",

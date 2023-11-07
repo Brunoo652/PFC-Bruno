@@ -2738,6 +2738,8 @@ drawable btn_radio_off_mtrl
 drawable btn_radio_off_to_on_mtrl_animation
 drawable btn_radio_on_mtrl
 drawable btn_radio_on_to_off_mtrl_animation
+drawable btn_toogle_selector
+drawable button_colored
 drawable design_fab_background
 drawable design_ic_visibility
 drawable design_ic_visibility_off
@@ -2925,6 +2927,7 @@ id action_text
 id actions
 id activity_chooser_view_content
 id add
+id afinidadJugadorDetalle
 id alertTitle
 id aligned
 id all
@@ -2947,9 +2950,11 @@ id beginOnFirstDraw
 id beginning
 id bestChoice
 id blocking
+id botonFavoritosDetalleJugador
 id botonInvitado
 id botonLogin
 id botonRegister
+id botonVolverDetalleJugador
 id bottom
 id bounce
 id bounceBoth
@@ -3005,6 +3010,7 @@ id decor_content_parent
 id default_activity_button
 id deltaRelative
 id dependency_ordering
+id descripcionJugadorDetalle
 id design_bottom_sheet
 id design_menu_item_action_area
 id design_menu_item_action_area_stub
@@ -3083,6 +3089,7 @@ id ifRoom
 id ignore
 id ignoreRequest
 id image
+id imagenJugadorDetalle
 id imagenLogo
 id immediateStop
 id included
@@ -3182,6 +3189,7 @@ id neverCompleteToStart
 id noScroll
 id noState
 id nombreJugador
+id nombreJugadorDetalle
 id none
 id normal
 id north
@@ -3208,6 +3216,7 @@ id pathRelative
 id peekHeight
 id percent
 id pin
+id posicionJugadorDetalle
 id position
 id postLayout
 id pressed
@@ -3262,6 +3271,7 @@ id search_voice_btn
 id select_dialog_listview
 id selected
 id selection_type
+id sexoJugadorDetalle
 id sharedValueSet
 id sharedValueUnset
 id shortcut
@@ -3337,6 +3347,7 @@ id time
 id title
 id titleDividerNoCustom
 id title_template
+id tituloDetallejugador
 id toggle
 id toolbar
 id top
@@ -3480,6 +3491,7 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
+layout activity_detalle_jugador
 layout activity_initial
 layout activity_launcher
 layout activity_login
