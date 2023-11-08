@@ -4,6 +4,7 @@ ADDED from C:\msys64\home\brure\PFC-Bruno\android\InazumaWiki\app\src\main\Andro
 INJECTED from C:\msys64\home\brure\PFC-Bruno\android\InazumaWiki\app\src\main\AndroidManifest.xml:2:1-48:12
 INJECTED from C:\msys64\home\brure\PFC-Bruno\android\InazumaWiki\app\src\main\AndroidManifest.xml:2:1-48:12
 INJECTED from C:\msys64\home\brure\PFC-Bruno\android\InazumaWiki\app\src\main\AndroidManifest.xml:2:1-48:12
+MERGED from [com.github.bumptech.glide:glide:4.12.0] C:\Users\brure\.gradle\caches\transforms-3\8fa66f5b94a69f4448d6b96d2a2d8fbd\transformed\glide-4.12.0\AndroidManifest.xml:2:1-12:12
 MERGED from [androidx.navigation:navigation-ui:2.3.5] C:\Users\brure\.gradle\caches\transforms-3\b70e1e9f81c5cb411da7ffd81409db33\transformed\navigation-ui-2.3.5\AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.android.material:material:1.8.0] C:\Users\brure\.gradle\caches\transforms-3\113dec783198fb148d5bb0a209784fef\transformed\material-1.8.0\AndroidManifest.xml:17:1-26:12
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\brure\.gradle\caches\transforms-3\28075e3b5fe6386b541742e3f2e4f8fe\transformed\constraintlayout-2.1.4\AndroidManifest.xml:2:1-11:12
@@ -15,6 +16,9 @@ MERGED from [androidx.fragment:fragment:1.3.6] C:\Users\brure\.gradle\caches\tra
 MERGED from [com.squareup.picasso:picasso:2.8] C:\Users\brure\.gradle\caches\transforms-3\f247a8428758363ad40e9cad992214c1\transformed\picasso-2.8\AndroidManifest.xml:2:1-14:12
 MERGED from [androidx.recyclerview:recyclerview:1.2.1] C:\Users\brure\.gradle\caches\transforms-3\3bdce688fe41cea45baddc3b0a5703af\transformed\recyclerview-1.2.1\AndroidManifest.xml:17:1-24:12
 MERGED from [com.android.volley:volley:1.2.1] C:\Users\brure\.gradle\caches\transforms-3\71af9ddc6e7b4297fcf1143d426ca149\transformed\volley-1.2.1\AndroidManifest.xml:2:1-7:12
+MERGED from [com.github.bumptech.glide:gifdecoder:4.12.0] C:\Users\brure\.gradle\caches\transforms-3\865f777bc06f80d305af401f0ca39474\transformed\gifdecoder-4.12.0\AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\brure\.gradle\caches\transforms-3\1bcc206c0510161075e5a6bef7d8a801\transformed\vectordrawable-animated-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.exifinterface:exifinterface:1.2.0] C:\Users\brure\.gradle\caches\transforms-3\dc55dd200b1981ec12732491e7f4e571\transformed\exifinterface-1.2.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.navigation:navigation-runtime:2.3.5] C:\Users\brure\.gradle\caches\transforms-3\30bd09251b8e52d8c90eaba5cd78b42a\transformed\navigation-runtime-2.3.5\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.activity:activity:1.6.0] C:\Users\brure\.gradle\caches\transforms-3\366bc55389b310f2f951927a248c0e2c\transformed\activity-1.6.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\brure\.gradle\caches\transforms-3\beea0202a3bfc6fcead60be62b365ba4\transformed\viewpager-1.0.0\AndroidManifest.xml:17:1-22:12
@@ -25,7 +29,6 @@ MERGED from [androidx.emoji2:emoji2-views-helper:1.2.0] C:\Users\brure\.gradle\c
 MERGED from [androidx.emoji2:emoji2:1.2.0] C:\Users\brure\.gradle\caches\transforms-3\ec6e2ba61c9a42dd8e0aa44ee71f9dfb\transformed\emoji2-1.2.0\AndroidManifest.xml:17:1-35:12
 MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] C:\Users\brure\.gradle\caches\transforms-3\ab16b2e2e5eceb327b59bc4f3e06ffc1\transformed\drawerlayout-1.1.1\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] C:\Users\brure\.gradle\caches\transforms-3\57fa40c87617b400b03816871a4d774b\transformed\coordinatorlayout-1.1.0\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\brure\.gradle\caches\transforms-3\1bcc206c0510161075e5a6bef7d8a801\transformed\vectordrawable-animated-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\brure\.gradle\caches\transforms-3\cf38180b23347b1ee1726524e37f3b65\transformed\vectordrawable-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.customview:customview:1.1.0] C:\Users\brure\.gradle\caches\transforms-3\8f52c58859b61ad44bde80251e94a731\transformed\customview-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.transition:transition:1.3.0] C:\Users\brure\.gradle\caches\transforms-3\272faeafe75eb07d4965953e46b8c8e0\transformed\transition-1.3.0\AndroidManifest.xml:17:1-24:12
@@ -35,7 +38,6 @@ MERGED from [androidx.core:core-ktx:1.9.0] C:\Users\brure\.gradle\caches\transfo
 MERGED from [androidx.navigation:navigation-common:2.3.5] C:\Users\brure\.gradle\caches\transforms-3\5d3c327fc1a8a7539bde0f9da08635d3\transformed\navigation-common-2.3.5\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.core:core:1.9.0] C:\Users\brure\.gradle\caches\transforms-3\c6770eda00af6c105866b6db09ea3053\transformed\core-1.9.0\AndroidManifest.xml:17:1-30:12
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\brure\.gradle\caches\transforms-3\3cb5c66fe0a968009044032844119254\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:17:1-27:12
-MERGED from [androidx.exifinterface:exifinterface:1.0.0] C:\Users\brure\.gradle\caches\transforms-3\9f28e2ee2f502af4424072f83d65b488\transformed\exifinterface-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.savedstate:savedstate:1.2.0] C:\Users\brure\.gradle\caches\transforms-3\569338f0b0055036abb5ae65bf6eb80c\transformed\savedstate-1.2.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\brure\.gradle\caches\transforms-3\882cfffd8d3c95ba668d49b40f3d88f0\transformed\cursoradapter-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\brure\.gradle\caches\transforms-3\371d4428813d11175307b9e72a350208\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:17:1-37:12
@@ -76,12 +78,16 @@ ADDED from C:\msys64\home\brure\PFC-Bruno\android\InazumaWiki\app\src\main\Andro
 		ADDED from C:\msys64\home\brure\PFC-Bruno\android\InazumaWiki\app\src\main\AndroidManifest.xml:5:22-64
 application
 ADDED from C:\msys64\home\brure\PFC-Bruno\android\InazumaWiki\app\src\main\AndroidManifest.xml:7:5-46:19
+MERGED from [com.github.bumptech.glide:glide:4.12.0] C:\Users\brure\.gradle\caches\transforms-3\8fa66f5b94a69f4448d6b96d2a2d8fbd\transformed\glide-4.12.0\AndroidManifest.xml:10:5-20
+MERGED from [com.github.bumptech.glide:glide:4.12.0] C:\Users\brure\.gradle\caches\transforms-3\8fa66f5b94a69f4448d6b96d2a2d8fbd\transformed\glide-4.12.0\AndroidManifest.xml:10:5-20
 MERGED from [com.google.android.material:material:1.8.0] C:\Users\brure\.gradle\caches\transforms-3\113dec783198fb148d5bb0a209784fef\transformed\material-1.8.0\AndroidManifest.xml:24:5-20
 MERGED from [com.google.android.material:material:1.8.0] C:\Users\brure\.gradle\caches\transforms-3\113dec783198fb148d5bb0a209784fef\transformed\material-1.8.0\AndroidManifest.xml:24:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\brure\.gradle\caches\transforms-3\28075e3b5fe6386b541742e3f2e4f8fe\transformed\constraintlayout-2.1.4\AndroidManifest.xml:9:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\brure\.gradle\caches\transforms-3\28075e3b5fe6386b541742e3f2e4f8fe\transformed\constraintlayout-2.1.4\AndroidManifest.xml:9:5-20
 MERGED from [com.squareup.picasso:picasso:2.8] C:\Users\brure\.gradle\caches\transforms-3\f247a8428758363ad40e9cad992214c1\transformed\picasso-2.8\AndroidManifest.xml:7:5-12:19
 MERGED from [com.squareup.picasso:picasso:2.8] C:\Users\brure\.gradle\caches\transforms-3\f247a8428758363ad40e9cad992214c1\transformed\picasso-2.8\AndroidManifest.xml:7:5-12:19
+MERGED from [com.github.bumptech.glide:gifdecoder:4.12.0] C:\Users\brure\.gradle\caches\transforms-3\865f777bc06f80d305af401f0ca39474\transformed\gifdecoder-4.12.0\AndroidManifest.xml:9:5-20
+MERGED from [com.github.bumptech.glide:gifdecoder:4.12.0] C:\Users\brure\.gradle\caches\transforms-3\865f777bc06f80d305af401f0ca39474\transformed\gifdecoder-4.12.0\AndroidManifest.xml:9:5-20
 MERGED from [androidx.emoji2:emoji2:1.2.0] C:\Users\brure\.gradle\caches\transforms-3\ec6e2ba61c9a42dd8e0aa44ee71f9dfb\transformed\emoji2-1.2.0\AndroidManifest.xml:23:5-33:19
 MERGED from [androidx.emoji2:emoji2:1.2.0] C:\Users\brure\.gradle\caches\transforms-3\ec6e2ba61c9a42dd8e0aa44ee71f9dfb\transformed\emoji2-1.2.0\AndroidManifest.xml:23:5-33:19
 MERGED from [androidx.core:core:1.9.0] C:\Users\brure\.gradle\caches\transforms-3\c6770eda00af6c105866b6db09ea3053\transformed\core-1.9.0\AndroidManifest.xml:28:5-89
@@ -101,7 +107,7 @@ MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\brure\.gradle\cach
 	android:fullBackupContent
 		ADDED from C:\msys64\home\brure\PFC-Bruno\android\InazumaWiki\app\src\main\AndroidManifest.xml:10:9-54
 	android:roundIcon
-		ADDED from C:\msys64\home\brure\PFC-Bruno\android\InazumaWiki\app\src\main\AndroidManifest.xml:13:9-48
+		ADDED from C:\msys64\home\brure\PFC-Bruno\android\InazumaWiki\app\src\main\AndroidManifest.xml:13:9-59
 	tools:targetApi
 		ADDED from C:\msys64\home\brure\PFC-Bruno\android\InazumaWiki\app\src\main\AndroidManifest.xml:17:9-29
 	android:icon
@@ -172,6 +178,8 @@ uses-sdk
 INJECTED from C:\msys64\home\brure\PFC-Bruno\android\InazumaWiki\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\msys64\home\brure\PFC-Bruno\android\InazumaWiki\app\src\main\AndroidManifest.xml
 INJECTED from C:\msys64\home\brure\PFC-Bruno\android\InazumaWiki\app\src\main\AndroidManifest.xml
+MERGED from [com.github.bumptech.glide:glide:4.12.0] C:\Users\brure\.gradle\caches\transforms-3\8fa66f5b94a69f4448d6b96d2a2d8fbd\transformed\glide-4.12.0\AndroidManifest.xml:6:5-8:41
+MERGED from [com.github.bumptech.glide:glide:4.12.0] C:\Users\brure\.gradle\caches\transforms-3\8fa66f5b94a69f4448d6b96d2a2d8fbd\transformed\glide-4.12.0\AndroidManifest.xml:6:5-8:41
 MERGED from [androidx.navigation:navigation-ui:2.3.5] C:\Users\brure\.gradle\caches\transforms-3\b70e1e9f81c5cb411da7ffd81409db33\transformed\navigation-ui-2.3.5\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.navigation:navigation-ui:2.3.5] C:\Users\brure\.gradle\caches\transforms-3\b70e1e9f81c5cb411da7ffd81409db33\transformed\navigation-ui-2.3.5\AndroidManifest.xml:20:5-22:41
 MERGED from [com.google.android.material:material:1.8.0] C:\Users\brure\.gradle\caches\transforms-3\113dec783198fb148d5bb0a209784fef\transformed\material-1.8.0\AndroidManifest.xml:20:5-22:41
@@ -194,6 +202,12 @@ MERGED from [androidx.recyclerview:recyclerview:1.2.1] C:\Users\brure\.gradle\ca
 MERGED from [androidx.recyclerview:recyclerview:1.2.1] C:\Users\brure\.gradle\caches\transforms-3\3bdce688fe41cea45baddc3b0a5703af\transformed\recyclerview-1.2.1\AndroidManifest.xml:20:5-22:41
 MERGED from [com.android.volley:volley:1.2.1] C:\Users\brure\.gradle\caches\transforms-3\71af9ddc6e7b4297fcf1143d426ca149\transformed\volley-1.2.1\AndroidManifest.xml:5:5-43
 MERGED from [com.android.volley:volley:1.2.1] C:\Users\brure\.gradle\caches\transforms-3\71af9ddc6e7b4297fcf1143d426ca149\transformed\volley-1.2.1\AndroidManifest.xml:5:5-43
+MERGED from [com.github.bumptech.glide:gifdecoder:4.12.0] C:\Users\brure\.gradle\caches\transforms-3\865f777bc06f80d305af401f0ca39474\transformed\gifdecoder-4.12.0\AndroidManifest.xml:5:5-7:41
+MERGED from [com.github.bumptech.glide:gifdecoder:4.12.0] C:\Users\brure\.gradle\caches\transforms-3\865f777bc06f80d305af401f0ca39474\transformed\gifdecoder-4.12.0\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\brure\.gradle\caches\transforms-3\1bcc206c0510161075e5a6bef7d8a801\transformed\vectordrawable-animated-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\brure\.gradle\caches\transforms-3\1bcc206c0510161075e5a6bef7d8a801\transformed\vectordrawable-animated-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.exifinterface:exifinterface:1.2.0] C:\Users\brure\.gradle\caches\transforms-3\dc55dd200b1981ec12732491e7f4e571\transformed\exifinterface-1.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.exifinterface:exifinterface:1.2.0] C:\Users\brure\.gradle\caches\transforms-3\dc55dd200b1981ec12732491e7f4e571\transformed\exifinterface-1.2.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.navigation:navigation-runtime:2.3.5] C:\Users\brure\.gradle\caches\transforms-3\30bd09251b8e52d8c90eaba5cd78b42a\transformed\navigation-runtime-2.3.5\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.navigation:navigation-runtime:2.3.5] C:\Users\brure\.gradle\caches\transforms-3\30bd09251b8e52d8c90eaba5cd78b42a\transformed\navigation-runtime-2.3.5\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.activity:activity:1.6.0] C:\Users\brure\.gradle\caches\transforms-3\366bc55389b310f2f951927a248c0e2c\transformed\activity-1.6.0\AndroidManifest.xml:20:5-44
@@ -214,8 +228,6 @@ MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] C:\Users\brure\.gradle\ca
 MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] C:\Users\brure\.gradle\caches\transforms-3\ab16b2e2e5eceb327b59bc4f3e06ffc1\transformed\drawerlayout-1.1.1\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] C:\Users\brure\.gradle\caches\transforms-3\57fa40c87617b400b03816871a4d774b\transformed\coordinatorlayout-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] C:\Users\brure\.gradle\caches\transforms-3\57fa40c87617b400b03816871a4d774b\transformed\coordinatorlayout-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\brure\.gradle\caches\transforms-3\1bcc206c0510161075e5a6bef7d8a801\transformed\vectordrawable-animated-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\brure\.gradle\caches\transforms-3\1bcc206c0510161075e5a6bef7d8a801\transformed\vectordrawable-animated-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\brure\.gradle\caches\transforms-3\cf38180b23347b1ee1726524e37f3b65\transformed\vectordrawable-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\brure\.gradle\caches\transforms-3\cf38180b23347b1ee1726524e37f3b65\transformed\vectordrawable-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.customview:customview:1.1.0] C:\Users\brure\.gradle\caches\transforms-3\8f52c58859b61ad44bde80251e94a731\transformed\customview-1.1.0\AndroidManifest.xml:20:5-22:41
@@ -234,8 +246,6 @@ MERGED from [androidx.core:core:1.9.0] C:\Users\brure\.gradle\caches\transforms-
 MERGED from [androidx.core:core:1.9.0] C:\Users\brure\.gradle\caches\transforms-3\c6770eda00af6c105866b6db09ea3053\transformed\core-1.9.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\brure\.gradle\caches\transforms-3\3cb5c66fe0a968009044032844119254\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\brure\.gradle\caches\transforms-3\3cb5c66fe0a968009044032844119254\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.exifinterface:exifinterface:1.0.0] C:\Users\brure\.gradle\caches\transforms-3\9f28e2ee2f502af4424072f83d65b488\transformed\exifinterface-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.exifinterface:exifinterface:1.0.0] C:\Users\brure\.gradle\caches\transforms-3\9f28e2ee2f502af4424072f83d65b488\transformed\exifinterface-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.savedstate:savedstate:1.2.0] C:\Users\brure\.gradle\caches\transforms-3\569338f0b0055036abb5ae65bf6eb80c\transformed\savedstate-1.2.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.savedstate:savedstate:1.2.0] C:\Users\brure\.gradle\caches\transforms-3\569338f0b0055036abb5ae65bf6eb80c\transformed\savedstate-1.2.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\brure\.gradle\caches\transforms-3\882cfffd8d3c95ba668d49b40f3d88f0\transformed\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
