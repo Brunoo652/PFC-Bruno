@@ -43,9 +43,7 @@ public class JugadorAdapter extends RecyclerView.Adapter<JugadorAdapter.ViewHold
     }
 
     public interface OnItemClickListener {
-        void onItemClick(Object jugador); // Cambio Jugador a Object
-
-
+        void onItemClick(Object jugador);
         void onItemClick(JSONObject jugador);
     }
 
@@ -64,14 +62,15 @@ public class JugadorAdapter extends RecyclerView.Adapter<JugadorAdapter.ViewHold
                 JSONObject jugadorJson = (JSONObject) jugador;
                 try {
                     String nombre = jugadorJson.getString("nombre");
-                    String urlSprite = jugadorJson.getString("urlSprite");
+                    String urlSprite = jugadorJson.getString("sprite");
 
                     textViewNombre.setText(nombre);
 
                     // Cargar la imagen del sprite con Glide
                     Glide.with(itemView)
-                            .load(urlSprite) // Utiliza la URL directamente
+                            .load(urlSprite)
                             .transition(DrawableTransitionOptions.withCrossFade())
+                            .error(R.drawable.logo_app_placeholder) // Manejo de error de carga de imagen
                             .into(imageViewSprite);
 
                     itemView.setOnClickListener(new View.OnClickListener() {

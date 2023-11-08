@@ -107,7 +107,7 @@ MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\brure\.gradle\cach
 	android:fullBackupContent
 		ADDED from C:\msys64\home\brure\PFC-Bruno\android\InazumaWiki\app\src\main\AndroidManifest.xml:10:9-54
 	android:roundIcon
-		ADDED from C:\msys64\home\brure\PFC-Bruno\android\InazumaWiki\app\src\main\AndroidManifest.xml:13:9-48
+		ADDED from C:\msys64\home\brure\PFC-Bruno\android\InazumaWiki\app\src\main\AndroidManifest.xml:13:9-59
 	tools:targetApi
 		ADDED from C:\msys64\home\brure\PFC-Bruno\android\InazumaWiki\app\src\main\AndroidManifest.xml:17:9-29
 	android:icon

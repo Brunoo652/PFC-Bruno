@@ -32,10 +32,6 @@
         "source": "C:\\Users\\brure\\.gradle\\daemon\\7.4\\com.afundacion.myaplication.app-main-36:\\layout\\activity_detalle_jugador.xml"
     },
     {
-        "merged": "com.afundacion.myaplication.app-merged_res-34:/layout_item_jugador.xml.flat",
-        "source": "com.afundacion.myaplication.app-main-36:/layout/item_jugador.xml"
-    },
-    {
         "merged": "C:\\Users\\brure\\.gradle\\daemon\\7.4\\com.afundacion.myaplication.app-merged_res-34:\\drawable_ic_launcher_background.xml.flat",
         "source": "C:\\Users\\brure\\.gradle\\daemon\\7.4\\com.afundacion.myaplication.app-main-36:\\drawable\\ic_launcher_background.xml"
     },
@@ -98,6 +94,10 @@
     {
         "merged": "C:\\Users\\brure\\.gradle\\daemon\\7.4\\com.afundacion.myaplication.app-merged_res-34:\\mipmap-xxxhdpi_ic_launcher.webp.flat",
         "source": "C:\\Users\\brure\\.gradle\\daemon\\7.4\\com.afundacion.myaplication.app-main-36:\\mipmap-xxxhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "com.afundacion.myaplication.app-merged_res-34:/layout_fragment_buscar_jugadores_nombre.xml.flat",
+        "source": "com.afundacion.myaplication.app-main-36:/layout/fragment_buscar_jugadores_nombre.xml"
     },
     {
         "merged": "C:\\Users\\brure\\.gradle\\daemon\\7.4\\com.afundacion.myaplication.app-merged_res-34:\\layout_nav_header.xml.flat",

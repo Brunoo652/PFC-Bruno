@@ -40,8 +40,8 @@
 25-->C:\msys64\home\brure\PFC-Bruno\android\InazumaWiki\app\src\main\AndroidManifest.xml:11:9-54
 26        android:label="@string/app_name"
 26-->C:\msys64\home\brure\PFC-Bruno\android\InazumaWiki\app\src\main\AndroidManifest.xml:12:9-41
-27        android:roundIcon="@mipmap/ic_launcher"
-27-->C:\msys64\home\brure\PFC-Bruno\android\InazumaWiki\app\src\main\AndroidManifest.xml:13:9-48
+27        android:roundIcon="@drawable/logo_app_placeholder"
+27-->C:\msys64\home\brure\PFC-Bruno\android\InazumaWiki\app\src\main\AndroidManifest.xml:13:9-59
 28        android:supportsRtl="true"
 28-->C:\msys64\home\brure\PFC-Bruno\android\InazumaWiki\app\src\main\AndroidManifest.xml:14:9-35
 29        android:testOnly="true"
