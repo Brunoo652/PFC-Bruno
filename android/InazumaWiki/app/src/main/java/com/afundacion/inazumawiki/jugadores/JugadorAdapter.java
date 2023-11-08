@@ -16,7 +16,7 @@ import org.json.JSONObject;
 import java.util.List;
 
 public class JugadorAdapter extends RecyclerView.Adapter<JugadorAdapter.ViewHolder> {
-    private List<Object> jugadores; // Cambio List<Jugador> a List<Object>
+    private List<Object> jugadores;
     private OnItemClickListener listener;
 
     public JugadorAdapter(List<Object> jugadores, OnItemClickListener listener) {
@@ -44,6 +44,7 @@ public class JugadorAdapter extends RecyclerView.Adapter<JugadorAdapter.ViewHold
 
     public interface OnItemClickListener {
         void onItemClick(Object jugador); // Cambio Jugador a Object
+
 
         void onItemClick(JSONObject jugador);
     }
