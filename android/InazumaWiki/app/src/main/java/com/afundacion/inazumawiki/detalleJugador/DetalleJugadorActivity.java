@@ -9,7 +9,6 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.afundacion.inazumawiki.jugadores.FragmentBuscarJugadoresNombre;
 import com.afundacion.inazumawiki.main.MainActivity;
 import com.afundacion.myaplication.R;
 import org.json.JSONException;

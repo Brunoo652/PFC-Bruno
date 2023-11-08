@@ -5,33 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f64eb30c-a4e1-4ab1-a6ae-e011171c4219" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../../android/InazumaWiki/.gradle/7.3/checksums/checksums.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../android/InazumaWiki/.gradle/7.3/checksums/md5-checksums.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../android/InazumaWiki/.gradle/7.3/checksums/sha1-checksums.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../android/InazumaWiki/.gradle/7.3/dependencies-accessors/dependencies-accessors.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../android/InazumaWiki/.gradle/7.3/dependencies-accessors/gc.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../android/InazumaWiki/.gradle/7.3/executionHistory/executionHistory.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../android/InazumaWiki/.gradle/7.3/fileChanges/last-build.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../android/InazumaWiki/.gradle/7.3/fileHashes/fileHashes.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../android/InazumaWiki/.gradle/7.3/gc.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../android/InazumaWiki/.gradle/7.4/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../android/InazumaWiki/.gradle/7.4/executionHistory/executionHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../android/InazumaWiki/.gradle/7.4/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../android/InazumaWiki/.gradle/7.4/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../android/InazumaWiki/.gradle/7.4/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../android/InazumaWiki/.gradle/7.4/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../android/InazumaWiki/.gradle/7.4/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../android/InazumaWiki/.gradle/7.4/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../android/InazumaWiki/.gradle/7.4/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../android/InazumaWiki/.gradle/7.4/fileHashes/resourceHashesCache.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../android/InazumaWiki/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../android/InazumaWiki/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../android/InazumaWiki/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/../../android/InazumaWiki/.gradle/file-system.probe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../android/InazumaWiki/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../android/InazumaWiki/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../android/InazumaWiki/app/build/intermediates/apk/debug/app-debug.apk" beforeDir="false" afterPath="$PROJECT_DIR$/../../android/InazumaWiki/app/build/intermediates/apk/debug/app-debug.apk" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../android/InazumaWiki/app/build/intermediates/dex/debug/mergeProjectDexDebug/1/classes.dex" beforeDir="false" afterPath="$PROJECT_DIR$/../../android/InazumaWiki/app/build/intermediates/dex/debug/mergeProjectDexDebug/1/classes.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../android/InazumaWiki/app/build/intermediates/incremental/debug/mergeDebugResources/compile-file-map.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../../android/InazumaWiki/app/build/intermediates/incremental/debug/mergeDebugResources/compile-file-map.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../android/InazumaWiki/app/build/intermediates/incremental/debug/packageDebugResources/compile-file-map.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../../android/InazumaWiki/app/build/intermediates/incremental/debug/packageDebugResources/compile-file-map.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../android/InazumaWiki/app/build/intermediates/incremental/packageDebug/tmp/debug/dex-renamer-state.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../android/InazumaWiki/app/build/intermediates/incremental/packageDebug/tmp/debug/dex-renamer-state.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../android/InazumaWiki/app/build/intermediates/javac/debug/classes/com/afundacion/inazumawiki/main/MainActivity.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../android/InazumaWiki/app/build/intermediates/javac/debug/classes/com/afundacion/inazumawiki/main/MainActivity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../android/InazumaWiki/app/build/intermediates/project_dex_archive/debug/out/com/afundacion/inazumawiki/main/MainActivity.dex" beforeDir="false" afterPath="$PROJECT_DIR$/../../android/InazumaWiki/app/build/intermediates/project_dex_archive/debug/out/com/afundacion/inazumawiki/main/MainActivity.dex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../android/InazumaWiki/app/build/tmp/compileDebugJavaWithJavac/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../android/InazumaWiki/app/build/tmp/compileDebugJavaWithJavac/previous-compilation-data.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../android/InazumaWiki/app/src/main/java/com/afundacion/inazumawiki/detalleJugador/DetalleJugadorActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../android/InazumaWiki/app/src/main/java/com/afundacion/inazumawiki/detalleJugador/DetalleJugadorActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../android/InazumaWiki/app/src/main/java/com/afundacion/inazumawiki/main/GETRandomPlayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../android/InazumaWiki/app/src/main/java/com/afundacion/inazumawiki/main/GETRandomPlayer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../android/InazumaWiki/app/src/main/java/com/afundacion/inazumawiki/main/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../android/InazumaWiki/app/src/main/java/com/afundacion/inazumawiki/main/MainActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../android/InazumaWiki/app/src/main/java/com/afundacion/inazumawiki/main/NavigationDrawerHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../android/InazumaWiki/app/src/main/java/com/afundacion/inazumawiki/main/NavigationDrawerHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../android/InazumaWiki/app/build/intermediates/incremental/packageDebug/tmp/debug/zip-cache/androidResources" beforeDir="false" afterPath="$PROJECT_DIR$/../../android/InazumaWiki/app/build/intermediates/incremental/packageDebug/tmp/debug/zip-cache/androidResources" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../android/InazumaWiki/app/build/intermediates/merged_res/debug/layout_fragment_buscar_jugadores_nombre.xml.flat" beforeDir="false" afterPath="$PROJECT_DIR$/../../android/InazumaWiki/app/build/intermediates/merged_res/debug/layout_fragment_buscar_jugadores_nombre.xml.flat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../android/InazumaWiki/app/build/intermediates/merged_res_blame_folder/debug/out/single/debug.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../android/InazumaWiki/app/build/intermediates/merged_res_blame_folder/debug/out/single/debug.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../android/InazumaWiki/app/build/intermediates/packaged_res/debug/layout/fragment_buscar_jugadores_nombre.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../android/InazumaWiki/app/build/intermediates/packaged_res/debug/layout/fragment_buscar_jugadores_nombre.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../android/InazumaWiki/app/build/intermediates/processed_res/debug/out/resources-debug.ap_" beforeDir="false" afterPath="$PROJECT_DIR$/../../android/InazumaWiki/app/build/intermediates/processed_res/debug/out/resources-debug.ap_" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../android/InazumaWiki/app/build/intermediates/stable_resource_ids_file/debug/stableIds.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../android/InazumaWiki/app/build/intermediates/stable_resource_ids_file/debug/stableIds.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../android/InazumaWiki/app/src/main/res/layout/fragment_buscar_jugadores_nombre.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../android/InazumaWiki/app/src/main/res/layout/fragment_buscar_jugadores_nombre.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,19 +54,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "Merging main",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;fragJugadores&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\brure\Desktop\MERLIN\Curso Spring\prueba-spring\src\test" />
@@ -171,7 +155,8 @@
       <workItem from="1698740406012" duration="3299000" />
       <workItem from="1698912350438" duration="2145000" />
       <workItem from="1699256011993" duration="6905000" />
-      <workItem from="1699343028236" duration="1079000" />
+      <workItem from="1699343028236" duration="3096000" />
+      <workItem from="1699429950187" duration="2596000" />
     </task>
     <servers />
   </component>
