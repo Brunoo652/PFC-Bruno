@@ -1,5 +1,6 @@
 package com.afundacion.inazumawiki.jugadores;
 
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -8,6 +9,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.afundacion.inazumawiki.detalleJugador.DetalleJugadorActivity;
 import com.afundacion.myaplication.R;
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.resource.drawable.DrawableTransitionOptions;
@@ -76,7 +78,9 @@ public class JugadorAdapter extends RecyclerView.Adapter<JugadorAdapter.ViewHold
                     itemView.setOnClickListener(new View.OnClickListener() {
                         @Override
                         public void onClick(View v) {
-                            listener.onItemClick(jugador);
+                            Intent intent = new Intent(itemView.getContext(), DetalleJugadorActivity.class);
+                            intent.putExtra("jugador", jugador.toString());
+                            itemView.getContext().startActivity(intent);
                         }
                     });
                 } catch (JSONException e) {

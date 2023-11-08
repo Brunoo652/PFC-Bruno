@@ -1,5 +1,6 @@
 package com.afundacion.inazumawiki.jugadores;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -9,6 +10,9 @@ import androidx.appcompat.widget.SearchView;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
+
+import com.afundacion.inazumawiki.detalleJugador.DetalleJugadorActivity;
+import com.afundacion.inazumawiki.main.MainActivity;
 import com.afundacion.myaplication.R;
 
 import org.json.JSONArray;
@@ -99,7 +103,7 @@ public class FragmentBuscarJugadoresNombre extends Fragment {
                     JugadorAdapter adapter = new JugadorAdapter(jugadoresList, new JugadorAdapter.OnItemClickListener() {
                         @Override
                         public void onItemClick(Object jugador) {
-                            // Manejar la acción de hacer clic en un jugador aquí
+
                         }
 
                         @Override

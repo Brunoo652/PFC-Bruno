@@ -11,21 +11,22 @@
         android:id="@+id/searchView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="52dp"
+        android:layout_marginTop="50dp"
         android:iconifiedByDefault="false"
         android:queryHint="Buscar jugadores..."
         app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="16dp" />
+        tools:layout_editor_absoluteX="16dp"
+        android:outlineSpotShadowColor="@color/grey"/>
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerViewJugadores"
-        android:layout_width="match_parent"
-        android:layout_height="661dp"
+        android:layout_width="411dp"
+        android:layout_height="777dp"
         android:scrollbars="vertical"
         android:textAlignment="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/searchView"
-        app:layout_constraintVertical_bias="1.0"
+        app:layout_constraintVertical_bias="0.0"
         tools:layout_editor_absoluteX="0dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
