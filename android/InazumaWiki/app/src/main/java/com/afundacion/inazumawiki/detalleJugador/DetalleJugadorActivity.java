@@ -44,7 +44,7 @@ public class DetalleJugadorActivity extends AppCompatActivity {
         botonVolverDetalleJugador = findViewById(R.id.botonVolverDetalleJugador);
 /**************************************************************************************************************/
         // Obtén la información del jugador aleatorio del intent (por id)
-        String jugadorData = getIntent().getStringExtra("jugador_data");
+      /*  String jugadorData = getIntent().getStringExtra("jugador_data");
 
         if (jugadorData != null) {
             try {
@@ -60,13 +60,28 @@ public class DetalleJugadorActivity extends AppCompatActivity {
             } catch (JSONException e) {
                 e.printStackTrace();
             }
-        }
+        }*/
 /**************************************************************************************************************/
 
 /**************************************************************************************************************/
         // Obtén la información del jugador del fragment de Buscar  Jugadores (por nombre)
 
+        String jugadorData = getIntent().getStringExtra("jugador");
 
+        if (jugadorData != null) {
+            try {
+                JSONObject jsonObject = new JSONObject(jugadorData);
+                nombreJugadorDetalle.setText(jsonObject.getString("nombre"));
+                // Carga la imagen del jugador utilizando Picasso
+                Picasso.get().load(jsonObject.getString("sprite")).into(imagenJugadorDetalle);
+                descripcionJugadorDetalle.setText(jsonObject.getString("descripcion"));
+                sexoJugadorDetalle.setText(jsonObject.getString("sexo"));
+                afinidadJugadorDetalle.setText(jsonObject.getString("afinidad"));
+                posicionJugadorDetalle.setText(jsonObject.getString("posicion"));
+            } catch (JSONException e) {
+                e.printStackTrace();
+            }
+        }
 /**************************************************************************************************************/
 
 /**************************************************************************************************************/

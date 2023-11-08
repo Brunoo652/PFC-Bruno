@@ -84,7 +84,7 @@ public class FragmentBuscarJugadoresNombre extends Fragment {
 
         return rootView;
     }
-    
+
     // Método para obtener todos los jugadores desde la API y configurar el adaptador
     private void obtenerTodosLosJugadores() {
         GETAllJugadores.obtenerTodosLosJugadores(new GETAllJugadores.Callback() {

@@ -1,6 +1,7 @@
 package com.afundacion.inazumawiki.jugadores;
 
-import android.content.Intent;
+import
+        android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -80,6 +81,7 @@ public class JugadorAdapter extends RecyclerView.Adapter<JugadorAdapter.ViewHold
                         public void onClick(View v) {
                             Intent intent = new Intent(itemView.getContext(), DetalleJugadorActivity.class);
                             intent.putExtra("jugador", jugador.toString());
+                            System.out.println(jugador);
                             itemView.getContext().startActivity(intent);
                         }
                     });
