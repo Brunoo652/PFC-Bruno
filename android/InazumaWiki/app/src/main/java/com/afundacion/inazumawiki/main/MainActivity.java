@@ -40,6 +40,10 @@ public class MainActivity extends AppCompatActivity {
     private TextView nombreJugador;
     private ImageView spriteJugador;
 
+    private TextView textoBienvenida;
+
+    private TextView textoAviso;
+
     private String jsonData;
 
     @Override
@@ -55,6 +59,8 @@ public class MainActivity extends AppCompatActivity {
         // Encuentra las vistas por sus IDs
         nombreJugador = findViewById(R.id.nombreJugador);
         spriteJugador = findViewById(R.id.spriteJugador);
+        textoAviso = findViewById(R.id.textAviso);
+        textoBienvenida = findViewById(R.id.textbienvenida);
 
         // Funcionamiento del NavigationView
         NavigationView navigationView = findViewById(R.id.navigation_view);
@@ -93,6 +99,8 @@ public class MainActivity extends AppCompatActivity {
                     // Ocultar o eliminar la vista del jugador aleatorio
                     nombreJugador.setVisibility(View.GONE);
                     spriteJugador.setVisibility(View.GONE);
+                    textoAviso.setVisibility(View.GONE);
+                    textoBienvenida.setVisibility(View.GONE);
                 }
 
                 // Cierra el menú de navegación después de hacer una selección
