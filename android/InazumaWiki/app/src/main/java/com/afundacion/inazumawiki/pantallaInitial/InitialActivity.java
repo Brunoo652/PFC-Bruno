@@ -28,16 +28,21 @@ public class InitialActivity extends AppCompatActivity {
         loginButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(InitialActivity.this, LoginActivity.class);
-                startActivity(intent);
+
+                Toast.makeText(InitialActivity.this, "Opción no disponible aún", Toast.LENGTH_SHORT).show();
+                //intent para cambiar a la actividad de login, bloqueda en la entrega parcial
+              /*  Intent intent = new Intent(InitialActivity.this, LoginActivity.class);
+                startActivity(intent);*/
             }
         });
 
         registerButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(InitialActivity.this, RegisterActivity.class);
-                startActivity(intent);
+                Toast.makeText(InitialActivity.this, "Opción no disponible aún", Toast.LENGTH_SHORT).show();
+                //intent para cambiar a la actividad de register, bloqueda en la entrega parcial
+             /*   Intent intent = new Intent(InitialActivity.this, RegisterActivity.class);
+                startActivity(intent);*/
             }
         });
 

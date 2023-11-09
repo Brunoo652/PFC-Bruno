@@ -5,9 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f64eb30c-a4e1-4ab1-a6ae-e011171c4219" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../../android/InazumaWiki/app/src/main/java/com/afundacion/inazumawiki/detalleJugador/DetalleJugadorActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../android/InazumaWiki/app/src/main/java/com/afundacion/inazumawiki/detalleJugador/DetalleJugadorActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../android/InazumaWiki/app/src/main/java/com/afundacion/inazumawiki/jugadores/JugadorAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../android/InazumaWiki/app/src/main/java/com/afundacion/inazumawiki/jugadores/JugadorAdapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../android/InazumaWiki/app/src/main/java/com/afundacion/inazumawiki/main/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../android/InazumaWiki/app/src/main/java/com/afundacion/inazumawiki/main/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../android/InazumaWiki/app/src/main/java/com/afundacion/inazumawiki/launcher/LauncherActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../android/InazumaWiki/app/src/main/java/com/afundacion/inazumawiki/launcher/LauncherActivity.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,19 +44,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;detalleJugador&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "revisionParcial",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\brure\Desktop\MERLIN\Curso Spring\prueba-spring\src\test" />
