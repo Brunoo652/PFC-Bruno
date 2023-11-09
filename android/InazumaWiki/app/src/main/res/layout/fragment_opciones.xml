@@ -36,20 +36,13 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="96dp"
+        android:clickable="true"
         android:text="Cerrar sesión"
         android:textAlignment="center"
-        app:layout_constraintTop_toBottomOf="@+id/ModoOscuro"
-        android:clickable="true"/>
-
-    <TextView
-        android:id="@+id/EliminarCuenta"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:clickable="true"
-        android:text="Eliminar cuenta"
-        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/CerrarSesion"
-        app:layout_constraintVertical_bias="0.2" />
+        app:layout_constraintTop_toBottomOf="@+id/ModoOscuro"
+        app:layout_constraintVertical_bias="0.110" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
