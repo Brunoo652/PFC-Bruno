@@ -29,16 +29,17 @@ public class GETRandomPlayer {
         String url = BASE_URL + jugadorId;
 
         executorService.execute(() -> {
+
             OkHttpClient client = new OkHttpClient();
             Request request = new Request.Builder().url(url).build();
 
             try {
                 Response response = client.newCall(request).execute();
                 if (response.isSuccessful()) {
-                    String jsonData = response.body().string();
-                    Log.d("GETRandomPlayer", "Respuesta del servidor: " + jsonData);
-                    System.out.println("Solicitud correcta, datos: "+ jsonData);
-                    handler.post(() -> callback.onRandomPlayerReceived(jsonData));
+                    String jsonDataRandom = response.body().string();
+                    Log.d("GETRandomPlayer", "Respuesta del servidor: " + jsonDataRandom);
+                    System.out.println("Solicitud correcta, datos: "+ jsonDataRandom);
+                    handler.post(() -> callback.onRandomPlayerReceived(jsonDataRandom));
                 } else {
                     handler.post(() -> callback.onRandomPlayerReceived(null));
                 }
