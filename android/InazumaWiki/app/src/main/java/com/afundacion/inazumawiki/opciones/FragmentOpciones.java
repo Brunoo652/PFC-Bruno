@@ -2,8 +2,6 @@ package com.afundacion.inazumawiki.opciones;
 
 import android.content.DialogInterface;
 import android.os.Bundle;
-import android.os.Handler;
-import android.os.Looper;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -13,10 +11,8 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AlertDialog;
-import androidx.appcompat.app.AppCompatDelegate;
 import androidx.fragment.app.Fragment;
 
-import com.afundacion.inazumawiki.pantallaInitial.InitialActivity;
 import com.afundacion.myaplication.R;
 
 public class FragmentOpciones extends Fragment {

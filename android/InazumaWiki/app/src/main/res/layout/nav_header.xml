@@ -12,12 +12,14 @@
 
     <ImageView
         android:id="@+id/header_image"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@mipmap/ic_launcher"
-        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="90dp"
+        android:layout_height="98dp"
+        android:src="@drawable/logo_app_placeholder"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="2dp"
+        tools:layout_editor_absoluteY="0dp" />
 
     <TextView
         android:id="@+id/header_title"
@@ -29,14 +31,14 @@
         android:text="@string/app_name"
         android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium.Inverse"
         android:textColor="@color/black"
-        android:textSize="25dp"
+        android:textSize="20dp"
         app2:layout_constraintBottom_toBottomOf="parent"
         app2:layout_constraintTop_toTopOf="parent"
-        app2:layout_constraintVertical_bias="0.515"
+        app2:layout_constraintVertical_bias="0.508"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/header_image"
-        tools:layout_editor_absoluteX="16dp" />
+        tools:layout_editor_absoluteX="92dp" />
 
     <!--TextView
         android:layout_width="0dp"
