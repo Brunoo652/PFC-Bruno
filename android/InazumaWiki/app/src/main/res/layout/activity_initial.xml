@@ -9,9 +9,9 @@
 
     <ImageView
         android:id="@+id/imagenLogo"
-        android:layout_width="331dp"
+        android:layout_width="335dp"
         android:layout_height="345dp"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="40dp"
         android:src="@drawable/logo_app_placeholder"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.506"
@@ -22,37 +22,40 @@
         android:id="@+id/botonInvitado"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="50dp"
         android:text="Invitado"
-        android:textColor="@color/black"
         android:textSize="30dp"
-        app:layout_constraintTop_toBottomOf="@+id/imagenLogo"
-        tools:layout_editor_absoluteX="-16dp" />
+        app:layout_constraintTop_toBottomOf="@+id/imagenLogo" />
 
     <Button
         android:id="@+id/botonLogin"
         style="@style/CardView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="40dp"
         android:text="LOGIN"
-        android:textColor="@color/black"
         android:textSize="30dp"
-        app:layout_constraintTop_toBottomOf="@+id/botonInvitado"
-        tools:layout_editor_absoluteX="0dp" />
+        app:layout_constraintTop_toBottomOf="@+id/botonInvitado" />
 
     <Button
         android:id="@+id/botonRegister"
         style="@style/CardView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
         android:text="REGISTER"
-        android:textColor="@color/black"
         android:textSize="30dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/botonLogin"
-        app:layout_constraintVertical_bias="0.32"
-        tools:layout_editor_absoluteX="-16dp" />
+        app:layout_constraintTop_toBottomOf="@+id/botonLogin" />
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="74dp"
+        android:text="Elige una opción"
+        android:textAlignment="center"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/botonRegister"
+        app:layout_constraintVertical_bias="0.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

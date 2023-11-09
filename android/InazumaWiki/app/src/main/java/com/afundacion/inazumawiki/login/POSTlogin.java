@@ -3,8 +3,6 @@ package com.afundacion.inazumawiki.login;
 import android.content.Context;
 import android.util.Log;
 
-import com.afundacion.inazumawiki.register.CheckEmail;
-import com.android.volley.DefaultRetryPolicy;
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
 import com.android.volley.Response;

@@ -8,10 +8,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
-import com.afundacion.inazumawiki.home.HomeFragment;
-import com.afundacion.inazumawiki.login.LoginActivity;
 import com.afundacion.inazumawiki.main.MainActivity;
-import com.afundacion.inazumawiki.register.RegisterActivity;
 import com.afundacion.myaplication.R;
 
 public class InitialActivity extends AppCompatActivity {
@@ -28,16 +25,21 @@ public class InitialActivity extends AppCompatActivity {
         loginButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(InitialActivity.this, LoginActivity.class);
-                startActivity(intent);
+
+                Toast.makeText(InitialActivity.this, "Opción no disponible aún", Toast.LENGTH_SHORT).show();
+                //intent para cambiar a la actividad de login, bloqueda en la entrega parcial
+              /*  Intent intent = new Intent(InitialActivity.this, LoginActivity.class);
+                startActivity(intent);*/
             }
         });
 
         registerButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(InitialActivity.this, RegisterActivity.class);
-                startActivity(intent);
+                Toast.makeText(InitialActivity.this, "Opción no disponible aún", Toast.LENGTH_SHORT).show();
+                //intent para cambiar a la actividad de register, bloqueda en la entrega parcial
+             /*   Intent intent = new Intent(InitialActivity.this, RegisterActivity.class);
+                startActivity(intent);*/
             }
         });
 

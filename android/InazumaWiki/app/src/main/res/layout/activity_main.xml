@@ -35,40 +35,51 @@
         <TextView
             android:id="@+id/nombreJugador"
             android:layout_width="match_parent"
-            android:layout_height="42dp"
+            android:layout_height="wrap_content"
             android:textAlignment="center"
             android:textColor="@color/black"
             android:textSize="25dp"
             app:layout_constraintBottom_toTopOf="@+id/spriteJugador"
             app:layout_constraintEnd_toEndOf="@+id/spriteJugador"
-            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintHorizontal_bias="0.503"
             app:layout_constraintStart_toStartOf="@+id/spriteJugador"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.571" />
+            app:layout_constraintTop_toBottomOf="@+id/textbienvenida"
+            app:layout_constraintVertical_bias="1.0" />
 
         <ImageView
             android:id="@+id/spriteJugador"
-            android:layout_width="408dp"
-            android:layout_height="343dp"
-            android:layout_marginBottom="204dp"
+            android:layout_width="380dp"
+            android:layout_height="380dp"
+            android:layout_marginBottom="172dp"
             android:clickable="true"
             android:foregroundGravity="center"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent" />
 
-        <!--TextView
-            android:id="@+id/prueba"
+        <TextView
+            android:id="@+id/textbienvenida"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="356dp"
-            android:text="Soy un texto de prueba, estoy enciam de la imagen"
+            android:layout_marginTop="36dp"
+            android:text="¡Bienvenido a la Wikipedia de Inazuma Eleven!"
+            android:textSize="28dp"
+            android:textAlignment="center"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.723"
+            app:layout_constraintHorizontal_bias="0.637"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" /-->
+            app:layout_constraintTop_toBottomOf="@+id/toolbar" />
 
+        <TextView
+            android:id="@+id/textAviso"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="48dp"
+            android:text="Aplicación hecha con fines estudiantiles."
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/spriteJugador" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
