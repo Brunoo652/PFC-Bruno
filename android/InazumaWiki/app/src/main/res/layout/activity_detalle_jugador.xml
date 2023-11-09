@@ -24,9 +24,9 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
         android:textColor="@color/black"
-        android:textSize="20dp"
+        android:textSize="23dp"
+        android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tituloDetallejugador" />
 
@@ -41,10 +41,11 @@
     <TextView
         android:id="@+id/descripcionJugadorDetalle"
         android:layout_width="match_parent"
-        android:layout_height="100dp"
+        android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
         android:textColor="@color/black"
         android:textSize="12dp"
+        android:justificationMode="inter_word"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imagenJugadorDetalle" />
@@ -81,35 +82,38 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
+        android:textColor="@color/black"
+        android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/descripcionJugadorDetalle" />
 
     <Button
         android:id="@+id/botonFavoritosDetalleJugador"
-        android:layout_width="133dp"
-        android:layout_height="92dp"
-        android:layout_marginStart="4dp"
-        android:layout_marginBottom="4dp"
-        android:background="@drawable/logo_app_placeholder"
+        android:layout_width="130dp"
+        android:layout_height="95dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="5dp"
         android:text="Añadir a favoritos"
         android:textColor="@android:color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/sexoJugadorDetalle" />
+        app:layout_constraintTop_toBottomOf="@+id/sexoJugadorDetalle"
+        app:layout_constraintVertical_bias="0.452" />
 
     <Button
         android:id="@+id/botonVolverDetalleJugador"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="128dp"
-        android:layout_marginBottom="32dp"
-        android:text="Button"
+        android:layout_width="130dp"
+        android:layout_height="95dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="5dp"
+        android:text="VOLVER"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.017"
+        app:layout_constraintHorizontal_bias="0.702"
         app:layout_constraintStart_toEndOf="@+id/botonFavoritosDetalleJugador"
-        app:layout_constraintTop_toBottomOf="@+id/sexoJugadorDetalle" />
+        app:layout_constraintTop_toBottomOf="@+id/sexoJugadorDetalle"
+        app:layout_constraintVertical_bias="0.45" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
