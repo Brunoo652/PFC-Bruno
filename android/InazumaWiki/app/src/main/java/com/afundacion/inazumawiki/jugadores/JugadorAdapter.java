@@ -81,7 +81,6 @@ public class JugadorAdapter extends RecyclerView.Adapter<JugadorAdapter.ViewHold
                         public void onClick(View v) {
                             Intent intent = new Intent(itemView.getContext(), DetalleJugadorActivity.class);
                             intent.putExtra("jugador", jugador.toString());
-                            System.out.println(jugador);
                             itemView.getContext().startActivity(intent);
                         }
                     });

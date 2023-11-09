@@ -40,6 +40,8 @@ public class MainActivity extends AppCompatActivity {
     private TextView nombreJugador;
     private ImageView spriteJugador;
 
+    private String jsonData;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -107,6 +109,9 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 // Abre la actividad de detalles del jugador aquí
                 Intent intent = new Intent(MainActivity.this, DetalleJugadorActivity.class);
+              //  intent.putExtra("jugador", jugador.toString());
+                intent.putExtra("jugadorDataRandom", jsonData);
+                System.out.println(jsonData);
                 startActivity(intent);
             }
         });
@@ -136,7 +141,8 @@ public class MainActivity extends AppCompatActivity {
     private void cargarJugadorAleatorio() {
         GETRandomPlayer.getRandomPlayer(new GETRandomPlayer.RandomPlayerCallback() {
             @Override
-            public void onRandomPlayerReceived(String jsonData) {
+            public void onRandomPlayerReceived(String receivedJsonData) {
+                 jsonData = receivedJsonData;
                 // Actualiza la interfaz de usuario con los datos del jugador
                 actualizarInterfazUsuario(jsonData);
             }
