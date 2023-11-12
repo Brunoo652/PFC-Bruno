@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f64eb30c-a4e1-4ab1-a6ae-e011171c4219" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../../android/InazumaWiki/app/src/main/res/layout/activity_detalle_jugador.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../android/InazumaWiki/app/src/main/res/layout/activity_detalle_jugador.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../android/InazumaWiki/app/src/main/res/layout/fragment_acerca_de.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../android/InazumaWiki/app/src/main/res/layout/fragment_acerca_de.xml" afterDir="false" />
-    </list>
+    <list default="true" id="f64eb30c-a4e1-4ab1-a6ae-e011171c4219" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -55,6 +52,7 @@
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -149,6 +147,7 @@
       <workItem from="1699343028236" duration="3096000" />
       <workItem from="1699429950187" duration="3795000" />
       <workItem from="1699516773745" duration="851000" />
+      <workItem from="1699827798956" duration="772000" />
     </task>
     <servers />
   </component>
