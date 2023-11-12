@@ -4,12 +4,12 @@ spring:
       enabled: true
       path: /h2
 
-#  datasource:
-#    datasource-initializer-enabled: true
- #   hikari:
-   #   driver-class-name: org.h2.Driver
-    #  connection-timeout: 30000
-     # idle-timeout: 600000
+      #  datasource:
+      #    datasource-initializer-enabled: true
+      #   hikari:
+      #   driver-class-name: org.h2.Driver
+      #  connection-timeout: 30000
+      # idle-timeout: 600000
       #max-lifetime: 1800000
       #     maximum-pool-size: 20
       #     minimum-idle: 5
