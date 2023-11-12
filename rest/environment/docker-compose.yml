@@ -1,0 +1,22 @@
+version: '3.8'
+
+services:
+  db:
+    container_name: container_mysql
+    image: mysql
+    platform: linux/x86_64
+    restart: always
+    environment:
+      MYSQL_DATABASE: 'DEMO'
+      MYSQL_USER: 'demo'
+      MYSQL_PASSWORD: 'demo'
+      MYSQL_ROOT_PASSWORD: 'demo'
+    ports:
+      - '3306:3306'
+    expose:
+      - '3306'
+    volumes:
+      - mysql-data:/var/lib/mysql
+
+volumes:
+  mysql-data:

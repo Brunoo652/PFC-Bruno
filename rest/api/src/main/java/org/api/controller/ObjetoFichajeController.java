@@ -26,11 +26,11 @@ public class ObjetoFichajeController {
     }
 
 
-    @GetMapping("/health")
+    /*@GetMapping("/health")
     @ApiOperation(value = "Check health", notes = "Check the health of the application")
     public ResponseEntity<String> checkHealth() {
         return ResponseEntity.ok("Healthy");
-    }
+    }*/
 
     @GetMapping("/{id}")
     public ResponseEntity<ObjetoFichajeEntity> getObjetoFichajeById(@PathVariable Integer id) {
