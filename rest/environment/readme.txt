@@ -1,0 +1,1 @@
+Usar el comando: docker-compose up -d --build --force-recreate --renew-anon-volumes

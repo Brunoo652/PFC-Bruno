@@ -32,12 +32,6 @@ public class JugadorController {
         this.dataJugadoresProccesor = dataJugadoresProccesor;
     }
 
-    //Endpoint que comprueba que la conexion esta establecida
-    @GetMapping("/health")
-    @ApiOperation(value = "Check health", notes = "Check the health of the application")
-    public ResponseEntity<String> checkHealth() {
-        return ResponseEntity.ok("Healthy");
-    }
 
     //Endpoint que permite buscar a un jugador por su id
     @GetMapping(value = "/jugador/{id}", produces = MediaType.APPLICATION_JSON_VALUE)
