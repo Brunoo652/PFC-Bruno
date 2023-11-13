@@ -1,9 +1,11 @@
 package org.api.controller;
 
+import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiResponse;
 import io.swagger.annotations.ApiResponses;
 import org.api.model.ClubEntity;
+import org.api.model.JugadorEntity;
 import org.api.proccesor.DataClubesProcessor;
 import org.api.service.ClubService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -12,9 +14,10 @@ import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import java.io.IOException;
+import java.util.List;
 
 @RestController
-@RequestMapping("clubes")
+@Api(tags = "club")
 public class ClubController {
 
     private final ClubService clubService;
@@ -42,7 +45,7 @@ public class ClubController {
     }
 
     //Endpoint que permite buscar a un club por su id
-    @GetMapping(value = "/{id}", produces = MediaType.APPLICATION_JSON_VALUE)
+ /*   @GetMapping(value = "/{id}", produces = MediaType.APPLICATION_JSON_VALUE)
     @ApiOperation(value = "Get Club by ID", notes = "Retrieves an CLub with the specified ID")
     @ApiResponses(value = {
             @ApiResponse(code = 200, message = "Club found", response = ClubEntity.class),
@@ -54,6 +57,25 @@ public class ClubController {
         } catch (RuntimeException e) {
             return ResponseEntity.notFound().build();
 
+        }
+    }*/
+
+    //Endpoint que permite buscar a un club por su nombre
+    @GetMapping(value = "/club", produces = MediaType.APPLICATION_JSON_VALUE)
+    @ApiOperation(value = "Get club by name", notes = "Retrieves a club with the specified name")
+    @ApiResponses(value = {
+            @ApiResponse(code = 200, message = "Club found", response = ClubEntity.class),
+            @ApiResponse(code = 404, message = "Club not found")
+    })
+    public ResponseEntity<List<ClubEntity>> getClubesByNombre(@RequestParam String name) {
+        try {
+            List<ClubEntity> clubes = clubService.getClubesByNombreContaining(name);
+            if (clubes.isEmpty()) {
+                return ResponseEntity.notFound().build();
+            }
+            return ResponseEntity.ok(clubes);
+        } catch (RuntimeException e) {
+            return ResponseEntity.notFound().build();
         }
     }
 }

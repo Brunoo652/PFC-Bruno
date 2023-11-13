@@ -4,7 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f64eb30c-a4e1-4ab1-a6ae-e011171c4219" name="Changes" comment="" />
+    <list default="true" id="f64eb30c-a4e1-4ab1-a6ae-e011171c4219" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../../android/InazumaWiki/app/src/main/java/com/afundacion/inazumawiki/clubes/ClubesAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../android/InazumaWiki/app/src/main/java/com/afundacion/inazumawiki/clubes/GETAllClubes.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../android/InazumaWiki/app/src/main/res/layout/item_club.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../android/InazumaWiki/app/src/main/java/com/afundacion/inazumawiki/clubes/FragmentBuscarClubesNombre.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../android/InazumaWiki/app/src/main/java/com/afundacion/inazumawiki/clubes/FragmentBuscarClubesNombre.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../android/InazumaWiki/app/src/main/res/layout/fragment_buscar_clubes_nombre.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../android/InazumaWiki/app/src/main/res/layout/fragment_buscar_clubes_nombre.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../android/InazumaWiki/app/src/main/res/values/colors.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../android/InazumaWiki/app/src/main/res/values/colors.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -42,20 +49,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "fragClubes",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\brure\Desktop\MERLIN\Curso Spring\prueba-spring\src\test" />
@@ -148,7 +155,7 @@
       <workItem from="1699429950187" duration="3795000" />
       <workItem from="1699516773745" duration="851000" />
       <workItem from="1699827798956" duration="1644000" />
-      <workItem from="1699861705667" duration="760000" />
+      <workItem from="1699861705667" duration="3103000" />
     </task>
     <servers />
   </component>
