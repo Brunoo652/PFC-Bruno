@@ -68,6 +68,16 @@ public class FragmentBuscarJugadoresNombre extends Fragment {
                     public void onItemClick(JSONObject jugador) {
                         // Manejar la acción de hacer clic en un jugador aquí
                     }
+
+                    @Override
+                    public void onJugadorClick(Object jugador) {
+
+                    }
+
+                    @Override
+                    public void onJugadorClick(JSONObject jugador) {
+
+                    }
                 });
                 recyclerViewJugadores.setAdapter(adapter);
                 return true;
@@ -104,6 +114,16 @@ public class FragmentBuscarJugadoresNombre extends Fragment {
                         public void onItemClick(JSONObject jugador) {
                             // Manejar la acción de hacer clic en un jugador aquí
                         }
+
+                        @Override
+                        public void onJugadorClick(Object jugador) {
+
+                        }
+
+                        @Override
+                        public void onJugadorClick(JSONObject jugador) {
+
+                        }
                     });
                     recyclerViewJugadores.setAdapter(adapter);
                 } catch (JSONException e) {
@@ -135,13 +155,24 @@ public class FragmentBuscarJugadoresNombre extends Fragment {
                     JugadorAdapter adapter = new JugadorAdapter(jugadoresList, new JugadorAdapter.OnItemClickListener() {
                         @Override
                         public void onItemClick(Object jugador) {
-                            // Manejar la acción de hacer clic en un jugador aquí
+
                         }
 
                         @Override
                         public void onItemClick(JSONObject jugador) {
-                            // Manejar la acción de hacer clic en un jugador aquí
+
                         }
+
+                        @Override
+                        public void onJugadorClick(Object jugador) {
+
+                        }
+
+                        @Override
+                        public void onJugadorClick(JSONObject jugador) {
+
+                        }
+
                     });
                     recyclerViewJugadores.setAdapter(adapter);
                 } catch (JSONException e) {

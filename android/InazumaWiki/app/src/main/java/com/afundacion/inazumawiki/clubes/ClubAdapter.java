@@ -11,7 +11,6 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.afundacion.inazumawiki.detalleJugador.DetalleJugadorActivity;
-import com.afundacion.inazumawiki.jugadores.JugadorAdapter;
 import com.afundacion.myaplication.R;
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.resource.drawable.DrawableTransitionOptions;
@@ -21,38 +20,53 @@ import org.json.JSONObject;
 
 import java.util.List;
 
-public class ClubesAdapter {
+public class ClubAdapter extends RecyclerView.Adapter<ClubAdapter.ViewHolder> {
 
     private List<Object> clubes;
-    private ClubesAdapter.OnItemClickListener listener;
+    private OnItemClickListener listener;
 
-    public ClubesAdapterAdapter(List<Object> clubes, ClubesAdapter.OnItemClickListener listener) {
+    public interface OnItemClickListener {
+        void onClubClick(Object club);
+        void onClubClick(JSONObject club);
+
+        void onItemClick(Object jugador);
+
+        void onItemClick(JSONObject jugador);
+    }
+
+
+    public ClubAdapter(List<Object> clubes, OnItemClickListener listener) {
         this.clubes = clubes;
         this.listener = listener;
     }
 
+
     @NonNull
     @Override
-    public ClubesAdapter.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+    public ClubAdapter.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View itemView = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_club, parent, false);
-        return new ClubesAdapter.ViewHolder(itemView);
+        return new ClubAdapter.ViewHolder(itemView);
     }
 
+
     @Override
-    public void onBindViewHolder(@NonNull JugadorAdapter.ViewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull ClubAdapter.ViewHolder holder, int position) {
         Object club = clubes.get(position);
         holder.bind(club, listener);
     }
+
 
     @Override
     public int getItemCount() {
         return clubes.size();
     }
 
-    public interface OnItemClickListener {
-        void onItemClick(Object club);
-        void onItemClick(JSONObject club);
+    public void updateData(List<Object> newData) {
+        clubes.clear();
+        clubes.addAll(newData);
+        notifyDataSetChanged();
     }
+
 
     public static class ViewHolder extends RecyclerView.ViewHolder {
         private TextView textViewNombreClubes;
@@ -64,7 +78,7 @@ public class ClubesAdapter {
             imageViewSpriteClubes = itemView.findViewById(R.id.imageViewSpriteClubes);
         }
 
-        public void bind(final Object club, final JugadorAdapter.OnItemClickListener listener) {
+        public void bind(final Object club, final OnItemClickListener listener) {
             if (club instanceof JSONObject) {
                 JSONObject clubJson = (JSONObject) club;
                 try {
@@ -83,9 +97,9 @@ public class ClubesAdapter {
                     itemView.setOnClickListener(new View.OnClickListener() {
                         @Override
                         public void onClick(View v) {
-                            Intent intent = new Intent(itemView.getContext(), DetalleJugadorActivity.class);
-                            intent.putExtra("jugador", club.toString());
-                            itemView.getContext().startActivity(intent);
+                          /*  Intent intent = new Intent(itemView.getContext(), DetalleJugadorActivity.class);
+                            intent.putExtra("club", club.toString());
+                            itemView.getContext().startActivity(intent);*/
                         }
                     });
                 } catch (JSONException e) {
@@ -93,5 +107,6 @@ public class ClubesAdapter {
                 }
             }
         }
+
     }
 }
