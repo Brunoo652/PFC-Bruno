@@ -15,7 +15,7 @@ public class GETJugadorPorNombre  {
 
     public static JSONArray obtenerDatosJugador(String nombreJugador,  Callback callback) {
         OkHttpClient client = new OkHttpClient();
-        String url = "http://192.168.1.44:8080/api/jugador?name=" + nombreJugador;
+        String url = "http://192.168.68.140:8080/api/jugador?name=" + nombreJugador;
 
         Request request = new Request.Builder()
                 .url(url)

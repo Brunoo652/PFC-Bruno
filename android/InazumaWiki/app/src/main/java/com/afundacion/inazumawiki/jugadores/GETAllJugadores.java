@@ -21,7 +21,7 @@ public class GETAllJugadores {
 
     public static void obtenerTodosLosJugadores(final Callback callback) {
         OkHttpClient client = new OkHttpClient();
-        String url = "http://192.168.1.44:8080/api/jugador?name=";
+        String url = "http://192.168.68.140:8080/api/jugador?name=";
 
         Request request = new Request.Builder()
                 .url(url)
