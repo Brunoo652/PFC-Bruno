@@ -86,14 +86,18 @@ public class FragmentBuscarClubesNombre extends Fragment {
             @Override
             public boolean onQueryTextSubmit(String query) {
                 // Aquí puedes realizar la solicitud a la API y actualizar el RecyclerView con los resultados.
-                obtenerClubesPorNombre(query);
+                adapter.updateData(filtarClubes(query));
                 return true;
             }
 
             @Override
             public boolean onQueryTextChange(String newText) {
-                // Puedes realizar búsquedas en tiempo real mientras el usuario escribe aquí
-                adapter.updateData(filtarClubes(newText));
+                if (newText.isEmpty()) {
+                    obtenerTodosLosClubes();
+                } else {
+                    // Perform real-time filtering
+                    adapter.updateData(filtarClubes(newText));
+                }
                 return true;
             }
         });
