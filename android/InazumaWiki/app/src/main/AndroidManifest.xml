@@ -16,9 +16,12 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="33">
         <activity
+            android:name="com.afundacion.inazumawiki.detalleClub.DetalleClubActivity"
+            android:exported="false" />
+        <activity
             android:name="com.afundacion.inazumawiki.detalleJugador.DetalleJugadorActivity"
             android:exported="false"
-            android:theme="@style/AppTheme"/>
+            android:theme="@style/AppTheme" />
         <activity
             android:name="com.afundacion.inazumawiki.register.RegisterActivity"
             android:exported="false" />

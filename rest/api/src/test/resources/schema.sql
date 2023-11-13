@@ -21,7 +21,7 @@ CREATE TABLE clubes (
     sprite       VARCHAR(500) NOT NULL,
     descripcion  VARCHAR(250),
     formacion    VARCHAR(250),
-    miembros     VARCHAR(250),
+    miembros     VARCHAR(500),
     favorito     BOOLEAN DEFAULT false
 );
 
