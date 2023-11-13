@@ -11,6 +11,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 
+import com.afundacion.inazumawiki.detalleClub.DetalleClubActivity;
 import com.afundacion.myaplication.R;
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.resource.drawable.DrawableTransitionOptions;
@@ -97,9 +98,9 @@ public class ClubAdapter extends RecyclerView.Adapter<ClubAdapter.ViewHolder> {
                     itemView.setOnClickListener(new View.OnClickListener() {
                         @Override
                         public void onClick(View v) {
-                          /*  Intent intent = new Intent(itemView.getContext(), DetalleJugadorActivity.class);
+                            Intent intent = new Intent(itemView.getContext(), DetalleClubActivity.class);
                             intent.putExtra("club", club.toString());
-                            itemView.getContext().startActivity(intent);*/
+                            itemView.getContext().startActivity(intent);
                         }
                     });
                 } catch (JSONException e) {
