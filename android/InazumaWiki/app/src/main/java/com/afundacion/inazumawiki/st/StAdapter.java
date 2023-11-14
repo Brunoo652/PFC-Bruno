@@ -1,4 +1,4 @@
-package com.afundacion.inazumawiki.jugadores;
+package com.afundacion.inazumawiki.st;
 
 import android.content.Intent;
 import android.view.LayoutInflater;
@@ -6,55 +6,57 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
+
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.afundacion.inazumawiki.clubes.ClubAdapter;
-import com.afundacion.inazumawiki.detalleJugador.DetalleJugadorActivity;
+import com.afundacion.inazumawiki.detalleSt.DetalleStActivity;
 import com.afundacion.myaplication.R;
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.resource.drawable.DrawableTransitionOptions;
+
 import org.json.JSONException;
 import org.json.JSONObject;
+
 import java.util.List;
 
-public class JugadorAdapter extends RecyclerView.Adapter<JugadorAdapter.ViewHolder> {
-    private List<Object> jugadores;
-    private OnItemClickListener listener;
+public class StAdapter extends RecyclerView.Adapter<StAdapter.ViewHolder> {
 
-    public JugadorAdapter(List<Object> jugadores, OnItemClickListener listener) {
-        this.jugadores = jugadores;
+    private List<Object> sts;
+    private StAdapter.OnItemClickListener listener;
+
+    public StAdapter(List<Object> sts, StAdapter.OnItemClickListener listener) {
+        this.sts = sts;
         this.listener = listener;
     }
 
-    public JugadorAdapter(List<Object> clubesList, ClubAdapter.OnItemClickListener onItemClickListener) {
-    }
 
     @NonNull
     @Override
-    public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View itemView = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_jugador, parent, false);
-        return new ViewHolder(itemView);
+    public StAdapter.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+        View itemView = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_st, parent, false);
+        return new StAdapter.ViewHolder(itemView);
     }
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
-        Object jugador = jugadores.get(position);
-        holder.bind(jugador, listener);
+        Object st = sts.get(position);
+        holder.bind(st, listener);
     }
+
 
     @Override
     public int getItemCount() {
-        return jugadores.size();
+        return sts.size();
     }
 
     public interface OnItemClickListener {
-        void onItemClick(Object jugador);
-        void onItemClick(JSONObject jugador);
+        void onItemClick(Object st);
+        void onItemClick(JSONObject st);
 
-        void onJugadorClick(Object jugador);
+        void onStClick(Object st);
 
-        void onJugadorClick(JSONObject jugador);
+        void onStClick(JSONObject st);
     }
 
     public static class ViewHolder extends RecyclerView.ViewHolder {
@@ -67,12 +69,12 @@ public class JugadorAdapter extends RecyclerView.Adapter<JugadorAdapter.ViewHold
             imageViewSprite = itemView.findViewById(R.id.imageViewSprite);
         }
 
-        public void bind(final Object st, final OnItemClickListener listener) {
+        public void bind(final Object st, final StAdapter.OnItemClickListener listener) {
             if (st instanceof JSONObject) {
-                JSONObject jugadorJson = (JSONObject) st;
+                JSONObject stJson = (JSONObject) st;
                 try {
-                    String nombre = jugadorJson.getString("nombre");
-                    String urlSprite = jugadorJson.getString("sprite");
+                    String nombre = stJson.getString("nombre");
+                    String urlSprite = stJson.getString("sprite");
 
                     textViewNombre.setText(nombre);
 
@@ -86,8 +88,8 @@ public class JugadorAdapter extends RecyclerView.Adapter<JugadorAdapter.ViewHold
                     itemView.setOnClickListener(new View.OnClickListener() {
                         @Override
                         public void onClick(View v) {
-                            Intent intent = new Intent(itemView.getContext(), DetalleJugadorActivity.class);
-                            intent.putExtra("jugador", st.toString());
+                            Intent intent = new Intent(itemView.getContext(), DetalleStActivity.class);
+                            intent.putExtra("st", st.toString());
                             itemView.getContext().startActivity(intent);
                         }
                     });
@@ -97,4 +99,5 @@ public class JugadorAdapter extends RecyclerView.Adapter<JugadorAdapter.ViewHold
             }
         }
     }
+
 }
