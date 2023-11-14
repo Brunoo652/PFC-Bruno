@@ -86,7 +86,7 @@ public class DetalleJugadorActivity extends AppCompatActivity {
         //LOGICA DE LOS BOTONES DE VOLVER AL BUSCADOR Y AÑADIR A FAVORITOS
 
 
-        // Obtén la información del jugador aleatorio del intent de Main activity
+        // Logica boton añadir a favoritos
         botonFavoritos.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

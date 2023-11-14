@@ -38,6 +38,7 @@ public class JugadorController {
     @ApiOperation(value = "Get Jugador by ID", notes = "Retrieves an jugador with the specified ID")
     @ApiResponses(value = {
             @ApiResponse(code = 200, message = "Jugador found", response = JugadorEntity.class),
+            @ApiResponse(code = 400, message = "Invalid ID provided"),
             @ApiResponse(code = 404, message = "Jugador not found")
     })
     public ResponseEntity<JugadorEntity> getJugadorById(@PathVariable Integer id) {

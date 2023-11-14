@@ -9,6 +9,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.afundacion.inazumawiki.clubes.ClubAdapter;
 import com.afundacion.inazumawiki.detalleJugador.DetalleJugadorActivity;
 import com.afundacion.myaplication.R;
 import com.bumptech.glide.Glide;
@@ -24,6 +25,9 @@ public class JugadorAdapter extends RecyclerView.Adapter<JugadorAdapter.ViewHold
     public JugadorAdapter(List<Object> jugadores, OnItemClickListener listener) {
         this.jugadores = jugadores;
         this.listener = listener;
+    }
+
+    public JugadorAdapter(List<Object> clubesList, ClubAdapter.OnItemClickListener onItemClickListener) {
     }
 
     @NonNull
@@ -47,6 +51,10 @@ public class JugadorAdapter extends RecyclerView.Adapter<JugadorAdapter.ViewHold
     public interface OnItemClickListener {
         void onItemClick(Object jugador);
         void onItemClick(JSONObject jugador);
+
+        void onJugadorClick(Object jugador);
+
+        void onJugadorClick(JSONObject jugador);
     }
 
     public static class ViewHolder extends RecyclerView.ViewHolder {
