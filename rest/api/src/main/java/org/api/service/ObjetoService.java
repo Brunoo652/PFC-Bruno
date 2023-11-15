@@ -26,7 +26,7 @@ public class ObjetoService {
         return objetoRepository.findById(id).orElseThrow(() -> new RuntimeException("Objeto not found"));
     }
 
-    public List<JugadorEntity> getObjetosByNombreContaining(String nombre) {
+    public List<ObjetoEntity> getObjetosByNombreContaining(String nombre) {
         return objetoRepository.findByNombreContaining(nombre);
     }
 }
