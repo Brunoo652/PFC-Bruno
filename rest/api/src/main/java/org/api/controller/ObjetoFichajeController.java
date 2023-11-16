@@ -1,18 +1,23 @@
 package org.api.controller;
 
+import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
+import io.swagger.annotations.ApiResponse;
+import io.swagger.annotations.ApiResponses;
+import org.api.model.ObjetoEntity;
 import org.api.model.ObjetoFichajeEntity;
 import org.api.proccesor.DataObjetosFichajesProcessor;
 import org.api.service.ObjetoFichajeService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
+import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.*;
 
 @RestController
-@RequestMapping("objetos-fichajes")
+@Api(tags = "objetoFichaje")
 public class ObjetoFichajeController {
 
 
@@ -26,18 +31,37 @@ public class ObjetoFichajeController {
     }
 
 
-    /*@GetMapping("/health")
-    @ApiOperation(value = "Check health", notes = "Check the health of the application")
-    public ResponseEntity<String> checkHealth() {
-        return ResponseEntity.ok("Healthy");
-    }*/
-
-    @GetMapping("/{id}")
+    @GetMapping("/objetoFichaje/{id}")
+    @ApiOperation(value = "Get ObjetoFichaje by ID", notes = "Retrieves an objetoFichaje with the specified ID")
+    @ApiResponses(value = {
+            @ApiResponse(code = 200, message = "ObjetoFichaje found", response = ObjetoFichajeEntity.class),
+            @ApiResponse(code = 400, message = "Invalid ID provided"),
+            @ApiResponse(code = 404, message = "ObjetoFichaje not found")
+    })
     public ResponseEntity<ObjetoFichajeEntity> getObjetoFichajeById(@PathVariable Integer id) {
-        Optional<ObjetoFichajeEntity> objeto = objetoFichajeService.getObjetoById(id);
-        if (objeto.isPresent()) {
-            return ResponseEntity.ok(objeto.get());
+        Optional<ObjetoFichajeEntity> objetoFichaje = objetoFichajeService.getObjetoById(id);
+        if (objetoFichaje.isPresent()) {
+            return ResponseEntity.ok(objetoFichaje.get());
         } else {
+            return ResponseEntity.notFound().build();
+        }
+    }
+
+    //Endpoint que permite buscar a un objetoFichaje por su nombre
+    @GetMapping(value = "/objetoFichaje", produces = MediaType.APPLICATION_JSON_VALUE)
+    @ApiOperation(value = "Get objetoFichaje by name", notes = "Retrieves a objetoFichaje with the specified name")
+    @ApiResponses(value = {
+            @ApiResponse(code = 200, message = "Objeto found", response = ObjetoFichajeEntity.class),
+            @ApiResponse(code = 404, message = "Objeto not found")
+    })
+    public ResponseEntity<List<ObjetoFichajeEntity>> getObjetoFichajeByNombre(@RequestParam String name) {
+        try {
+            List<ObjetoFichajeEntity> objetosFichajes = objetoFichajeService.getObjetosByNombreContaining(name);
+            if (objetosFichajes.isEmpty()) {
+                return ResponseEntity.notFound().build();
+            }
+            return ResponseEntity.ok(objetosFichajes);
+        } catch (RuntimeException e) {
             return ResponseEntity.notFound().build();
         }
     }

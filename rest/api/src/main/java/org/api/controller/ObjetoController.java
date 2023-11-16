@@ -1,5 +1,6 @@
 package org.api.controller;
 
+import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiResponse;
 import io.swagger.annotations.ApiResponses;
@@ -16,7 +17,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("objeto")
+@Api(tags = "objeto")
 public class ObjetoController {
 
     private ObjetoService objetoService;
@@ -49,6 +50,7 @@ public class ObjetoController {
     @ApiOperation(value = "Get Objeto by ID", notes = "Retrieves an objeto with the specified ID")
     @ApiResponses(value = {
             @ApiResponse(code = 200, message = "Objeto found", response = ObjetoEntity.class),
+            @ApiResponse(code = 400, message = "Invalid ID provided"),
             @ApiResponse(code = 404, message = "Objeto not found")
     })
     public ResponseEntity<ObjetoEntity> getObjetoById(@PathVariable Integer id) {
@@ -59,16 +61,16 @@ public class ObjetoController {
         }
     }
 
-    //Endpoint que permite buscar a un jugador por su nombre
-    @GetMapping(value = "", produces = MediaType.APPLICATION_JSON_VALUE)
+    //Endpoint que permite buscar a un objeto por su nombre
+    @GetMapping(value = "/objeto", produces = MediaType.APPLICATION_JSON_VALUE)
     @ApiOperation(value = "Get objeto by name", notes = "Retrieves a objeto with the specified name")
     @ApiResponses(value = {
             @ApiResponse(code = 200, message = "Objeto found", response = ObjetoEntity.class),
             @ApiResponse(code = 404, message = "Objeto not found")
     })
-    public ResponseEntity<List<JugadorEntity>> getObjetoByNombre(@RequestParam String name) {
+    public ResponseEntity<List<ObjetoEntity>> getObjetoByNombre(@RequestParam String name) {
         try {
-            List<JugadorEntity> objetos = objetoService.getObjetosByNombreContaining(name);
+            List<ObjetoEntity> objetos = objetoService.getObjetosByNombreContaining(name);
             if (objetos.isEmpty()) {
                 return ResponseEntity.notFound().build();
             }

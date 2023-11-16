@@ -47,7 +47,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;fragClubes&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;fragST&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -151,6 +151,7 @@
       <workItem from="1699861705667" duration="3103000" />
       <workItem from="1699867081280" duration="2783000" />
       <workItem from="1699948610082" duration="2342000" />
+      <workItem from="1700034210512" duration="5522000" />
     </task>
     <servers />
   </component>
