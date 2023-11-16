@@ -82,7 +82,7 @@ public class StAdapter extends RecyclerView.Adapter<StAdapter.ViewHolder> {
                     Glide.with(itemView)
                             .load(urlSprite)
                             .transition(DrawableTransitionOptions.withCrossFade())
-                            .error(R.drawable.logo_app_placeholder) // Manejo de error de carga de imagen
+                            .error(R.drawable.cuaderno3) // Manejo de error de carga de imagen
                             .into(imageViewSprite);
 
                     itemView.setOnClickListener(new View.OnClickListener() {
