@@ -1,6 +1,4 @@
-package com.afundacion.inazumawiki.st;
-
-import com.afundacion.inazumawiki.jugadores.GETJugadorPorNombre;
+package com.afundacion.inazumawiki.objetos;
 
 import org.json.JSONArray;
 
@@ -9,16 +7,16 @@ import okhttp3.Request;
 import okhttp3.Response;
 import okhttp3.ResponseBody;
 
-public class GETStPorNombre {
+public class GETOjbetoFichajePorNombre {
 
     public interface Callback {
         void onResponse(String result);
         void onError(Exception e);
     }
 
-    public static JSONArray obtenerDatosSt(String nombreSt, GETStPorNombre.Callback callback) {
+    public static JSONArray obtenerDatosObjetoFichaje(String nombreObjetoFicahje, GETOjbetoFichajePorNombre.Callback callback) {
         OkHttpClient client = new OkHttpClient();
-        String url = "http://192.168.68.140:8080/api/st?name=" + nombreSt;
+        String url = "http://192.168.68.140:8080/api/objeto?name=" + nombreObjetoFicahje;
 
         Request request = new Request.Builder()
                 .url(url)
@@ -41,5 +39,7 @@ public class GETStPorNombre {
 
         return null;
     }
+
+
 
 }

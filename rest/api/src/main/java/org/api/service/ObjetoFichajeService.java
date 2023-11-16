@@ -31,7 +31,7 @@ public class ObjetoFichajeService {
         objetoFichajeRepository.save(objetoFichaje);
     }
 
-    public List<ObjetoFichajeEntity> getObjetosByNombreContaining(String nombre) {
+    public List<ObjetoFichajeEntity> getObjetosFichajeByNombreContaining(String nombre) {
         return objetoFichajeRepository.findByNombreContaining(nombre);
     }
 }
