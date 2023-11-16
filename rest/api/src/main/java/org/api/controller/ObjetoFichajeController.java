@@ -51,12 +51,12 @@ public class ObjetoFichajeController {
     @GetMapping(value = "/objetoFichaje", produces = MediaType.APPLICATION_JSON_VALUE)
     @ApiOperation(value = "Get objetoFichaje by name", notes = "Retrieves a objetoFichaje with the specified name")
     @ApiResponses(value = {
-            @ApiResponse(code = 200, message = "Objeto found", response = ObjetoFichajeEntity.class),
-            @ApiResponse(code = 404, message = "Objeto not found")
+            @ApiResponse(code = 200, message = "ObjetoFichaje found", response = ObjetoFichajeEntity.class),
+            @ApiResponse(code = 404, message = "ObjetoFichaje not found")
     })
     public ResponseEntity<List<ObjetoFichajeEntity>> getObjetoFichajeByNombre(@RequestParam String name) {
         try {
-            List<ObjetoFichajeEntity> objetosFichajes = objetoFichajeService.getObjetosByNombreContaining(name);
+            List<ObjetoFichajeEntity> objetosFichajes = objetoFichajeService.getObjetosFichajeByNombreContaining(name);
             if (objetosFichajes.isEmpty()) {
                 return ResponseEntity.notFound().build();
             }

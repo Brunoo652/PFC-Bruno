@@ -8,6 +8,6 @@ import java.util.List;
 
 public interface ObjetoFichajeRepository extends JpaRepository <ObjetoFichajeEntity, Integer>{
 
-    @Query("SELECT o FROM ObjetoEntity o WHERE o.nombre LIKE %:nombre%")
+    @Query("SELECT o FROM ObjetoFichajeEntity o WHERE o.nombre LIKE %:nombre%")
     List<ObjetoFichajeEntity> findByNombreContaining(@Param("nombre") String nombre);
 }

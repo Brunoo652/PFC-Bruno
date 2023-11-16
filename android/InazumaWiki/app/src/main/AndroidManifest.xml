@@ -16,6 +16,12 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="33">
         <activity
+            android:name="com.afundacion.inazumawiki.detalleObjeto.DetalleObjetoFichajeActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.afundacion.inazumawiki.detalleObjeto.DetalleObjetoActivity"
+            android:exported="false" />
+        <activity
             android:name="com.afundacion.inazumawiki.detalleSt.DetalleStActivity"
             android:exported="false" />
         <activity

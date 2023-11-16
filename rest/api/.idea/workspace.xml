@@ -4,7 +4,26 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f64eb30c-a4e1-4ab1-a6ae-e011171c4219" name="Changes" comment="" />
+    <list default="true" id="f64eb30c-a4e1-4ab1-a6ae-e011171c4219" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../../android/InazumaWiki/app/src/main/java/com/afundacion/inazumawiki/detalleObjeto/DetalleObjetoActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../android/InazumaWiki/app/src/main/java/com/afundacion/inazumawiki/detalleObjeto/DetalleObjetoFichajeActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../android/InazumaWiki/app/src/main/java/com/afundacion/inazumawiki/objetos/GETAllObjetos.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../android/InazumaWiki/app/src/main/java/com/afundacion/inazumawiki/objetos/GETObjetoPorNombre.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../android/InazumaWiki/app/src/main/java/com/afundacion/inazumawiki/objetos/GETOjbetoFichajePorNombre.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../android/InazumaWiki/app/src/main/java/com/afundacion/inazumawiki/objetos/GetAllObjetosFichaje.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../android/InazumaWiki/app/src/main/java/com/afundacion/inazumawiki/objetos/ObjetoAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../android/InazumaWiki/app/src/main/java/com/afundacion/inazumawiki/objetos/ObjetoFichajeAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../android/InazumaWiki/app/src/main/res/drawable/cofreapp.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../android/InazumaWiki/app/src/main/res/drawable/lupa.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../android/InazumaWiki/app/src/main/res/layout/activity_detalle_objeto.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../android/InazumaWiki/app/src/main/res/layout/activity_detalle_objeto_fichaje.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../android/InazumaWiki/app/src/main/res/layout/item_objeto.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../android/InazumaWiki/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../android/InazumaWiki/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../android/InazumaWiki/app/src/main/java/com/afundacion/inazumawiki/objetos/FragmentBuscarObjetosNombre.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../android/InazumaWiki/app/src/main/java/com/afundacion/inazumawiki/objetos/FragmentBuscarObjetosNombre.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../android/InazumaWiki/app/src/main/java/com/afundacion/inazumawiki/st/GETStPorNombre.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../android/InazumaWiki/app/src/main/java/com/afundacion/inazumawiki/st/GETStPorNombre.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../android/InazumaWiki/app/src/main/res/layout/fragment_buscar_objetos_nombre.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../android/InazumaWiki/app/src/main/res/layout/fragment_buscar_objetos_nombre.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../android/InazumaWiki/app/src/main/res/values/colors.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../android/InazumaWiki/app/src/main/res/values/colors.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -47,7 +66,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "fragObjetos",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
