@@ -14,7 +14,7 @@ import okhttp3.Response;
 
 public class GETRandomPlayer {
 
-    private static final String BASE_URL = "http://192.168.68.140:8080/api/jugador/";
+    private static final String BASE_URL = "http://192.168.1.44:8080/api/jugador/";
     private static final ExecutorService executorService = Executors.newSingleThreadExecutor();
     private static final Handler handler = new Handler(Looper.getMainLooper());
 

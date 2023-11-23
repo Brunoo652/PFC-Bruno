@@ -16,7 +16,7 @@ public class GETObjetoPorNombre {
 
     public static JSONArray obtenerDatosObjeto(String nombreObjeto, GETObjetoPorNombre.Callback callback) {
         OkHttpClient client = new OkHttpClient();
-        String url = "http://192.168.68.140:8080/api/objeto?name=" + nombreObjeto;
+        String url = "http://192.168.1.44:8080/api/objeto?name=" + nombreObjeto;
 
         Request request = new Request.Builder()
                 .url(url)
