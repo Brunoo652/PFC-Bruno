@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f64eb30c-a4e1-4ab1-a6ae-e011171c4219" name="Changes" comment="" />
+    <list default="true" id="f64eb30c-a4e1-4ab1-a6ae-e011171c4219" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../android/InazumaWiki/app/src/main/java/com/afundacion/inazumawiki/clubes/GETClubPorNombre.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../android/InazumaWiki/app/src/main/java/com/afundacion/inazumawiki/clubes/GETClubPorNombre.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../android/InazumaWiki/app/src/main/java/com/afundacion/inazumawiki/main/GETRandomPlayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../android/InazumaWiki/app/src/main/java/com/afundacion/inazumawiki/main/GETRandomPlayer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../android/InazumaWiki/app/src/main/java/com/afundacion/inazumawiki/st/GETStPorNombre.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../android/InazumaWiki/app/src/main/java/com/afundacion/inazumawiki/st/GETStPorNombre.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../android/InazumaWiki/app/src/main/res/layout/fragment_buscar_s_t_nombre.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../android/InazumaWiki/app/src/main/res/layout/fragment_buscar_s_t_nombre.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -153,7 +158,8 @@
       <workItem from="1699948610082" duration="2342000" />
       <workItem from="1700034210512" duration="5522000" />
       <workItem from="1700552553254" duration="2611000" />
-      <workItem from="1700726297324" duration="357000" />
+      <workItem from="1700726297324" duration="2002000" />
+      <workItem from="1701070654828" duration="2499000" />
     </task>
     <servers />
   </component>

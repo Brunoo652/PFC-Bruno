@@ -18,7 +18,7 @@ public class GETStPorNombre {
 
     public static JSONArray obtenerDatosSt(String nombreSt, GETStPorNombre.Callback callback) {
         OkHttpClient client = new OkHttpClient();
-        String url = "http://192.168.68.140:8080/api/st?name=" + nombreSt;
+        String url = "http://192.168.150.1:8080/api/st?name=" + nombreSt;
 
         Request request = new Request.Builder()
                 .url(url)
