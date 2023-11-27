@@ -23,7 +23,7 @@ public class GETAllObjetos {
 
     public static void obtenerTodosLosObjetos(final GETAllObjetos.Callback callback) {
         OkHttpClient client = new OkHttpClient();
-        String url = "http://192.168.68.140:8080/api/objeto?name=";
+        String url = "http://192.168.1.44:8080/api/objeto?name=";
 
         Request request = new Request.Builder()
                 .url(url)

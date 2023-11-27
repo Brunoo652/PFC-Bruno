@@ -26,7 +26,7 @@ public class POSTlogin {
 
 
     public static void continueLogin(Context context, String email, String password, final LoginCallback callback) {
-        String serverUrl = "http://192.168.68.140:8080/api/usuarios/login?login="+ email;
+        String serverUrl = "http://192.168.1.44:8080/api/usuarios/login?login="+ email;
 
 
         // Inicializa la cola de solicitudes HTTP

@@ -23,7 +23,7 @@ public class GETAllClubes {
 
     public static void obtenerTodosLosClubes(final GETAllClubes.Callback callback) {
         OkHttpClient client = new OkHttpClient();
-        String url = "http://192.168.68.140:8080/api/club?name=";
+        String url = "http://192.168.1.44:8080/api/club?name=";
 
         Request request = new Request.Builder()
                 .url(url)

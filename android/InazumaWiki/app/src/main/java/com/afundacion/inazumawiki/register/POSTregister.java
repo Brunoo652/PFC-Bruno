@@ -22,7 +22,7 @@ public class POSTregister {
 
 
     public static void continueRegistration(Context context, String email, String password) throws InterruptedException {
-        String serverUrl = "http://192.168.68.140:8080/api/usuarios/register";
+        String serverUrl = "http://192.168.1.44:8080/api/usuarios/register";
 
         // Inicializa la cola de solicitudes HTTP
         RequestQueue requestQueue = Volley.newRequestQueue(context);

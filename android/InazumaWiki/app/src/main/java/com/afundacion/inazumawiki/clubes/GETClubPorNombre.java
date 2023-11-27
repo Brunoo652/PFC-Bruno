@@ -13,7 +13,7 @@ public class GETClubPorNombre {
 
     public static JSONArray obtenerDatosJugador(String nombreClub, Callback callback) {
         OkHttpClient client = new OkHttpClient();
-        String url = "http://192.168.68.140:8080/api/club?name=" + nombreClub;
+        String url = "http://192.168.1.44/api/club?name=" + nombreClub;
 
         Request request = new Request.Builder()
                 .url(url)

@@ -23,7 +23,7 @@ public class GETAllSt {
 
     public static void obtenerTodasLasSt(final GETAllSt.Callback callback) {
         OkHttpClient client = new OkHttpClient();
-        String url = "http://192.168.68.140:8080/api/st?name=";
+        String url = "http://192.168.150.1:8080/api/st?name=";
 
         Request request = new Request.Builder()
                 .url(url)
