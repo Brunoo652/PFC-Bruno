@@ -70,6 +70,4 @@ public class CheckEmail {
         requestQueue.add(request);
     }
 
-
-
 }

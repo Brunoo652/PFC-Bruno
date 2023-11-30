@@ -3,6 +3,7 @@ package org.api.controller;
 import io.swagger.annotations.ApiOperation;
 import org.api.model.UsuarioEntity;
 import org.api.model.UsuarioRepository;
+import org.api.service.UsuarioService;
 import org.json.JSONException;
 import org.json.JSONObject;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -10,15 +11,20 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.Map;
+
 @RestController
 @RequestMapping("usuarios")
 public class UsuarioController {
 
     private final UsuarioRepository usuarioRepository;
 
+    private final UsuarioService usuarioService;
+
     @Autowired
-    public UsuarioController(UsuarioRepository usuarioRepository) {
+    public UsuarioController(UsuarioRepository usuarioRepository, UsuarioService usuarioService) {
         this.usuarioRepository = usuarioRepository;
+        this.usuarioService = usuarioService;
     }
 
 
@@ -65,14 +71,19 @@ public class UsuarioController {
     //Endpoint de login
     @PostMapping("/login")
     @ApiOperation(value = "Login Usuarios", notes = "Permite comprobar los datos del usuario con los de la tabla para poder acceder a la app")
-    public ResponseEntity<String> loginUsuario(@RequestBody JSONObject loginData) {
+    public ResponseEntity<String> loginUsuario(@RequestBody Map<String, String> loginData) {
         try {
-            // Extrae el correo electrónico y la contraseña del JSON
-            String email = loginData.getString("email");
-            String password = loginData.getString("password");
+            // Verifica si el Map contiene las claves "email" y "password"
+            if (!loginData.containsKey("email") || !loginData.containsKey("password")) {
+                System.out.println(loginData);
+                return ResponseEntity.status(HttpStatus.BAD_REQUEST).body("Solicitud JSON incompleta");
+            }
+            // Extrae el correo electrónico y la contraseña del Map
+            String email = loginData.get("email");
+            String password = loginData.get("password");
 
-            // Busca un usuario en la base de datos con el correo electrónico proporcionado
-            UsuarioEntity usuarioEncontrado = (usuarioRepository.findByEmail(email));
+            // Utiliza el servicio para buscar un usuario por correo electrónico
+            UsuarioEntity usuarioEncontrado = usuarioService.findByEmail(email);
 
             if (usuarioEncontrado != null) {
                 // Si se encuentra un usuario, verifica si la contraseña coincide
@@ -84,7 +95,7 @@ public class UsuarioController {
 
             // Si las credenciales no son válidas, devuelve un error no autorizado (código 401)
             return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body("Inicio de sesión fallido");
-        } catch (JSONException e) {
+        } catch (Exception e) {
             // Maneja errores de formato JSON
             e.printStackTrace();
             return ResponseEntity.status(HttpStatus.BAD_REQUEST).body("Solicitud JSON no válida");
