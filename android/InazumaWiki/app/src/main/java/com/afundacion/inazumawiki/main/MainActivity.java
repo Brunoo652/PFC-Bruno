@@ -85,12 +85,12 @@ public class MainActivity extends AppCompatActivity {
                     selectedFragment = new FragmentBuscarObjetosNombre();
                 } else if (id == R.id.BuscadorSTNombre) {
                     selectedFragment = new FragmentBuscarSTNombre();
-                } else if (id == R.id.ListaFavoritos) {
-                    selectedFragment = new FragmentListaFavoritos();
+               /* } else if (id == R.id.ListaFavoritos) {
+                    selectedFragment = new FragmentListaFavoritos();*/
                 } else if (id == R.id.AcercaDe) {
                     selectedFragment = new FragmentAcercaDe();
-                } else if (id == R.id.Opciones) {
-                    selectedFragment = new FragmentOpciones();
+             /*   } else if (id == R.id.Opciones) {
+                    selectedFragment = new FragmentOpciones();*/
                 }
 
                 if (selectedFragment != null) {

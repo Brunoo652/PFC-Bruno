@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
+import com.afundacion.inazumawiki.login.LoginActivity;
 import com.afundacion.inazumawiki.main.MainActivity;
 import com.afundacion.myaplication.R;
 
@@ -26,10 +27,10 @@ public class InitialActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                Toast.makeText(InitialActivity.this, "Opción no disponible aún", Toast.LENGTH_SHORT).show();
+            //    Toast.makeText(InitialActivity.this, "Opción no disponible aún", Toast.LENGTH_SHORT).show();
                 //intent para cambiar a la actividad de login, bloqueda en la entrega parcial
-              /*  Intent intent = new Intent(InitialActivity.this, LoginActivity.class);
-                startActivity(intent);*/
+                Intent intent = new Intent(InitialActivity.this, LoginActivity.class);
+                startActivity(intent);
             }
         });
 
