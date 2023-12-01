@@ -27,13 +27,13 @@
             android:title="Buscador de supertécnicas" />
     </group>
 
-    <group>
+    <!--group>
 
         <item
         android:id="@+id/ListaFavoritos"
         android:title="Lista de favoritos"></item>
 
-    </group>
+    </group-->
 
     <group
         android:id="@+id/otros"
@@ -41,10 +41,10 @@
         <item
             android:id="@+id/AcercaDe"
             android:title="Acerca de"/>
-        <item
+        <!--item
             android:id="@+id/Opciones"
             android:title="Opciones"
-            />
+            /-->
     </group>
 
 </menu>

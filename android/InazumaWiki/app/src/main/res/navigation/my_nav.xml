@@ -31,14 +31,14 @@
         android:id="@+id/buscarST"
         android:label="fragment_buscar_ST"
         tools:layout="@layout/fragment_buscar_ST" />
-    <fragment
+    <!--fragment
         android:id="@+id/listaFav"
         android:label="fragment_lista_fav"
         tools:layout="@layout/fragment_lista_fav" />
     <fragment
         android:id="@+id/opciones"
         android:label="fragment_opciones"
-        tools:layout="@layout/fragment_opciones" />
+        tools:layout="@layout/fragment_opciones" /-->
     <fragment
         android:id="@+id/acercaDe"
         android:label="fragment_acerca_de"

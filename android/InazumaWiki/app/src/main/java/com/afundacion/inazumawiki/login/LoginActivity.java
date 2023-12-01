@@ -8,6 +8,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 import com.afundacion.inazumawiki.main.MainActivity;
+import com.afundacion.inazumawiki.pantallaInitial.InitialActivity;
 import com.afundacion.myaplication.R;
 
 public class LoginActivity extends AppCompatActivity implements POSTlogin.LoginCallback {
@@ -27,15 +28,23 @@ public class LoginActivity extends AppCompatActivity implements POSTlogin.LoginC
         submitButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                // Obtener el correo electrónico y la contraseña
                 String email = emailEditText.getText().toString();
                 String password = passwordEditText.getText().toString();
 
-                if (email.isEmpty() || password.isEmpty()) {
-                    Toast.makeText(LoginActivity.this, "Completa todos los campos", Toast.LENGTH_SHORT).show();
-                    return;
-                }
-
-              //  CheckEmailLogin.isEmailExisting(LoginActivity.this, email, CheckEmail.CheckEmailLoginCallback callback);
+                // Verificar si el correo electrónico ya existe
+                CheckEmailLogin.isEmailAlreadyExisting(LoginActivity.this, email, new CheckEmailLogin.EmailCheckCallback() {
+                    @Override
+                    public void onEmailCheckComplete(boolean emailExists) {
+                        if (emailExists) {
+                            // El correo existe, continuar con el inicio de sesión
+                            POSTlogin.continueLogin(LoginActivity.this, email, password, LoginActivity.this);
+                        } else {
+                            // El correo no existe, mostrar un mensaje
+                            Toast.makeText(LoginActivity.this, "Email incorrecto", Toast.LENGTH_SHORT).show();
+                        }
+                    }
+                });
             }
         });
     }
