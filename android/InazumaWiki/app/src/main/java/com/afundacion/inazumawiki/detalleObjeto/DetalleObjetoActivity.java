@@ -36,11 +36,11 @@ public class DetalleObjetoActivity extends AppCompatActivity {
 
         nombreObjetoDetalle = findViewById(R.id.nombreObjetoDetalle);
         detalleObjetoDetalle = findViewById(R.id.detalleObjetoDetalle);
-        nombreObjetoFichjajeDetalle = findViewById(R.id.nombreObjetoFichajeDetalle);
+      //  nombreObjetoFichjajeDetalle = findViewById(R.id.nombreObjetoFichajeDetalle);
         areaObjetoFichajeDetalle = findViewById(R.id.areaObjetoFichajeDetalle);
         localizacionObjetoFichajeDetalle = findViewById(R.id.localizacionObjetoFichajeDetalle);
         equipoObjetoFichajeDetalle = findViewById(R.id.equipoObjetoFichajeDetalle);
-        botonFavoritos = findViewById(R.id.botonFavoritosDetalleObjeto);
+   //     botonFavoritos = findViewById(R.id.botonFavoritosDetalleObjeto);
         botonVolverDetalleObjeto = findViewById(R.id.botonVolverDetalleObjeto);
 
 
@@ -50,7 +50,7 @@ public class DetalleObjetoActivity extends AppCompatActivity {
             try {
                 JSONObject jsonObject = new JSONObject(objeto);
                 nombreObjetoDetalle.setText(jsonObject.getString("nombre"));
-                nombreObjetoFichjajeDetalle.setText(jsonObject.getString("nombre"));
+            //    nombreObjetoFichjajeDetalle.setText(jsonObject.getString("nombre"));
                 areaObjetoFichajeDetalle.setText(jsonObject.getString("area"));
                 localizacionObjetoFichajeDetalle.setText(jsonObject.getString("localizacion"));
                 equipoObjetoFichajeDetalle.setText(jsonObject.getString("equipo"));
@@ -63,7 +63,7 @@ public class DetalleObjetoActivity extends AppCompatActivity {
 
 
         // Logica boton añadir a favoritos
-        botonFavoritos.setOnClickListener(new View.OnClickListener() {
+     /*   botonFavoritos.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 favorito = !favorito; // Cambia el estado
@@ -78,7 +78,7 @@ public class DetalleObjetoActivity extends AppCompatActivity {
                     botonFavoritos.setText("Añadir a favoritos");
                 }
             }
-        });
+        });*/
 
         //Volver al fragmento de busqueda de clubes
         botonVolverDetalleObjeto.setOnClickListener(new View.OnClickListener() {
