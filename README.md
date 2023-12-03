@@ -1,10 +1,19 @@
-# PFC-Bruno
+# PFC-Bruno 
+
+![logo_app](https://github.com/Brunoo652/PFC-Bruno/assets/113421203/ed47f8fb-f76d-405c-85de-e5a693434829)
+
+## Índice
+* [Descripción del proyecto](#descripción-del-proyecto)
+* [Pasos para iniciar la App](#pasos-para-iniciar-la-app)
+* [Tecnologías usadas](#tecnologías-usadas)
+* [Contribuidores](#contribuidores)
 
 ## Descripción del proyecto
-Aplicación que consume datos de una api conectada a una BBDD sobre jugadores, objetos, clubes y supertécnicas de los videojuegos, anime películas de la saga Inazuma Eleven.
+Aplicación android que consume datos de una api conectada a una BBDD sobre jugadores, objetos, clubes y supertécnicas de la saga Inazuma Eleven.
 Aplicación hecha para el PFC.
 
-## Como iniciar la App.
+
+## Pasos para iniciar la App.
 
 - Instalar docker desktop. (enlace: https://www.docker.com/products/docker-desktop/ )
   -   en en proyecto, en la carpeta enviroment, tienes el docker-compose para conigurar y correr el container para la BBDD.
@@ -25,4 +34,16 @@ Aplicación hecha para el PFC.
  
 ![image](https://github.com/Brunoo652/PFC-Bruno/assets/113421203/7afcaa56-7e1d-4276-a00b-065d709b3893)
 
+## Tecnologías usadas
+- Python 3.10.8
+- Java
+- Sping
+- Android Studio
+- Sourcetree
+- Docker
+- Postman
+- DBeaver
 
+
+## Contribuidores
+[<img src="https://avatars.githubusercontent.com/u/113421203?v=4" width=115><br><sub>Bruno Reboredo Álvarez</sub>](https://github.com/Brunoo652) 
