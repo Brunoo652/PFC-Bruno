@@ -38,7 +38,7 @@ public class DetalleClubActivity extends AppCompatActivity {
         descripcionClubDetalle = findViewById(R.id.descripcionClubDetalle);
         formacionClubDetalle = findViewById(R.id.formacionClubDetalle);
         miembrosClubDetalle = findViewById(R.id.miembrosClubDetalle);
-        botonFavoritos = findViewById(R.id.botonAñadirFavoritosClubDetalle);
+      //  botonFavoritos = findViewById(R.id.botonAñadirFavoritosClubDetalle);
         botonVolverDetalleClub = findViewById(R.id.botonVolverMenuClubDetalle);
 
 
@@ -60,7 +60,7 @@ public class DetalleClubActivity extends AppCompatActivity {
 
 
         // Logica boton añadir a favoritos
-        botonFavoritos.setOnClickListener(new View.OnClickListener() {
+     /*   botonFavoritos.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 favorito = !favorito; // Cambia el estado
@@ -75,7 +75,7 @@ public class DetalleClubActivity extends AppCompatActivity {
                     botonFavoritos.setText("Añadir a favoritos");
                 }
             }
-        });
+        });*/
 
         //Volver al fragmento de busqueda de clubes
         botonVolverDetalleClub.setOnClickListener(new View.OnClickListener() {
