@@ -19,19 +19,29 @@
         app:layout_constraintTop_toTopOf="parent"
         tools:layout_editor_absoluteX="0dp" />
 
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="260dp"
+        android:layout_height="234dp"
+        android:layout_marginTop="60dp"
+        android:src="@drawable/lupa"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tituloObjetoDetalle" />
 
     <TextView
         android:id="@+id/nombreObjetoDetalle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="104dp"
+        android:layout_marginTop="40dp"
         android:textAlignment="center"
         android:textColor="@color/black"
         android:textSize="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tituloObjetoDetalle" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
     <TextView
         android:id="@+id/detalleObjetoDetalle"
@@ -48,23 +58,10 @@
         app:layout_constraintTop_toBottomOf="@+id/nombreObjetoDetalle" />
 
     <TextView
-        android:id="@+id/nombreObjetoFichajeDetalle"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="104dp"
-        android:textAlignment="center"
-        android:textColor="@color/black"
-        android:textSize="20dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tituloObjetoDetalle" />
-
-    <TextView
         android:id="@+id/areaObjetoFichajeDetalle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="132dp"
+        android:layout_marginTop="32dp"
         android:justificationMode="inter_word"
         android:textAlignment="center"
         android:textColor="@color/black"
@@ -72,25 +69,29 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/nombreObjetoFichajeDetalle" />
+        app:layout_constraintTop_toBottomOf="@+id/nombreObjetoDetalle" />
 
     <TextView
         android:id="@+id/localizacionObjetoFichajeDetalle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="44dp"
+        android:layout_marginTop="16dp"
+        android:textAlignment="center"
+        android:textColor="@color/black"
         app:layout_constraintTop_toBottomOf="@+id/areaObjetoFichajeDetalle"
-        tools:layout_editor_absoluteX="0dp" />
+        tools:layout_editor_absoluteX="16dp" />
 
     <TextView
         android:id="@+id/equipoObjetoFichajeDetalle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
+        android:textAlignment="center"
+        android:textColor="@color/black"
         app:layout_constraintTop_toBottomOf="@+id/localizacionObjetoFichajeDetalle"
         tools:layout_editor_absoluteX="-16dp" />
 
-    <Button
+    <!--Button
         android:id="@+id/botonFavoritosDetalleObjeto"
         android:layout_width="130dp"
         android:layout_height="95dp"
@@ -100,7 +101,7 @@
         android:textColor="@android:color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/detalleObjetoDetalle" />
+        app:layout_constraintTop_toBottomOf="@+id/detalleObjetoDetalle" /-->
 
     <Button
         android:id="@+id/botonVolverDetalleObjeto"
@@ -111,9 +112,10 @@
         android:text="VOLVER"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.702"
-        app:layout_constraintStart_toEndOf="@+id/botonFavoritosDetalleObjeto"
-        app:layout_constraintTop_toBottomOf="@+id/detalleObjetoDetalle" />
+        app:layout_constraintHorizontal_bias="0.459"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/detalleObjetoDetalle"
+        app:layout_constraintVertical_bias="0.567" />
 
     <!--TextView
         android:layout_width="match_parent"

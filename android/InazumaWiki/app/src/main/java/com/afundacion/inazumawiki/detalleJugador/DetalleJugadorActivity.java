@@ -39,7 +39,7 @@ public class DetalleJugadorActivity extends AppCompatActivity {
         sexoJugadorDetalle = findViewById(R.id.sexoJugadorDetalle);
         afinidadJugadorDetalle = findViewById(R.id.afinidadJugadorDetalle);
         posicionJugadorDetalle = findViewById(R.id.posicionJugadorDetalle);
-        botonFavoritos = findViewById(R.id.botonFavoritosDetalleJugador);
+       // botonFavoritos = findViewById(R.id.botonFavoritosDetalleJugador);
         botonVolverDetalleJugador = findViewById(R.id.botonVolverDetalleJugador);
 /**************************************************************************************************************/
         // Obtén la información del jugador aleatorio del intent (por id)
@@ -87,7 +87,7 @@ public class DetalleJugadorActivity extends AppCompatActivity {
 
 
         // Logica boton añadir a favoritos
-        botonFavoritos.setOnClickListener(new View.OnClickListener() {
+      /*  botonFavoritos.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 favorito = !favorito; // Cambia el estado
@@ -102,7 +102,7 @@ public class DetalleJugadorActivity extends AppCompatActivity {
                     botonFavoritos.setText("Añadir a favoritos");
                 }
             }
-        });
+        });*/
 
         //Volver al fragmento de busqueda de jugadores
         botonVolverDetalleJugador.setOnClickListener(new View.OnClickListener() {
