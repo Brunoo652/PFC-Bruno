@@ -37,7 +37,7 @@ public class DetalleStActivity extends AppCompatActivity {
         imagenStDetalle = findViewById(R.id.imagenStDetalle);
         tipoStDetalle = findViewById(R.id.tipoStDetalle);
         elementoStDetalle = findViewById(R.id.elementoStDetalle);
-        botonFavoritos = findViewById(R.id.botonFavoritosDetalleSt);
+      //  botonFavoritos = findViewById(R.id.botonFavoritosDetalleSt);
         botonVolverDetalleSt = findViewById(R.id.botonVolverDetalleSt);
 
         // Obtén la información del jugador aleatorio del intent (por id)
@@ -62,7 +62,7 @@ public class DetalleStActivity extends AppCompatActivity {
 
 
         // Logica boton añadir a favoritos
-        botonFavoritos.setOnClickListener(new View.OnClickListener() {
+       /* botonFavoritos.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 favorito = !favorito; // Cambia el estado
@@ -77,7 +77,7 @@ public class DetalleStActivity extends AppCompatActivity {
                     botonFavoritos.setText("Añadir a favoritos");
                 }
             }
-        });
+        });*/
 
         //Volver al fragmento de busqueda de jugadores
         botonVolverDetalleSt.setOnClickListener(new View.OnClickListener() {
